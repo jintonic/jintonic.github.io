@@ -1,17 +1,17 @@
 Youtube
 -------
 Set the second external browser to
-
+```bash
     cvlc $(youtube-dl -g %s) &
-
+```
 and press '2M' to launch vlc.
 
 Print web page
 --------------
 The following command can be used in w3m for preview:
-
+```bash
     wkhtmltopdf %s - | zathura - &
-
+```
 In zathura, one can print the pdf file by:
 
     :print <TAB> 1-5 -o media=a4 <ENTER>
@@ -33,7 +33,7 @@ that is, the user specify a script to handle the unknown uri in a config file
 "ar:" will be recognized by w3m as an unknown uri. w3m will call
 file:/cgi-bin/arxiv.cgi to handle this uri. "?%s" is optional. It is used to
 pass the whole uri string (including what is behind the ":") to the script:
-
+```bash
     #!/bin/sh
     arXiv="http://arxiv.org/abs/"
     query=${QUERY_STRING#*:}
@@ -43,7 +43,7 @@ pass the whole uri string (including what is behind the ":") to the script:
     W3m-control: DELETE_PREVBUF
     W3m-control: SEARCH PDF
     _END_
-
+```
 If a link instead of a script is provided, this file can be used to map a uri
 like keyword to a link:
 
@@ -57,6 +57,8 @@ character keyword bookmark.
 
 Function list
 -------------
+function          | explanation
+------------------|---------------------------------
 ABORT             | Quit w3m without confirmation
 ACCESSSKEY        | Popup acceskey menu
 ADD_BOOKMARK      | Add current page to bookmark
