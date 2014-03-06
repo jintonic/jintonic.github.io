@@ -20,7 +20,7 @@ In zathura, one can print the pdf file by:
 
     :print <TAB> 1-5 -o media=a4 <ENTER>
 
-Press <TAB>, the printer name will be automatically completed.
+Press "TAB", the printer name will be automatically completed.
 
 Keyword bookmarking
 -------------------
@@ -53,10 +53,10 @@ like keyword to a link:
 
     fa: www.your.favorite.web.site.com
 
-Type <C-U>fa:<ENTER> in w3m, and your favorite site will be served by w3m.
+Type C-U fa: ENTER in w3m, and your favorite site will be served by w3m.
 Unfortunately, the keyword must be at least 3 letters long.
 
-<C-W> will run the dict search script. One can customize it to enable a single
+C-W will run the dict search script. One can customize it to enable a single
 character keyword bookmark.
 
 Function list
