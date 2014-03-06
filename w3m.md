@@ -1,20 +1,20 @@
 Youtube
-=======
+-------
 Set the second external browser to
 
-  cvlc $(youtube-dl -g %s) &
+    cvlc $(youtube-dl -g %s) &
 
 and press '2M' to launch vlc.
 
 Print web page
-==============
+
 The following command can be used in w3m for preview:
 
-  wkhtmltopdf %s - | zathura - &
+    wkhtmltopdf %s - | zathura - &
 
 In zathura, one can print the pdf file by:
 
-  :print <TAB> 1-5 -o media=a4 <ENTER>
+    :print <TAB> 1-5 -o media=a4 <ENTER>
 
 Press <TAB>, the printer name will be automatically completed.
 
@@ -28,26 +28,26 @@ will be recognized by w3m as a uri. w3m provide a way to handle unknown uri,
 that is, the user specify a script to handle the unknown uri in a config file
 ~/.w3m/urimethodmap, for example:
 
-  ar:      file:/cgi-bin/arxiv.cgi?%s
+    ar:      file:/cgi-bin/arxiv.cgi?%s
 
 "ar:" will be recognized by w3m as an unknown uri. w3m will call
 file:/cgi-bin/arxiv.cgi to handle this uri. "?%s" is optional. It is used to
 pass the whole uri string (including what's behind the ":") to the script:
 
-  #!/bin/sh
-  arXiv="http://arxiv.org/abs/"
-  query=${QUERY_STRING#*:}
-  cat <<_END_
-  Content-type: text/plain
-  W3m-control: GOTO $arXiv$query
-  W3m-control: DELETE_PREVBUF
-  W3m-control: SEARCH PDF
-  _END_
+    #!/bin/sh
+    arXiv="http://arxiv.org/abs/"
+    query=${QUERY_STRING#*:}
+    cat <<_END_
+    Content-type: text/plain
+    W3m-control: GOTO $arXiv$query
+    W3m-control: DELETE_PREVBUF
+    W3m-control: SEARCH PDF
+    _END_
 
 If a link instead of a script is provided, this file can be used to map a uri
 like keyword to a link:
 
-  fa: www.your.favorite.web.site.com
+    fa: www.your.favorite.web.site.com
 
 Type <C-U>fa:<ENTER> in w3m, and your favorite site will be served by w3m.
 Unfortunately, the keyword must be at least 3 letters long.
