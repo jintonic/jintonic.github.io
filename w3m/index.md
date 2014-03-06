@@ -1,5 +1,6 @@
 ---
 title: w3m
+layout: page
 ---
 
 Youtube
