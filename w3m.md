@@ -1,3 +1,7 @@
+---
+title: w3m
+---
+
 Youtube
 -------
 Set the second external browser to
