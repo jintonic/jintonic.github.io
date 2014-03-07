@@ -56,12 +56,11 @@ and use arrow keys to select the right file.
 
 ### Format of a snipmate file ###
 Take ~/.vim/snippets/help.snippets as an example:
-```
+
     snippet t1
-    <literal tab>${1}{{{4~
-    <literal tab>${2}
-    <literal tab>}}}
-```
+    <literal tab>$\{1\}\{\{\{4~
+    <literal tab>$\{2\}
+    <literal tab>\}\}\}
 
 smartinput
 ----------
