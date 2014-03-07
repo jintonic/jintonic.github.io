@@ -13,7 +13,7 @@ plugin by just dropping it in ~/.vim/bundle.
 
 vim-markdown
 ------------
-Vim regards *.md as modula2 files by default. This behavior can be overwritten
+Vim regards "*.md" as modula2 files by default. This behavior can be overwritten
 by installing
 [plasticboy/vim-markdown](https://github.com/plasticboy/vim-markdown).
 Unfortunately, it does not recognize YAML front-matters.
