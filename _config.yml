@@ -1,1 +1,1 @@
-exclude: Gemfile
+exclude: [ 'Gemfile' ]
