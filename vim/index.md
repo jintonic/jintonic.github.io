@@ -1,6 +1,7 @@
 ---
 layout: page
-title: Jing LIU::vim
+category: computer
+title: vim
 ---
 
 misc

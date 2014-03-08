@@ -1,6 +1,7 @@
 ---
 layout: page
-title: Disqus
+category: computer
+title: disqus
 ---
 
 Basic

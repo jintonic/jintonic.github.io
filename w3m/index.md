@@ -1,6 +1,7 @@
 ---
-title: w3m
 layout: page
+category: computer
+title: w3m
 ---
 
 Youtube

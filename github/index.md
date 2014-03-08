@@ -1,6 +1,7 @@
 ---
 layout: page
-title: Jing LIU::GitHub 
+category: computer
+title: github 
 ---
 
 Pages

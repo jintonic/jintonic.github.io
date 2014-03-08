@@ -1,6 +1,7 @@
 ---
 layout: page
-title: Jing LIU::Ruby
+category: computer
+title: ruby
 ---
 
 Gemfile

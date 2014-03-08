@@ -1,6 +1,7 @@
 ---
 layout: page
-title: Jing LIU::markdown
+category: computer
+title: markdown
 ---
 
 Syntax
