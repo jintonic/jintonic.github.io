@@ -1,6 +1,10 @@
 ---
 layout: page
-title: Jing LIU
 ---
+Last updated: {{site.time}}
 
-{{ site.pages }}
+{% for category in site.categories %}
+  <a href="/{{ category | first | slugize }}/">
+    {{ category | first }}
+  </a>
+{% endfor %}
