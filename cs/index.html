@@ -1,0 +1,12 @@
+---
+layout: page
+title: computer notes
+---
+
+{% for page in site.pages %}
+  {% if page.category == 'cs' %}
+    <a href="/{{ page.title }}/">
+      {{ page.title }}
+    </a>
+  {% endif %}
+{% endfor %}
