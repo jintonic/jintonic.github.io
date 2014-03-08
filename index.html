@@ -5,6 +5,6 @@ Last updated: {{site.time}}
 
 {% for page in site.pages %}
   <a href="/{{ page | first | slugize }}/">
-    {{ page | first }}
+    {{ page.title }}
   </a>
 {% endfor %}
