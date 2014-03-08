@@ -1,24 +1,15 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta charset="UTF-8">
-<link rel="stylesheet" type="text/css" href="/style/screen.css">
-<title>Jing LIU's toolbox</title>
-</head>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="/style/screen.css">
+    <title>Jing LIU's toolbox</title>
+  </head>
 
-<body>
-  <div class="content">
-    {{ content }}
-  </div>
-  <div id="disqus_thread"></div>
-  <script type="text/javascript">
-  window.disqus_identifier = {% if page.tumblr_id %}"{{ page.tumblr_id }}"{% else %}"{{ page.id }}"{% endif %};
-  </script>
-  <script async src="http://hunch.disqus.com/embed.js"></script>
-  <noscript>Please enable JavaScript to view the
-    <a href="http://disqus.com/?ref_noscript=hunch">comments powered by Disqus.</a>
-  </noscript>
-  {% include disqus.html %}
-</body>
-
+  <body>
+    <div class="content">
+      {{ content }}
+    </div>
+    {% include disqus.html %}
+  </body>
 </html>
