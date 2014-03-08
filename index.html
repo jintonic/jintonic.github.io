@@ -1,7 +1,12 @@
 ---
 layout: page
-title: home
+title: computer notes
 ---
 
-<h1>Notes</h1>
-<a href="/cs">computer</a>
+{% for page in site.pages %}
+  {% if page.category == 'cs' %}
+    <a href="/{{ page.title }}/">
+      {{ page.title }}
+    </a>
+  {% endif %}
+{% endfor %}
