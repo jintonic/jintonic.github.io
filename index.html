@@ -4,9 +4,7 @@ layout: page
 Last updated: {{site.time}}
 
 {% for page in site.pages %}
-  {% if page.categary != '' %}
-    <a href="/{{ page | first | slugize }}/">
-      {{ page.categray }}
-    </a>
-  {% endif %}
+  <a href="/{{ page | first | slugize }}/">
+    {{ page.categray }}
+  </a>
 {% endfor %}
