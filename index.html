@@ -3,6 +3,7 @@ layout: page
 ---
 Last updated: {{site.time}}
 
+{{site.categories}}
 {% for category in site.categories %}
   <a href="/{{ category | first | slugize }}/">
     {{ category | first }}
