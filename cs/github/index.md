@@ -1,6 +1,6 @@
 ---
 layout: page
-category: computer
+category: cs
 title: github 
 ---
 
