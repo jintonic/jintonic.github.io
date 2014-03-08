@@ -4,9 +4,9 @@ layout: page
 Last updated: {{site.time}}
 
 {% for page in site.pages %}
-  {% if {{ page.category | size }} != 0 %}
+  {% if page.category contains ' ' %}
     <a href="/{{ page.title }}/">
-      {{ page.title }}, {{ page.category | size }}
+      {{ page.title }}, {{ page.category }}
     </a>
   {% endif %}
 {% endfor %}
