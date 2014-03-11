@@ -3,12 +3,12 @@
   <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="/style/screen.css">
-    <title>{% if page.title %}{{ page.title }} &mdash; {% endif %}Jing LIU</title>
+  <title>{% if page.title %}{{ page.title }} {% else %} Jing LIU {% endif %}</title>
   </head>
 
   <body>
     <div class="header">
-      <h1>{% if page.title %}{{ page.title }} &mdash; {% endif %}Jing LIU</h1>
+    <h1>{% if page.title %}{{ page.title }} {% else %} Jing LIU {% endif %}</h1>
     </div>
     <div class="content">
       {{ content }}
