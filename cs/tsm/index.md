@@ -37,7 +37,9 @@ a command line UI _dsmc_, which can be used interactively:
     tsm> q ar /path/to/file # qerry archive of /path/to/file
     tsm> d ar /path/to/file # delete archive of /path/to/file
 
-*NOTE* The trailing \/ means \/\*. /path/to/directory will be regarded as a regular file instead of a directory. /path/to/directory/ means /path/to/directory/*
+*NOTE* The trailing / means /\*. /path/to/directory will be regarded as a
+regular file instead of a directory. /path/to/directory/ means
+/path/to/directory/*
 
 Or in batch mode:
 
