@@ -39,7 +39,7 @@ a command line UI _dsmc_, which can be used interactively:
 
 *NOTE* The trailing / means /\*. /path/to/directory will be regarded as a
 regular file instead of a directory. /path/to/directory/ means
-/path/to/directory/*.
+/path/to/directory/\*
 
 Or in batch mode:
 
