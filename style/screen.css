@@ -19,7 +19,7 @@
 /* Base */
 * { margin:0; padding:0; font-family:inherit; }
 body {
-  background:#ddd;
+  background:white;
   color:#444;
   font:14px 'Poly', georgia, serif;
   line-height:1.5;
@@ -52,6 +52,7 @@ h1,h2,h3,h4,h5,h6 {
   color:#040404;
   margin: 1.618em 0 1em 0;
   text-rendering: optimizelegibility;
+  border-bottom: 1px dashed #ddd;
 }
 h1,h2 { font-size: 200%; }
 h3 { font-size: 180%; }
