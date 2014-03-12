@@ -29,6 +29,7 @@ a command line UI _dsmc_, which can be used interactively:
     tsm> q b /path/to/ # querry backups in /path/to/ directory
     tsm> i /path/to/file # backup /path/to/file
     tsm> i /path/to/file # back it up again, an inactive version is created
+    tsm> i -conpression=yes /path/to/file # good for fast CPU + slow network
     tsm> q b -inac /path/to/ # show both active and inactive versions
     tsm> d b /path/to/file # delete active version of /path/to/file
     tsm> d b /path/to/file -deltype=inac # delete inactive version
