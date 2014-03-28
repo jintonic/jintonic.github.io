@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: note
 category: cs
 title: w3m
 ---
