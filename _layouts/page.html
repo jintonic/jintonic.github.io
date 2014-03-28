@@ -1,17 +1,24 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="/style.css">
-  <title>{% if page.title %}{{ page.title }} {% else %} Jing LIU {% endif %}</title>
-  </head>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="/style.css">
+<title>{% if page.title %}{{ page.title }} {% else %} Jing LIU {% endif %}</title>
+</head>
 
-  <body>
-    <div class="header">
-    <h1>{% if page.title %}{{ page.title }} {% else %} Jing LIU {% endif %}</h1>
-    </div>
-    <div class="content">
-      {{ content }}
-    </div>
-  </body>
+<body>
+<header>
+<span id="title">
+{% if page.title %}{{ page.title }} {% endif %}
+</span>
+
+<span id="subtitle">
+{% if page.subtitle %}{{ page.subtitle }} {% endif %}
+</span>
+</header>
+
+<main>
+{{ content }}
+</main>
+</body>
 </html>
