@@ -1,8 +1,8 @@
 ---
 layout: note
 category: cs
-title: TSM
-subtitle: Tivoli Storage Manager
+title: tsm
+subtitle: - Tivoli Storage Manager
 ---
 [Manual](http://accc.uic.edu/service/backups/manuals)
 
