@@ -25,9 +25,8 @@ h5 { font-size: 1em; font-style: italic; }
 h6 { font-size: 1em; }
 
 a { text-decoration:none; color: #0174DF; }
-a:active { font-weight:bold; }
-a:visited { font-weight:lighter; }
-a:hover { text-decoration:underline; }
+a:hover { font-weight:bold; }
+a:visited { color: #0B3861; }
 
 p, ul, ol { margin: 15px 0; }
 
