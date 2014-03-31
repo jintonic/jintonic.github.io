@@ -20,7 +20,7 @@ CMDS
 
 *NOTE* The single quotes around the first *CMDS* prevent the shell to expand
 variables before sending them to the remote machine. Without it, the dollar
-sign in the awk command has to be excaped to prevent expansion.
+sign in the awk command has to be escaped to prevent expansion.
 
 *NOTE* One cannot specify the remote shell used to execute the multiple line
 commands sent by ssh. The default shell for the user "usr" will be used.
