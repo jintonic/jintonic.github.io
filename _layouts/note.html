@@ -3,31 +3,20 @@
 <head>
 <meta charset="UTF-8">
 <link rel="stylesheet" type="text/css" href="/style.css">
-<title>{% if page.title %}{{ page.title }} {% else %} Jing LIU {% endif %}</title>
+<title>{% if page.title %}{{ page.title }}{% else %}Jing LIU{% endif %}</title>
 </head>
 
 <body>
-<header>
-<span id="title">
-{% if page.title %}{{ page.title }} {% endif %}
-</span>
-
+<h1 id="title">
+{% if page.title %}{{ page.title }}{% endif %}
 <span id="subtitle">
-{% if page.subtitle %} /{{ page.subtitle }}/ {% endif %}
+{% if page.subtitle %} /{{ page.subtitle }}/{% endif %}
 </span>
-</header>
+</h1>
 
-<br>
-
-<main>
 {{ content }}
-</main>
 
-<br>
-
-<footer>
 {% include disqus.html %}
-</footer>
 
 </body>
 </html>
