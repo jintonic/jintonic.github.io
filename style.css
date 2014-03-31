@@ -24,14 +24,12 @@ h4 { font-size: 1em; font-weight: bold; }
 h5 { font-size: 1em; font-style: italic; }
 h6 { font-size: 1em; }
 
-a { text-decoration:none; }
-a:link, a:active { color:#316d96; }
-a:visited { color:#7e5494; }
+a { text-decoration:none; color: #0174DF; }
+a:active { font-weight:bold; }
+a:visited { font-weight:light; }
 a:link:hover, a:active:hover, a:visited:hover { 
   text-decoration:underline;
 }
-a:link:hover, a:active:hover { color:#006be4; }
-a:visited:hover { color:#af00cf; }
 
 p, ul, ol { margin: 15px 0; }
 
@@ -47,7 +45,7 @@ pre {
   background-color: #F5F5F5;
   border: 1px solid #ccc;
   border-radius: 4px;
-  padding: 10px 10px;
+  padding: 10px;
 }
 
 #title {
