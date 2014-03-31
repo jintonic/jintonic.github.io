@@ -2,18 +2,19 @@
 layout: note
 category: cs
 title: vim
+subtitle: a classic text editor
 ---
 
-misc
+Misc
 ====
 
-How to know where a variable is set
------------------------------------
+Check where a variable is set
+-----------------------------
 
     :verbose set aSetting
 
-How to remove ^M in the end of a line in files created in window
-----------------------------------------------------------------
+Remove ^M in files created in Windows
+-------------------------------------
 
     :set filetype=unix
 
