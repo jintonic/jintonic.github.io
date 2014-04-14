@@ -1,0 +1,14 @@
+---
+layout: page
+title: Notes
+subtitle: on plumbing
+---
+
+<div id="contents">
+{% for page in site.pages %}
+  {% if page.category == 'plumbing' %}
+    <a href="/plumbing/{{ page.title }}">{{ page.title }}</a>
+    {% if page.subtitle %} /{{ page.subtitle }}/{% endif %}<br>
+  {% endif %}
+{% endfor %}
+</div>
