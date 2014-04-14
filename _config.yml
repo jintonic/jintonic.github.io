@@ -1,1 +1,2 @@
 exclude: [ 'Gemfile' ]
+markdown: kramdown
