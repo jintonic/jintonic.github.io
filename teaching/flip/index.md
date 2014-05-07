@@ -10,6 +10,7 @@ Basic
 
 According to [wikipedia][wp] and citations therein, the basic concepts of flip
 teaching include:
+
 - students go through raw material by themselves at home
   - raw material includes videos, text books and web pages, etc.
   - they do not need to be made by teachers themselves
@@ -30,6 +31,7 @@ There is no obvious evidence that this method improves the performance of
 students. But they are clearly better motivated.
 
 I may do the following when teach a new class:
+
 - go through raw material by myself first
   - take notes, make videos
   - provide half baked material to students
