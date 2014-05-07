@@ -1,14 +1,5 @@
 ---
-layout: page
+layout: list
 title: Notes
 subtitle: on computing tools
 ---
-
-<div id="contents">
-{% for page in site.pages %}
-  {% if page.category == 'cs' %}
-    <a href="/cs/{{ page.title }}">{{ page.title }}</a>
-    {% if page.subtitle %} /{{ page.subtitle }}/{% endif %}<br>
-  {% endif %}
-{% endfor %}
-</div>
