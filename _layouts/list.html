@@ -4,7 +4,7 @@
   {{each.title}} with category:
   {{each.category}} and directory:
   {{page.directory}} <br></br>
-  {% if each.category == 'page.directory' %}
+  {% if each.category == page.directory %}
     <a href="/page.directory/{{ each.title }}">{{ each.title }}</a>
     {% if each.subtitle %} /{{ each.subtitle }}/{% endif %}<br>
   {% endif %}
