@@ -2,7 +2,7 @@
 <div id="contents">
   {% for each in site.pages %}
     {% if each.category == page.directory %}
-      <a href="/page.directory/{{ each.title }}">{{ each.title }}</a>
+      <a href="/{{ page.directory }}/{{ each.title }}">{{ each.title }}</a>
       {% if each.subtitle %} /{{ each.subtitle }}/{% endif %}<br></br>
     {% endif %}
   {% endfor %}
