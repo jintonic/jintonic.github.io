@@ -1,7 +1,7 @@
 ---
 layout: note
 category: engineering
-title: vacuum technique
+title: vacuum
 ---
 
 Flanges
