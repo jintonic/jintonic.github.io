@@ -30,7 +30,7 @@ teaching include:
 There is no obvious evidence that this method improves the performance of
 students. But they are clearly better motivated.
 
-I may do the following when teach a new class:
+I may do the following when teaching a new class:
 
 - go through raw material by myself first
   - take notes, make videos
