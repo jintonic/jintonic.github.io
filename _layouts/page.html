@@ -1,20 +1,3 @@
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="UTF-8">
-<link rel="stylesheet" type="text/css" href="/style.css">
-<title>{% if page.title %}{{ page.title }}{% else %}Jing LIU{% endif %}</title>
-</head>
-
-<body>
-<h1 id="title">
-{% if page.title %}{{ page.title }}{% endif %}
-<span id="subtitle">
-{% if page.subtitle %} /{{ page.subtitle }}/{% endif %}
-</span>
-</h1>
-
+{% include head.html %}
 {{ content }}
-
-</body>
-</html>
+{% include foot.html %}
