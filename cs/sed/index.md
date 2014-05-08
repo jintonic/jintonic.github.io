@@ -7,10 +7,9 @@ subtitle: stream editor
 
 Basic concept
 =============
-```bash
+~~~bash
 $ sed -options 'address command' input.txt > output.txt
-```
-
+~~~
 It reads every line in "input.txt", do something if the line is specified in
 the "address" before "command".
 
