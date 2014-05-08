@@ -39,6 +39,7 @@ that is, the user specify a script to handle the unknown uri in a config file
 "ar:" will be recognized by w3m as an unknown uri. w3m will call
 file:/cgi-bin/arxiv.cgi to handle this uri. "?%s" is optional. It is used to
 pass the whole uri string (including what is behind the ":") to the script:
+
 ~~~bash
 #!/bin/sh
 arXiv="http://arxiv.org/abs/"
@@ -50,6 +51,7 @@ W3m-control: DELETE_PREVBUF
 W3m-control: SEARCH PDF
 _END_
 ~~~
+
 If a link instead of a script is provided, this file can be used to map a uri
 like keyword to a link:
 
@@ -63,6 +65,7 @@ character keyword bookmark.
 
 Function list
 -------------
+|------------------+---------------------------------
 |function          | explanation
 |:-----------------+:--------------------------------
 |ABORT             | Quit w3m without confirmation
