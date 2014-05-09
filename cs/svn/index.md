@@ -36,8 +36,8 @@ or change the option permanently in ~/.subversion/servers
     [global]
     http-library=serf
 
-delete locally deleted files from SVN repository
-================================================
+delete locally deleted files from repository
+============================================
 
     $ svn st | grep '^!' | awk '{print $2}' | xargs svn delete --force
 
@@ -118,8 +118,8 @@ transport on the wire, without the need of SSL/TLS.
 
 svn+ssh does not suffer from this.
 
-Set automatically basic properties on new files
-===============================================
+Set properties on new files automatically 
+=========================================
 
 Subversion keeps for each file and directory a hidden file with property
 information. Using properties Subversion keeps track, for example, of the mime
