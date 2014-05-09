@@ -37,7 +37,7 @@ I may do the following when teaching a new class:
   - provide half baked material to students
 - design problems for "homework" and tests
 - guide students to solve problems with teaching assistant
-
-It is not clear to me what to do exactly in class.
+  - ask students to list questions when processing raw material
+  - go through these questions together with students in class
 
 [wp]: http://en.wikipedia.org/wiki/Flip_teaching
