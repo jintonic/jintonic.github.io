@@ -30,7 +30,7 @@ a:visited { color: #084B8A; }
 
 p, ul, ol { margin: 15px 0; }
 
-ul > li { margin-left:1.4em; }
+ul, ol > li { margin-left:1.4em; }
 
 blockquote {
   padding-left: 5px;
