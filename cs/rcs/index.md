@@ -41,7 +41,9 @@ The latter will check out test.txt without lock. This will chmod test.txt to
 This command will 
 
 1. overwrite the working copy of test.txt with its version 1.3,
-2. lock version 1.3 in RCS. After this command, if one run
+2. lock version 1.3 in RCS.
+
+After this command, if one run
 
     $ rlog test.txt
 
