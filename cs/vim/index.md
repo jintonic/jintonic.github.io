@@ -5,6 +5,21 @@ title: vim
 subtitle: a classic text editor
 ---
 
+Fix arrow keys showing A B C D in inserting mode
+------------------------------------------------
+I use ssh + screen to work in remote machines.
+
+~~~
+:set term
+~~~
+
+in vim returns "screen". By setting the term explicitly to "linux" in .vimrc
+solves the problem:
+
+~~~
+set term="linux"
+~~~
+
 Misc
 ====
 
