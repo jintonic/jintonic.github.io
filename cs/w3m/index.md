@@ -2,6 +2,7 @@
 layout: note
 category: cs
 title: w3m
+subtitle: web browser in terminal
 ---
 
 Youtube
