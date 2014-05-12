@@ -19,6 +19,7 @@ teaching include:
   - processing raw material alone is easier than solving problems alone
   - speed of processing is controlled by students themselves
   - no need to take notes
+  - good for students who do not understand English well
 - students do "homework" in class
   - teachers help students to solve problems in class
   - students can help each other
@@ -35,9 +36,13 @@ I may do the following when teaching a new class:
 - go through raw material by myself first
   - take notes, make videos
   - provide half baked material to students
-- design problems for "homework" and tests
+  - provide online quiz to ensure students watch videos
+  - design problems for "homework" and tests
 - guide students to solve problems with teaching assistant
   - ask students to list questions when processing raw material
   - go through these questions together with students in class
+  - ask students to form groups to work on some projects.
+
+It is not clear to me how to generate projects as team work.
 
 [wp]: http://en.wikipedia.org/wiki/Flip_teaching
