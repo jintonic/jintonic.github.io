@@ -13,11 +13,11 @@ I use ssh + screen to work in remote machines.
 :set term
 ~~~
 
-in vim returns "screen". By setting the term explicitly to "linux" in .vimrc
+in vim returns *screen*. By setting the term explicitly to *xterm* in .vimrc
 solves the problem:
 
 ~~~
-set term="linux"
+set term=xterm
 ~~~
 
 Misc
