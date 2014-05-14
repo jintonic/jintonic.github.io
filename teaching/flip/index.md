@@ -41,8 +41,20 @@ I may do the following when teaching a new class:
 - guide students to solve problems with teaching assistant
   - ask students to list questions when processing raw material
   - go through these questions together with students in class
-  - ask students to form groups to work on some projects.
+  - ask students to form groups to work on some projects
+  - projects can be: XMan, review paper, design an experiment, etc.
 
-It is not clear to me how to generate projects as team work.
+Caution
+=======
+
+According to [one article in edutopia][edutopia], one should focus on ways to
+improve his instruction before choosing to use the "flipped classroom", because
+it is the practice in class rather than the video lectures that matters.
+
+Students may not read or watch raw material before classes at all. [This post
+in peer instruction][ps] explained how to evaluate the engagement of students.
+
 
 [wp]: http://en.wikipedia.org/wiki/Flip_teaching
+[edutopia]: http://www.edutopia.org/blog/flipped-classroom-best-practices-andrew-miller
+[ps]: http://blog.peerinstruction.net/2012/09/04/how-one-professor-motivated-students-to-read-before-a-flipped-class-and-measured-their-effort/
