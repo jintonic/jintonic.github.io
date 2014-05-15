@@ -18,7 +18,6 @@ $\overline{\nu_{\mu}}$ % long bar
 
 Text in math mode
 -----------------
-
 To put it simple,
 
 ~~~latex
