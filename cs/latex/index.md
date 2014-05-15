@@ -20,7 +20,8 @@ Text in math mode
 -----------------
 
 To put it simple,
-~~~ latex
+
+~~~latex
 $\text{provided by amsmath package}$
 $a^{\text{adapt correct size when used in subscripts}}$
 $a^{\mbox{same size as normal even when used in subscripts}}$
