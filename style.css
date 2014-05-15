@@ -18,8 +18,8 @@ h1 {
   border-top: 1px solid #ddd;
   margin: 15px 0;
 }
-h2 { font-size: 1.5em; font-weight: bold; }
-h3 { font-size: 1.5em; }
+h2 { font-size: 1.5em; font-weight: bold; margin-top: 10px; }
+h3 { font-size: 1.5em; margin-top: 10px; }
 h4 { font-size: 1em; font-weight: bold; }
 h5 { font-size: 1em; font-style: italic; }
 h6 { font-size: 1em; }
