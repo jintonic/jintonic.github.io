@@ -1,6 +1,6 @@
 {% include head.html %}
 <div id="contents">
-  {% for each in site.pages | sort:title %}
+  {% for each in site.pages | sort:name %}
     {% if each.category == page.directory %}
       <a href="/{{ page.directory }}/{{ each.title }}">{{ each.title }}</a>
       {% if each.subtitle %} /{{ each.subtitle }}/{% endif %}<br></br>
