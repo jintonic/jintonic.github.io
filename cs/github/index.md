@@ -28,7 +28,7 @@ According to [issue 42 of plusjade/jekyll-bootstrap][jbi42], Github sorts
 ~~~ liquid
 {% assign sorted = site.pages | sort:"path" %}
 {% for each in sorted %}
-  <li><a href="{{ each.url }}">{{ each.title }}</a></li>
+  <li><a href="{{ each.path }}">{{ each.title }}</a></li>
 {% endfor %}
 ~~~
 
