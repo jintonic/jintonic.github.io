@@ -25,7 +25,7 @@ According to [issue 42 of plusjade/jekyll-bootstrap][jbi42], Github sorts
 *site.pages* by the timestamps of the static html files. One can sort
 *site.pages* using the *sort* filter provided by [liquid][lsort]:
 
-~~~ liquid
+~~~html
 {% assign sorted = site.pages | sort:"path" %}
 {% for each in sorted %}
   <li><a href="{{ each.path }}">{{ each.title }}</a></li>
