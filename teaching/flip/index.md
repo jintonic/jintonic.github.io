@@ -53,6 +53,15 @@ it is the practice in class rather than the video lectures that matters.
 
 Students may not read or watch raw material before classes at all. [This post
 in peer instruction][ps] explained how to evaluate the engagement of students.
+Basically, students have to answer the following questions
+
+- anything difficult to understand?
+- if not, anything interesting?
+
+before the class, and the instructor prepares a short lecture accordingly right
+before a class. Those answers are used to assign credit to students'
+reading/watching assignment. An exam will be prepared after each class, which
+has higher weight to assign credit if the reading assignment is skipped.
 
 
 [wp]: http://en.wikipedia.org/wiki/Flip_teaching
