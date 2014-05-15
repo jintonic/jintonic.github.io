@@ -2,11 +2,11 @@
 layout: note
 category: cs
 title: root
-subtitle: data analysis framework for physicists
+subtitle: data analysis framework
 ---
 
-Forcing axis label displayed exponentially
-==========================================
+Force axis label displayed exponentially
+========================================
 According to [Ramble on programming tips for the particle physicist][ram],
 
 ~~~cpp
