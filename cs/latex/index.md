@@ -2,7 +2,7 @@
 layout: note
 category: cs
 title: latex
-subtitle: typesetting system for scientific documents
+subtitle: typesetting scientific documents
 ---
 
 Math
