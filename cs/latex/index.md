@@ -28,7 +28,8 @@ $a^{\mbox{same size as normal even when used in subscripts}}$
 $\text{rendered slowly}, \mbox{rendered fast}$
 $\text{spaces won't be ignored}$
 $\mathrm{d}f/\mathrm{d}x$ % it is for math symbols printed upright
-$\tex{umlaut \ss works here}, \mathrm{\ss does not work here}$
+$\text{umlaut \ss works here}, \mathrm{\ss does not work here}$
 $\operatorname{foo}$ % similar to \sin, with small spaces before and after
+$\mathrm{foo}$ % without small spaces before and after
 ~~~
 
