@@ -66,6 +66,6 @@ If one does not want to change the original file, he can crop the figure inside
 the latex file using the [graphicx](http://ctan.org/pkg/graphicx) package:
 
 ~~~ latex
-\includegraphics[trim=0 0 35 35, clip, width=\linewidth]{figure}
+\includegraphics[trim=lx ly rx ry, clip]{figure}
 ~~~
 
