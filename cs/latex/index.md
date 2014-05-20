@@ -69,3 +69,69 @@ the latex file using the [graphicx](http://ctan.org/pkg/graphicx) package:
 \includegraphics[trim=lx ly rx ry, clip]{figure}
 ~~~
 
+Version control
+===============
+If you regret from time to time that you should have not deleted some parts of
+your latex document, you should consider put your file under version control.
+If you are the only one working on the document, both [RCS](../rcs) and
+[Git](../git) are good choices. They save the history of revisions together
+with your working file locally, which allows you to use them even when you
+don't have Ethernet connection to some server where histories are saved.
+
+If you would like to backup your work in an additional location, consider using
+[GitHub](../github), where your work is publicly accessible, or [Dropbox][db],
+where your work is kept private unless you choose to share it.
+
+If you save the whole working directory to [Dropbox][db], temporary files
+generated during the compiling of LaTeX are also saved in [Dropbox][db], which
+is probably not what you want. The solution is to keep your working directory
+out of [Dropbox][db] while keep the directory for version control in it.
+
+The way to realize that using [RCS](../rcs) + [Dropbox][db] is to symbol link
+the *RCS* directory to Dropbox as shown in the following example:
+
+~~~ bash
+~/Dropbox $ ls -F
+rcs/
+~/Dropbox $ cd ~/Working
+~/Working $ ls -l
+drwxr-xr-x 3 user group 4.0K time RCS->~/Dropbox/rcs/doc1/
+-rw-r--r-- 1 user group 2345 time doc1.tex
+~~~
+
+The way to realize that using [Git](../git) + [Dropbox][db] is to at first turn
+*/path/to/latex/doc/* into a working directory controlled by [Git](../git),
+
+~~~ bash
+/path/to/latex/doc $ git init
+Initialized empty Git repository in /path/to/latex/doc/.git/
+/path/to/latex/doc $ git add .
+/path/to/latex/doc $ git commit -m "first commit"
+24 files changed, 23391 insertions(+)
+create mode 100644 doc.tex
+...
+~~~
+
+then create an empty [bare repository][br] in [Dropbox][db],
+
+~~~ bash
+$ git init --bare ~/Dropbox/git/my-latex-doc.git 
+~~~
+
+and at last, connect and push contents in your working directory to the bare
+repository in [Dropbox][db],
+
+~~~ bash
+/path/to/latex/doc $ git remote add dropbox ~/Dropbox/git/my-latex-doc.git
+/path/to/latex/doc $ git push -u dropbox master
+~~~
+
+When you have updated your working directory, you can push changes to your bare
+repository in [Dropbox][db],
+
+~~~ bash
+/path/to/latex/doc $ git push
+~~~
+
+[db]: https://www.dropbox.com/
+[br]: https://www.google.com/search?q=git+bare+repository
