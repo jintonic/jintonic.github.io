@@ -69,6 +69,78 @@ the latex file using the [graphicx](http://ctan.org/pkg/graphicx) package:
 \includegraphics[trim=lx ly rx ry, clip]{figure}
 ~~~
 
+Hyperlinks
+==========
+
+~~~ latex
+\usepackage{ifpdf}
+\ifpdf
+\usepackage{epstopdf}
+%\usepackage{pdflscape} % pdf version of lscape
+\usepackage[usenames,dvipsnames]{color}
+\usepackage[pdftex,bookmarks=true,hypertexnames=false]{hyperref}
+\pdfadjustspacing=1
+\else
+%\usepackage{lscape} % provide \begin{landscape}...\end{landscape}
+\usepackage[usenames,dvips]{color}
+\usepackage[ps2pdf]{hyperref}
+\fi
+~~~
+
+Hyperlinks in reference
+-----------------------
+One has to find out first which entries in a bibtex item can be shown as
+specified by the style file with the surfix *.bst*,
+
+~~~ bibtex
+$ vi a-specific-bibtex-style-file.bst
+...
+ENTRY
+{ address
+  author
+  booktitle
+  chapter
+  collaboration
+  edition
+  editor
+  howpublished
+  institution
+  journal
+  key
+  month
+  note
+  number
+  organization
+  pages
+  publisher
+  school
+  series
+  title
+  type
+  volume
+  year
+  url
+  doi
+  eprint
+  pubmed
+}
+{}
+{ label extra.label sort.label short.list }
+...
+~~~
+
+Entry *note* is your best bet,
+
+~~~ bibtex
+@article{eg,
+author = {Some Body and others},
+note = {\url{http://some.body.com}},
+}
+~~~
+
+*\url* is provided by [hyperref](http://www.ctan.org/pkg/hyperref) package or
+the old [url](http://www.ctan.org/pkg/url) package.
+
 Version control
 ===============
 If you regret from time to time that you should have not deleted some parts of
