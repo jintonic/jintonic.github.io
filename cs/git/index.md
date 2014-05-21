@@ -72,3 +72,24 @@ really delete it. In this case, one need to run "git add" to tell git that he
 does not want to really delete it; or one need to run "git rm" to tell git
 that he does want to really delete it.
 
+Undo "git add"
+==============
+
+If you have not *git commit* changes, run
+
+~~~ bash
+$ git reset things-added-but-not-committed
+~~~
+
+Otherwise, run
+
+~~~ bash
+$ git rm --cached things-added-and-committed
+~~~
+
+The option "--cached" helps to keep the working copy. Since *git rm* won't
+change the history. The files that you added will stay in the git history. It
+is complicated to [completely remove them from the history][sens]. Deleting the
+*.git* directory is much faster and simply if you don't care about the history.
+
+[sens]:https://help.github.com/articles/remove-sensitive-data
