@@ -45,6 +45,9 @@ $ vi .gitignore
 $ git commit -m "updated" .gitignore
 ~~~
 
+The *./gitignore* file in the root directory of a project effects every
+directory inside the project unless the directory has its own *.gitignore*.
+
 Resolve conflict
 ================
 
