@@ -7,12 +7,13 @@ title: git
 How to create a new repository
 ==============================
 
-Suppose you already have a directory containing all files related to a project. Then what you need to do is just:
+Suppose you already have a directory containing all files related to a project.
+Then what you need to do is just:
 
 ~~~ shell
 $ cd /path/to/your/project/
-$ git init # create .git/ in /path/to/your/project/
-$ git add *
+$ git init # create a .git/ directory in /root/of/your/project/
+$ git add * # make sure no temporary files in the directory!
 $ git commit -a -m "initial commit"
 ~~~
 
@@ -90,6 +91,7 @@ $ git rm --cached things-added-and-committed
 The option "--cached" helps to keep the working copy. Since *git rm* won't
 change the history. The files that you added will stay in the git history. It
 is complicated to [completely remove them from the history][sens]. Deleting the
-*.git* directory is much faster and simply if you don't care about the history.
+*.git* directory and do *git init* again is much faster and simpler if you
+don't care about the history.
 
 [sens]:https://help.github.com/articles/remove-sensitive-data
