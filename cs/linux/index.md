@@ -4,6 +4,31 @@ category: cs
 title: linux
 ---
 
+Command line tools
+==================
+USB
+---
+List connected USB disks,
+
+~~~ bash
+$ sudo fdisk -l
+...
+Device Boot      Start         End      Blocks   Id  System
+/dev/sdf1            2048  1953521663   976759808    7  HPFS/NTFS/exFAT
+~~~
+
+Mount disk as a normal user,
+
+~~~ bash
+$ pmount -umask 022 /dev/sdf1
+~~~
+
+and umount it,
+
+~~~ bash
+$ pumount /dev/sdf1
+~~~
+
 Reduce number of TTYs
 =====================
 In case of Linux distributions using System V init, comment out extra TTYs in
