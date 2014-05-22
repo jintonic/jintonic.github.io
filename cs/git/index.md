@@ -95,3 +95,17 @@ is complicated to [completely remove them from the history][sens]. Deleting the
 don't care about the history.
 
 [sens]:https://help.github.com/articles/remove-sensitive-data
+
+Show file name in git log
+=========================
+
+*git log* does not show modified file by default. According to [Stack
+Overflow][sd], one has to use one of the followings,
+
+~~~ bash
+$ git log --name-status
+$ git log --name-only
+$ git log --stat
+~~~
+
+[sd]:http://stackoverflow.com/questions/1230084/how-to-have-git-log-show-filenames-like-svn-log-v
