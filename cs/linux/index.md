@@ -6,8 +6,10 @@ title: linux
 
 Command line tools
 ==================
+
 USB
 ---
+
 List connected USB disks,
 
 ~~~ bash
