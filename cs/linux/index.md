@@ -31,6 +31,41 @@ and umount it,
 $ pumount /dev/sdf1
 ~~~
 
+Wireless
+--------
+
+List available network interfaces:
+
+~~~ bash
+$ ls /sys/class/net/ # or
+$ /sbin/ifconfig # or
+$ ip addr
+~~~
+
+Enable wireless interface:
+
+~~~ bash
+$ ifconfig eth0 down # turn off wired network interface
+$ ifconfig wlan0 up # turn on wireless network interface
+~~~
+
+Scan available access points:
+
+~~~ bash
+$ sudo apt-get install wireless-tools # debain based distributions
+$ sudo iwlist wlan0 scan | grep SSID
+~~~
+
+Connect to an access point:
+
+~~~ bash
+$ sudo iwconfig wlan0 essid "essid-of-the-access-point"
+$ sudo iwconfig wlan0 key s:access-key
+$ sudo dhclient wlan0
+~~~
+
+where "s:" is used to convert human readable password to hexadecimal key.
+
 Reduce number of TTYs
 =====================
 In case of Linux distributions using System V init, comment out extra TTYs in
