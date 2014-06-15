@@ -1,7 +1,7 @@
 ---
 layout: note
 category: japan
-title: Get funded in Japan
+title: fund
 subtitle: personal experience
 ---
 
