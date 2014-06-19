@@ -5,11 +5,11 @@ title: pdf
 subtitle: manipulated freely
 ---
 
-Rotate a single page
-====================
+Rotate a single page pdf
+========================
 
 ~~~ bash
-man pdftk
-pdftk input.pdf 1-endD output output.pdf
+$ man pdftk
+$ pdftk input.pdf cat 1-enddown output output.pdf
 ~~~
 
