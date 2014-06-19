@@ -3,7 +3,6 @@ layout: note
 category: usa
 title: visa
 subtitle: H-1B/H-4
-
 ---
 
 One needs to apply for the temporary worker visa, [H-1B][h1b], to work in
@@ -13,9 +12,9 @@ form online including kids. The [H-1B][h1b] applicant also needs to get the
 Notice of Action, form I-797, provided by USCIS to his employer. It is needed
 before scheduling a visa interview.
 
-There is a [dedicated web site][ustd] to apply for visa in Japan, where one can
-fill in the DS-160 and I-797 information, pay the application fee and schedule
-the interview.
+There is a [dedicated web site][ustd] to apply for US visa in Japan, where one
+can fill in the DS-160 and I-797 information, pay the application fee and
+schedule the interview.
 
 [h1b]:http://travel.state.gov/content/visas/english/employment/temporary.html
 [h4]:http://www.wikihow.com/Apply-For-a-Dependent-Visa
