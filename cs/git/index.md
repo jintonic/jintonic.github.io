@@ -109,3 +109,18 @@ $ git log --stat
 ~~~
 
 [sd]:http://stackoverflow.com/questions/1230084/how-to-have-git-log-show-filenames-like-svn-log-v
+
+Change remote repository
+========================
+
+~~~bash
+$ git remote -v
+$ git remote set-url origin git@github.com:usr/project.git
+$ git remote -v
+~~~
+
+or 
+
+~~~bash
+$ vi .git/config # change url setting inside directly
+~~~
