@@ -5,6 +5,18 @@ title: drive
 subtitle: license/buy/sell/inspection
 ---
 
+Get license without going to school
+===================================
+
+It is very expensive to get the license in Japan (200,000 ~ 400,000 yen) if you
+go to a qualified driving school. Most Japanese do not know that you can get
+the license without going to any school. If you know how to drive in your own
+country, and just need the Japanese license, you can take exams at the drivers
+license center directly. If you can pass them once, you just pay for the exams
+and related paper works. I personally failed 10 times, but still just paid
+about 100,000 yen in total.
+
+
 Buy a car from another person
 =============================
 
@@ -34,3 +46,27 @@ Things you need to do except for paying the money:
   * check this [web page][chng] in Japanese
 
 [chng]: http://www.mlit.go.jp/jidosha/kensatoroku/toroku/trk04.htm
+
+
+Get car inspected by yourself
+=============================
+
+Old cars have to be inspected every two years by law. Otherwise, you can not
+drive it. Most Japanese do not know this can be done by themselves without a
+dealer. A dealer normally recommend you to change parts of your car as much as
+possible. The price ends up to be 3 or 4 times more expensive than what is
+really necessary. Check [this web page][ins] in Japanese if you are interested
+to do it by yourself.
+
+[ins]: http://www.mlit.go.jp/jidosha/kensatoroku/kensa/index.htm
+
+If the inspection of your car is already expired, get a temperary plate from
+the city hall so that you can drive it legally to the place for inspection.
+
+Sell a car to another person
+============================
+
+Dealers pay very little for your car if you want to sell it. Sell it to another
+individual directly is a win-win situation for both of you.
+
+
