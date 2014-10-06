@@ -12,3 +12,13 @@ Flanges
 - CF: ConFlat, metal gasket, can be baked, can be used at low temperature, can
   hold high pressure, hard to assemble
 
+Companies
+=========
+
+- [Ideal vacuum products](http://www.pchemlabs.com/)
+- [A&J Vacuum Services](http://www.ajvs.com/)
+- [MDC Vacuum Products](http://www.mdcvacuum.com/index.aspx)
+- [Cosmo tec](http://cosmotec.us/)
+- [Kurt J. Lesker](http://www.lesker.com/newweb/index.cfm)
+- [Edwards](http://www.edwardsvacuum.com/), pumps
+- [Swagelok](http://www.swagelok.com/)
