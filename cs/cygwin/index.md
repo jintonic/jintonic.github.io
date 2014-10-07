@@ -23,4 +23,9 @@ $ ./configure --without-libmagic --without-gtk --disable-extended-keys
 mutt
 ====
 
-Install mutt, msmtp, offlineimap from setup.exe
+Install mutt, msmtp, offlineimap, abook from setup.exe
+
+git
+===
+
+Install git, git-completion from setup.exe
