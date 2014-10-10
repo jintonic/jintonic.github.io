@@ -15,12 +15,27 @@ none /cygdrive cygdrive binary,noacl,posix=0,user 0 0
 
 Ref: [cygwin forum](http://cygwin.1069669.n5.nabble.com/vim-and-file-permissions-on-Windows-7-td61390.html)
 
+/cygwin/c to /c
+===============
+Change the following line in /etc/fstab
+
+~~~
+none /cygdrive cygdrive binary,noacl,posix=0,user 0 0
+~~~
+
+to
+
+~~~
+none / cygdrive binary,noacl,posix=0,user 0 0
+~~~
+
 X
-=
+===
 
 - Install xinit from setup.exe
 - touch ~/.startxwinrc
 - launch "XWin Server" from windows
+
 
 vifm
 ====
