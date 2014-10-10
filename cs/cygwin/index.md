@@ -4,6 +4,17 @@ category: cs
 title: cygwin
 ---
 
+Issue of wrong file permission
+==============================
+
+Turn on "noacl" option in /etc/fstab:
+
+~~~
+none /cygdrive cygdrive binary,noacl,posix=0,user 0 0
+~~~
+
+Ref: [cygwin forum](http://cygwin.1069669.n5.nabble.com/vim-and-file-permissions-on-Windows-7-td61390.html)
+
 X
 =
 
