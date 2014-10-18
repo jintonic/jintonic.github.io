@@ -5,6 +5,14 @@ title: vim
 subtitle: a classic text editor
 ---
 
+Tips
+====
+
+[http://blog.sanctum.geek.nz/unidex/](http://blog.sanctum.geek.nz/unidex/)
+
+Misc
+====
+
 Fix arrow keys showing A B C D in inserting mode
 ------------------------------------------------
 I use ssh + screen to work in remote machines.
@@ -19,9 +27,6 @@ solves the problem:
 ~~~
 set term=xterm
 ~~~
-
-Misc
-====
 
 Check where a variable is set
 -----------------------------
