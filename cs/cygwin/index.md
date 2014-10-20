@@ -27,7 +27,7 @@ to
 
 ~~~
 none / cygdrive binary,noacl,posix=0,user 0 0
-~~~
+~
 
 X
 ===
@@ -49,7 +49,7 @@ $ ./configure --without-libmagic --without-gtk --disable-extended-keys
 mutt
 ====
 
-Install mutt, msmtp, offlineimap, abook from setup.exe
+Install mutt, msmtp, offlineimap, abook, ncurses (infocmp) from setup.exe
 
 git
 ===
