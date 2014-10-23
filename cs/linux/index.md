@@ -4,6 +4,14 @@ category: cs
 title: linux
 ---
 
+Send signals to a process
+=========================
+
+~~~bash
+$ kill -l # list available signals to be sent
+$ kill -SIGUSR1 1234 # send SIGUSR1 signal to process 1234
+~~~
+
 Command line tools
 ==================
 
