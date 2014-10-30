@@ -17,6 +17,7 @@ Ref: [cygwin forum](http://cygwin.1069669.n5.nabble.com/vim-and-file-permissions
 
 /cygwin/c to /c
 ===============
+
 Change the following line in /etc/fstab
 
 ~~~
@@ -27,7 +28,7 @@ to
 
 ~~~
 none / cygdrive binary,noacl,posix=0,user 0 0
-~
+~~~
 
 X
 ===
