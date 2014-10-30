@@ -56,3 +56,13 @@ git
 ===
 
 Install git, git-completion from setup.exe
+
+taskwarrior
+===========
+
+Install cmake, gnutls from setup.exe, follow instructions in:
+
+- http://taskwarrior.org/download/
+- https://github.com/farseer90718/vim-taskwarrior
+- https://freecinc.com/
+
