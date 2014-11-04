@@ -5,6 +5,13 @@ title: w3m
 subtitle: web browser in terminal
 ---
 
+It does not understand elements introduced in HTML5. It does not understand
+Java. It shows a web page only after the whole contents are downloaded. It does
+not maintain a cache of visited web pages. It can be used as a pager for local
+files, but no advantage over vifm + less.
+
+It is only good for browsing simple web sites full with text.
+
 Youtube
 -------
 Set the second external browser to
