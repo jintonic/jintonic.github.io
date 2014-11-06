@@ -56,3 +56,38 @@ git
 ===
 
 Install git, git-completion from setup.exe
+
+taskwarrior
+===========
+
+Install cmake, gnutls from setup.exe, follow instructions in:
+
+- http://taskwarrior.org/download/
+- https://github.com/farseer90718/vim-taskwarrior
+- https://freecinc.com/
+
+w3m
+===
+
+Install w3m, squid from setup.exe. Add
+
+~~~
+dns_nameservers ???.???.???.??? ???.???.???.???
+cache_dir ufs /var/cache/squid 1000 64 1024
+~~~
+
+to /etc/squid/squid.conf and run
+
+~~~
+$ squid -z # initialize some folders
+$ squid -N -d1 # run squid not as a daemon with debug info
+~~~
+
+Set environment variable
+
+~~~
+export HTTPS_PROXY="http://localhost:3128"
+export HTTP_PROXY="http://localhost:3128"
+export FTP_PROXY="http://localhost:3128"
+~~~
+
