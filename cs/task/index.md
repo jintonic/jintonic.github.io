@@ -8,6 +8,9 @@ subtitle: warrior
 bash completion
 ---------------
 
+Add the following to ~/.bashrc assuming the taskwarrior source directory is
+located in */path/to/task*:
+
 ~~~bash
 alias t='task'
 if [ -f /path/to/task/scripts/bash/task.sh ]; then
