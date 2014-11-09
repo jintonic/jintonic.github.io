@@ -56,15 +56,15 @@ Set type of data format of a collumn
 
 Press *f* followed by a number to change format type:
 
-|----+--------------
-|type|format
-|:---+:-------------
-|0   |fixed numbers
-|1   |scientific
-|2   |engineering
-|3   |6 Apr 79
-|4   |6 Apr 1979
-|5~9 |user-defined 
+|-----+--------------
+|type | format
+|:----+:-------------
+|0    | fixed numbers
+|1    | scientific
+|2    | engineering
+|3    | 6 Apr 79
+|4    | 6 Apr 1979
+|5~9  | user-defined 
 
 The new format type can be defined either inside sc by *f=* followed
 by a number, or in .scrc 
