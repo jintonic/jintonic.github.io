@@ -78,7 +78,8 @@ Set precision and length of numbers
 
 Press *f* to enable setting display format of numbers in a column, and then
 press *h* or *l* to change the length of the column, *j* or *k* to change the
-precision of the numbers in a column.
+precision of the numbers in a column. The *hljk* trick does not seem to work in
+cygwin.
 
 Sum up a range of numbers
 =========================
