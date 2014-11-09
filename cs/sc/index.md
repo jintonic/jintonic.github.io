@@ -116,3 +116,9 @@ formula at all. Rules of update:
 - To allow variables like A19 to update, one can use @nval("A",@myrow-1)
   instead.
 
+Text justification
+==================
+
+Numbers are always justified to the right. Strings can be justified to the
+left/center/right using *{/|/}*, respectively.
+
