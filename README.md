@@ -1,4 +1,1 @@
-jintonic.github.io
-==================
-
-Jing LIU at GitHub
+Jing LIU's home pages at GitHub
