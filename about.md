@@ -1,13 +1,14 @@
 ---
 layout: page
-title: Jing LIU
-subtitle: Experimental physicist
+title: about
+subtitle: Jing LIU
 ---
 
-About me
-========
+---------------
 
 Experimental physicist developing novel particle detectors for astroparticle physics and civil use.
+
+Public profiles:
 
   - [University of South Dakota](http://www.usd.edu/arts-and-sciences/physics/jing-liu.cfm)
   - [arXiv](http://arxiv.org/a/liu_j_2)
