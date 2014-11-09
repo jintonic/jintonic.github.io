@@ -12,7 +12,12 @@ It is very old spreadsheet program working in a terminal. It is amazing that
 such a small program achieved most of the common functionalities provided in
 MS Excel long time ago with much faster speed. Its original source codes are
 now maintained in [a GitHub repository](https://github.com/dkastner/sc) with
-many forks.
+many forks. Resources:
+
+- man sc. Hard to understand like any other man pages, but very useful once you
+  start to understand it.
+- [http://www.linuxjournal.com/article/10699](http://www.linuxjournal.com/article/10699)
+- [http://www.economics.utoronto.ca/jfloyd/stats/minmansc.pdf](http://www.economics.utoronto.ca/jfloyd/stats/minmansc.pdf)
 
 undo
 ====
