@@ -77,6 +77,6 @@ permanently.
 
 References:
 
-- https://www.mikeash.com/ssh_socks.html
-- http://blog.sanctum.geek.nz/ssh-socks-and-curl/
+- [https://www.mikeash.com/ssh_socks.html](https://www.mikeash.com/ssh_socks.html)
+- [http://blog.sanctum.geek.nz/ssh-socks-and-curl/](http://blog.sanctum.geek.nz/ssh-socks-and-curl/)
 
