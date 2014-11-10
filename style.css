@@ -66,5 +66,6 @@ pre {
 }
 
 table {
-  border: 1px, 0 solid gray;
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
 }
