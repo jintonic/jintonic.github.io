@@ -68,11 +68,7 @@ pre {
 table {
   border-top: 1px solid gray;
   border-bottom: 1px solid gray;
-}
-
-tr {
-  padding:0;
-  margin:0;
+  border-collapse: collapse;
 }
 
 td, th {
