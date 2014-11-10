@@ -68,13 +68,16 @@ pre {
 table {
   border-top: 1px solid gray;
   border-bottom: 1px solid gray;
+}
+
+tr {
   padding:0;
+  margin:0;
 }
 
 td, th {
   padding-left:10px;
   padding-right:10px;
-  margin:0;
 }
 
 th {
