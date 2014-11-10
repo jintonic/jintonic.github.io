@@ -23,3 +23,10 @@ lot first.
 One does not need to have a driver's license to buy a car, as long as he can
 find someone else who can drive the car back home legally.
 
+Driving test
+============
+
+Check [http://driverslicensetest.net](http://driverslicensetest.net) first
+before taking a written test. It is more helpful than merely reading the
+*Driver License Manual*.
+
