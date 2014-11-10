@@ -10,7 +10,9 @@ Java. It shows a web page only after the whole contents are downloaded. It does
 not maintain a cache of visited web pages. It can be used as a pager for local
 files, but no advantage over vifm + less.
 
-It is only good for browsing simple web sites full with text.
+It is only good for browsing simple web sites full with text, or for html files
+saved locally. It does a good job to display tables and frames. It displays
+many languages correctly.
 
 Youtube
 -------
