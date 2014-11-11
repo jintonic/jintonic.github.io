@@ -10,14 +10,27 @@ Minimal installation
 
 Just don't forget to install office-tools and Visual Basic for Applications.
 
+Style
+=====
+
 Add new style
-=============
+-------------
 
 * format text according to the needs
 * select the formated text
 * right click a style item in the quick style galary
 * select "Update xxx to Match Selection"
 * click Change styles -> Style set -> Save as quick style set
+
+Hyphenate like LaTeX
+--------------------
+
+Double-column scientific publications have very small line width. LaTeX often
+breaks words at the end of a line with hyphens to keep lines aligned to both
+ends. By default, Microsoft word does not automatically break words. It
+enlarges spaces between words to achieve both-side alignment instead. This
+results in a very unprofessional looking. The LaTeX-like hyphenation can be
+easily enabled in Microsoft Word: Page Layout -> Hyphenation -> Automatic.
 
 Insertion
 =========
@@ -38,6 +51,19 @@ Insert degree symbol
 --------------------
 
 Alt + keypad 0, 1, 7, 6. The numbers in the main keyboard won't work.
+
+Insert non-breaking space
+-------------------------
+
+If you don't want to separate a value from its unit into different lines,
+insert non-breaking space instead of normal space by pressing *C-S-space*.
+
+Insert no-width optional break
+------------------------------
+
+It can be inserted to control the breaking of a long URL to different lines.
+Insert -> Symbol -> More Symbols -> Special Characters -> No-Width Optional
+Break.
 
 Headers and Footers
 ===================
