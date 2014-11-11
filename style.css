@@ -64,3 +64,18 @@ pre {
   font-size: 1.5em;
   font-variant:small-caps;
 }
+
+table {
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+  border-collapse: collapse;
+}
+
+td, th {
+  padding-left:10px;
+  padding-right:10px;
+}
+
+th {
+  background-color: #F5F5F5;
+}
