@@ -91,3 +91,11 @@ export HTTP_PROXY="http://localhost:3128"
 export FTP_PROXY="http://localhost:3128"
 ~~~
 
+LaTeX
+======
+
+Install *texlive-collection-publisher* (*elsarticle*),
+*texlive-collection-fontsrecommanded* (*txfonts*),
+*texlive-collection-latexextra* (*tabulary.sty*), and
+*texlive-collection-binextra* (*latexmk*) from *setup.exe*
+
