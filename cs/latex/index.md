@@ -8,9 +8,17 @@ subtitle: typesetting scientific documents
 Install packages in HOME directory
 ==================================
 
+Check the definition of TEXMFHOME in your system tex config file:
+
 ~~~bash
 $ kpsewhich texmf.cnf # locate system tex config file
 $ cat /path/to/system/texmf.cnf | grep TEXMFHOME
+~~~
+
+or change it in your shell:
+
+~~~bash
+$ export TEXMFHOME=/where/you/like
 ~~~
 
 Put new packages into directory specified in TEXMFHOME and run
@@ -19,6 +27,10 @@ Put new packages into directory specified in TEXMFHOME and run
 $ cd /path/specified/in/TEXMFHOME
 $ texhash . # or mktexlsr .
 ~~~
+
+*NOTE*: *.cls* and *.sty* files should go to *TEXMFHOME/tex/latex/*, while
+*.bst* files should go to *TEXMFHOME/bibtex/bst/*. Those files won't be found
+if you don't follow this conventional path specification.
 
 Maths
 =====
