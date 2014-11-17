@@ -5,6 +5,21 @@ title: latex
 subtitle: typesetting scientific documents
 ---
 
+Install packages in HOME directory
+==================================
+
+~~~bash
+$ kpsewhich texmf.cnf # locate system tex config file
+$ cat /path/to/system/texmf.cnf | grep TEXMFHOME
+~~~
+
+Put new packages into directory specified in TEXMFHOME and run
+
+~~~bash
+$ cd /path/specified/in/TEXMFHOME
+$ texhash . # or mktexlsr .
+~~~
+
 Maths
 =====
 
