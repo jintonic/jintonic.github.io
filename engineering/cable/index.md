@@ -17,6 +17,7 @@ shielding effectiveness of -55 dB. The left 5% can be blocked by adding extra
 layers of foil with an approximate shielding effectiveness of -90 dB.
 
 *RG*, Radio Guide coax. Old military standard. Commonly used ones:
+
 - RG-59, RG-6, RG-11 from low end to high end uses, impedance: 75 Ohm. Used
   with F connectors for TV. 
 - RG-316/U, impedance: 50 Ohm, outer diameter: 2.6 mm, single shield,
@@ -24,6 +25,7 @@ layers of foil with an approximate shielding effectiveness of -90 dB.
 
 *LMR*, [nobody knows what it stands for][k3dav]. Made by [Times Microwave
 Systems][times]. Low loss coax, 50 Ohm. [Catalog][cat]:
+
 - LMR-100A, outer diameter: 2.79 mm, replace RG-316.
 
 [k3dav]:http://www.k3dav.com/lmrcoaxialcables.htm
