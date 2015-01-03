@@ -29,3 +29,4 @@ ideas and secondly, keep throwing myself into uncomfortable situation to get my
 butt chased by dogs all the time. And we will see how things turn out at the
 end of this year.
 
+<iframe width="420" height="315" src="//www.youtube.com/embed/4RYpzFZfcBU" frameborder="0" allowfullscreen></iframe>
