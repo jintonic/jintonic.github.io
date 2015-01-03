@@ -6,7 +6,7 @@ layout: page
   {% for post in site.posts %}
     <li>
       <a href="{{ post.url }}">{{ post.title }}</a>
-      {{ page.date | date: "%b %d, %Y" }}
+      {{ page.date }}
       {{ post.excerpt }}
     </li>
   {% endfor %}
