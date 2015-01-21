@@ -4,6 +4,24 @@ category: cs
 title: cygwin
 ---
 
+Issue of slow start of shell
+============================
+
+Disable the completion function of bash and it will be fixed:
+
+~~~
+$ cd /etc/profile.d
+$ mv bash_completion.sh bash_completion.sh.disabled
+~~~
+
+One can enable completion manually this way:
+
+~~~
+$ . /etc/bash_completion
+~~~
+
+Ref: [code for concinity](http://cfc.kizzx2.com/index.php/cygwin-slow-start-up-the-culprit-discovered/)
+
 Issue of wrong file permission
 ==============================
 
