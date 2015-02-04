@@ -22,3 +22,7 @@ Companies
 - [Kurt J. Lesker](http://www.lesker.com/newweb/index.cfm)
 - [Edwards](http://www.edwardsvacuum.com/), pumps
 - [Swagelok](http://www.swagelok.com/)
+
+VCR
+===
+http://www.swagelok.com/downloads/WebCatalogs/EN/MS-01-24.pdf
