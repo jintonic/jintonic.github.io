@@ -18,3 +18,6 @@ if [ -f /path/to/task/scripts/bash/task.sh ]; then
   complete -o nospace -F _task t
 fi
 ~~~
+
+Causion: The bash completion in cygwin cause the shell starts much slower as
+explained [here](../cygwin/)!
