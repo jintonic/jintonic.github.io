@@ -65,6 +65,13 @@ It can be inserted to control the breaking of a long URL to different lines.
 Insert -> Symbol -> More Symbols -> Special Characters -> No-Width Optional
 Break.
 
+Insert check box
+----------------
+
+Right click tool bar -> Customize the Ribbon -> Select "Developer" in the main
+tabs and press OK. One will find a check box tool box in the "Developer"
+Ribbon.
+
 Headers and Footers
 ===================
 
