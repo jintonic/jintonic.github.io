@@ -124,3 +124,32 @@ or
 ~~~bash
 $ vi .git/config # change url setting inside directly
 ~~~
+
+Show what was just committed
+============================
+
+~~~bash
+$ git diff-tree --no-commit-id --name-only -r SHA1
+~~~
+
+Ref. to [Stack Overflow][1]
+[1]: http://stackoverflow.com/questions/424071/list-all-the-files-for-a-commit-in-git
+
+Discard local changes
+=====================
+
+According to [Stack Overflow][2], for a specific file use:
+
+~~~bash
+$ git checkout path/to/file/to/revert
+~~~
+
+For all unstaged files use:
+
+~~~bash
+git checkout -- .
+~~~
+
+Make sure to include the period at the end.
+
+[2]: http://stackoverflow.com/questions/52704/how-do-you-discard-unstaged-changes-in-git
