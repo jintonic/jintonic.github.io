@@ -13,5 +13,6 @@ Experimental physicist developing novel particle detectors for astroparticle phy
 - [LinkedIn](https://www.linkedin.com/in/jingliuphys)
 - [Twitter](https://twitter.com/jingliusd)
 - [Facebook](https://www.facebook.com/liu.jing.501)
+- [Google+](https://plus.google.com/101717075408086641466)
 - [GitHub](https://github.com/jintonic)
 - [StackExchange](http://stackexchange.com/users/2014017/jing)
