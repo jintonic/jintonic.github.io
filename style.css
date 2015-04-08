@@ -81,9 +81,8 @@ th {
 @media screen and (max-width: 900px) {
   body { width: 100%; }
   #contents a {
-    font-size: 5.0em;
+    font-size: 10em;
     font-variant:small-caps;
     display: block;
-    width:100%;
   }
 }
