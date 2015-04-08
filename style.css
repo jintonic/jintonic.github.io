@@ -9,8 +9,9 @@ body {
 
 @viewport { zoom:1.0; width: extend-to-zoom; }
 
-@media screen and (min-width: 680px) {
-  body { width: 680px; }
+body { width: 680px; }
+@media screen and (max-width: 680px) {
+  body { width: 100%; }
 }
 
 h1 { 
