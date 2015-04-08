@@ -22,10 +22,12 @@ a { display: block; }
 
 the link will be in a separated line and the whole line is clickable.
 
-Wrapping lines instead of zooming-out to fit small screen
-=========================================================
+Wrapping lines instead of zooming-out to fit small screens
+==========================================================
 
-According to [this web page](http://webdesign.tutsplus.com/articles/quick-tip-dont-forget-the-viewport-meta-tag--webdesign-5972), one can set
+According to [this web
+page](http://webdesign.tutsplus.com/articles/quick-tip-dont-forget-the-viewport-meta-tag--webdesign-5972),
+one can set
 
 ```css
 @viewport { zoom: 1.0; width:extend-to-zoom; }
@@ -33,6 +35,20 @@ According to [this web page](http://webdesign.tutsplus.com/articles/quick-tip-do
 
 to instruct a mobile browser to wrap lines instead of zooming out to display
 the whole contents.
+
+Show text in pre tag in normal size in small screens
+====================================================
+
+According to [this web
+page](http://www.passwordincorrect.com/controlling-size-pre-tag-mobile-devices/),
+one can set
+
+```css
+pre { white-space: pre-wrap !important; }
+```
+
+to show text in the *pre* tag in normal size in small screens. No need to set
+*overflow* or *font-size*.
 
 id and class
 ============
