@@ -82,8 +82,6 @@ th {
 @media screen and (max-device-width: 900px) {
   body { width: 100%; }
   #contents a {
-    font-size: 3em;
-    font-variant:small-caps;
     display: block; /* make the whole line clickable */
   }
 }
