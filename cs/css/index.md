@@ -22,6 +22,18 @@ a { display: block; }
 
 the link will be in a separated line and the whole line is clickable.
 
+Wrapping lines instead of zooming-out to fit small screen
+=========================================================
+
+According to [this web page](http://webdesign.tutsplus.com/articles/quick-tip-dont-forget-the-viewport-meta-tag--webdesign-5972), one can set
+
+```css
+@viewport { zoom: 1.0; width:extend-to-zoom; }
+```
+
+to instruct a mobile browser to wrap lines instead of zooming out to display
+the whole contents.
+
 id and class
 ============
 
