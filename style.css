@@ -84,6 +84,5 @@ th {
     font-size: 3em;
     font-variant:small-caps;
     display: block; /* make the whole line clickable */
-    border-bottom:1px solid #ccc;
   }
 }
