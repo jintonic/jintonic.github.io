@@ -78,10 +78,10 @@ th {
 
 @viewport { zoom:1.0; width: extend-to-zoom; }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-device-width: 900px) {
   body { width: 100%; }
   #contents a {
-    font-size: 10em;
+    font-size: 5em;
     font-variant:small-caps;
     display: block;
   }
