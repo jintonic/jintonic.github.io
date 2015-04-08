@@ -11,6 +11,17 @@ There is no need to provide several css files, for example, one for screen, one
 for printing, etc. The same functionality is provided by the
 [@media](http://www.w3schools.com/css/css_mediatypes.asp) rule.
 
+Make entire line with a link clickable
+======================================
+
+Set
+
+```css
+a { display: block; }
+```
+
+the link will be in a separated line and the whole line is clickable.
+
 id and class
 ============
 
