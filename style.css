@@ -7,7 +7,7 @@ body {
   margin: 0 auto;
 }
 
-@viewport { width: device-width; }
+@viewport { zoom:1.0; width: extend-to-zoom; }
 
 @media screen and (min-width: 680px) {
   body { width: 680px; }
