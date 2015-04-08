@@ -40,6 +40,7 @@ pre {
   border-radius: 4px;
   padding: 10px;
   overflow: auto;
+  white-space: pre-wrap !important;
 }
 
 #title {
@@ -85,8 +86,5 @@ th {
     font-size: 3em;
     font-variant:small-caps;
     display: block; /* make the whole line clickable */
-  }
-  pre {
-    font-size:150%;
   }
 }
