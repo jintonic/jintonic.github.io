@@ -83,5 +83,6 @@ th {
   #contents a {
     font-size: 5.0em;
     font-variant:small-caps;
+    display: block;
   }
 }
