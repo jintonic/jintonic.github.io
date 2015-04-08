@@ -96,6 +96,11 @@ don't care about the history.
 
 [sens]:https://help.github.com/articles/remove-sensitive-data
 
+Undo "git mv"
+=============
+
+Simply use "git mv" again to rename the file back.
+
 Show file name in git log
 =========================
 
