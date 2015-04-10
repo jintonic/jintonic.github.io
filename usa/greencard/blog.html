@@ -1,6 +1,7 @@
 ---
 layout: page
 title: blog
+subtitle: /on {{ page.categories }}/
 ---
 
 <ul>
@@ -8,7 +9,7 @@ title: blog
     <li>
       <a href="{{ post.url }}">{{ post.title }}</a>
       {{ post.date | date: "%b %d, %Y" }}
-      {{ post.excerpt }} <a href="{{ post.url }}">...</a>
+      {{ post.excerpt }}
     </li>
   {% endfor %}
 </ul>
