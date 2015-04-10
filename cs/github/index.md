@@ -19,6 +19,13 @@ site.categories and site.tags work only for posts not for pages.
 
 [http://vvv.tobiassjosten.net/jekyll/jekyll-tag-cloud/](http://vvv.tobiassjosten.net/jekyll/jekyll-tag-cloud/)
 
+posts in subdirectories
+-----------------------
+
+site.posts only lists posts in the \_posts/ directory. It does not list posts in
+a subdirectory/\_posts/ directory. One has to use
+site.categories.subdirectoryName for the latter.
+
 Sorted site.pages
 -----------------
 According to [issue 42 of plusjade/jekyll-bootstrap][jbi42], Github sorts
