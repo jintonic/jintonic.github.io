@@ -19,6 +19,37 @@ site.categories and site.tags work only for posts not for pages.
 
 [http://vvv.tobiassjosten.net/jekyll/jekyll-tag-cloud/](http://vvv.tobiassjosten.net/jekyll/jekyll-tag-cloud/)
 
+posts in subdirectories
+-----------------------
+
+site.posts only lists posts in the \_posts/ directory. It does not list posts in
+a subdirectory/\_posts/ directory. One has to use
+site.categories.subdirectoryName for the latter.
+
+debugging on Travis CI
+----------------------
+
+One does not have to install jekyll locally to compile the site before pushing
+it to github pages. Github pages will compile all files before serving them.
+One problem arises in this case. If Github pages fail to compile the site, it
+does not give the reason. In order to know the reason without installing jekyll
+locally, one can use an online service [Travis CI](https://travis-ci.org/) to
+show the whole compile process. In order to do this, one needs to provide the
+following two files in his site's root directory, *.travis.yml* and *Gemfile*
+as instructed on the [Github help
+page](https://help.github.com/articles/troubleshooting-github-pages-build-failures/).
+If one encounters building errors on Travis CI related to ruby verson, one can
+specify the ruby version in *.travis.yml* the following way:
+
+~~~yml
+language: ruby
+rvm:
+    - 2.1.0
+script: "bundle exec jekyll build"
+~~~
+
+where, the ruby version is specified in the second and the third lines.
+
 Sorted site.pages
 -----------------
 According to [issue 42 of plusjade/jekyll-bootstrap][jbi42], Github sorts
