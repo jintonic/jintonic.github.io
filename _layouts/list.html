@@ -1,5 +1,5 @@
 {% include head.html %}
-<div id="contents">
+<div id="folders">
   {% assign sorted = site.pages | sort:"path" %}
   {% for each in sorted %}
     {% if each.category == page.directory %}
