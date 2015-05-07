@@ -15,9 +15,22 @@
 </head>
 
 <body>
-<h1 id="title">
-{% if page.title %}{{ page.title }}{% endif %}
-<span id="subtitle">
-{% if page.subtitle %} /{{ page.subtitle }}/{% endif %}
-</span>
-</h1>
+<div id="nav">
+  <ul>
+    <li><a href="/index.html">physino.xyz</a></li>
+    <li><a href="/about.html">Subscribe</a></li>
+    <li><a href="/blog.html">Note</a></li>
+  </ul>
+</div>
+<div id="tagline">
+  <a href="/about.html">
+    Research and education quanta of an experimental physicist
+  </a>
+</div>
+<div id="container">
+  <h1 id="title">
+    {% if page.title %}{{ page.title }}{% endif %}
+    <span id="subtitle">
+      {% if page.subtitle %} /{{ page.subtitle }}/{% endif %}
+    </span>
+  </h1>

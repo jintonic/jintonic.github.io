@@ -1,31 +1,28 @@
-* { margin:0; padding:0; }
-
+* { /* http://www.w3schools.com/css/css3_box-sizing.asp */
+  box-sizing: border-box;
+}
 body {
   color:#444;
   font-family: 'Arial', 'Helvetica', sans-serif;
   font-size: 100%;
-  margin: 0 auto;
+  margin: 0;
 }
-
-body { width: 900px; }
 
 h1 { 
-  font-size: 2em;
+  font-size: 1.6em;
   border-top: 1px solid #ddd;
-  margin: 15px 0;
+  margin: 0 0 15px 0;
 }
-h2 { font-size: 1.5em; font-weight: bold; margin-top: 10px; }
-h3 { font-size: 1.5em; margin-top: 10px; }
+h2 { font-size: 1.2em; font-weight: bold; margin-top: 10px; }
+h3 { font-size: 1.2em; margin-top: 10px; }
 h4 { font-size: 1em; font-weight: bold; }
 h5 { font-size: 1em; font-style: italic; }
 h6 { font-size: 1em; }
 
-a { text-decoration:none; color: #0174DF; }
-a:hover { font-weight:bold; }
-a:visited { color: #084B8A; }
+a { text-decoration:none; color: #268bd2; }
+a:hover { color: #cb4b16 }
 
-p, ul, ol { margin: 15px 0; }
-
+p, ul, ol { margin: 15px 0; line-height: 150%; }
 ul, ol > li { margin-left:1.4em; }
 
 blockquote {
@@ -42,46 +39,130 @@ pre {
   white-space: pre-wrap !important;
 }
 
-#title {
-  border: none;
-  font-size: 3em;
-  font-variant:small-caps;
-}
-#subtitle {
-  font-size: 0.5em;
-  color: #808080;
-  font-variant:normal;
-}
-
-#contents {
-  color: #888;
-  line-height: 90%;
-}
-#contents a {
-  font-size: 2.5em;
-  font-variant:small-caps;
-}
-
 table {
   border-top: 1px solid gray;
   border-bottom: 1px solid gray;
   border-collapse: collapse;
 }
-
 td, th {
   padding-left:10px;
   padding-right:10px;
 }
-
 th {
   background-color: #F5F5F5;
+}
+
+#title {
+  font-size: 3.0em;
+  border: none;
+  font-variant:small-caps;
+}
+#subtitle {
+  font-size: 0.3em;
+  color: #808080;
+  font-variant:normal;
+}
+
+#folders {
+  color: #888;
+  line-height: 90%;
+}
+#folders a {
+  font-size: 2.5em;
+  font-variant:small-caps;
+}
+
+#nav {
+  width: 100%;
+  height: 40px;
+  position: fixed; /* do not scroll */
+  background-color: black;
+}
+#nav ul {
+  max-width: 800px; /* = main content width */
+  margin: 0 auto; /* centered */
+  padding: 0; /* remove start indent of a list */
+  list-style-type: none; /* remove the bullets */
+}
+
+#nav ul>li { /* first item */
+  float: left;
+}
+#nav ul>li+li { /* the rest items */
+  float: right;
+}
+
+#nav ul a { /* links in all items */
+  display: block;
+  height: 40px;
+  text-align: center;
+  font-height: 20px;
+}
+#nav ul>li a { /* link in the first item */
+  padding: 10px 5px 10px 0; /* start from 0 */
+  color: #268bd2;
+  font-weight: bold;
+}
+#nav ul>li a:hover { /* link in the first item */
+  color: #cb4b16;
+}
+#nav ul>li+li a { /* links in the rest items */
+  padding: 10px 5px;
+  color: #aaa;
+  font-weight: lighter;
+}
+#nav ul>li+li a:hover { /* links in the rest items */
+  color: #fff;
+  background-color: #cb4b16;
+  font-weight: bold;
+}
+
+#tagline {
+  height: 80px; /* = 40 nav + 10 top padding + 20 txt + 10 bottom padding */
+  padding: 50px 0 10px 0; /* 50 top padding = 40 nav + 10 real padding */
+  width: 100%;
+  background-color: #444;
+}
+#tagline a::before { /* triangular speech bubble pointer */
+  background-color: #444;
+  content: "\00a0";
+  display: block;
+  height: 14px;
+  width: 14px;
+  position: absolute;
+  top: 34px;
+  transform: rotate(47deg) skew(5deg);
+  -moz-transform: rotate(47deg) skew(5deg);
+  -ms-transform: rotate(47deg) skew(5deg);
+  -o-transform: rotate(47deg) skew(5deg);
+  -webkit-transform: rotate(47deg) skew(5deg);
+}
+#tagline a {
+  display: block;
+  max-width: 800px;
+  margin: 0 auto; /* centered */
+  text-decoration: none; /* remove underline */
+  color: #268bd2;
+  font-height: 20px;
+}
+
+#container { /* main content */
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.post-date {
+  float: right;
+  font-size: 0.6em;
+  font-weight: lighter;
+  color: #859900
 }
 
 @viewport { zoom:1.0; width: extend-to-zoom; }
 
 @media screen and (max-device-width: 900px) {
   body { width: 100%; }
-  #contents a {
+  #folders a {
     display: block; /* make the whole line clickable */
   }
 }
