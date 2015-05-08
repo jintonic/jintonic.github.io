@@ -1,11 +1,9 @@
 {% include head.html %}
-<div id="folders">
-  {% assign sorted = site.pages | sort:"path" %}
-  {% for each in sorted %}
-    {% if each.category == page.directory %}
-      <a href="/{{ page.directory }}/{{ each.title }}">{{ each.title }}</a>
-      {% if each.subtitle %} /{{ each.subtitle }}/{% endif %}<br></br>
-    {% endif %}
-  {% endfor %}
-</div>
+{% assign sorted = site.pages | sort:"path" %}
+{% for each in sorted %}
+  {% if each.category == page.directory %}
+  <a href="/{{ page.directory }}/{{ each.title }}">{{ each.title }}</a>
+{% if each.subtitle %} /{{ each.subtitle }}/{% endif %}<br></br>
+{% endif %}
+{% endfor %}
 {% include foot.html %}

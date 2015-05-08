@@ -1,13 +1,20 @@
 ---
 layout: page
-title: blogs
-subtitle: about physics research and education
+title: physino.xyz
+subtitle: blog
 ---
-
+<div class="well well-sm">
+  Research and education quanta of an experimental physicist
+</div>
 {% for post in site.posts %}
-<h1>
+<h2>
   <a href="{{ post.url }}">{{ post.title }}</a>
-  <span class="post-date"> {{ post.date | date: "%b %d, %Y" }} </span>
-</h1>
+  <div class="post-date">
+    <span class="glyphicon glyphicon-time"></span>
+    {{ post.date | date: "%b %d, %Y" }}
+  </div>
+</h2>
 {{ post.excerpt }}
+<a href="{{ post.url }}">&raquo; Read full story ...</a>
+<hr>
 {% endfor %}
