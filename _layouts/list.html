@@ -1,9 +1,10 @@
 {% include head.html %}
+<ul class="nav nav-pills">
 {% assign sorted = site.pages | sort:"path" %}
 {% for each in sorted %}
   {% if each.category == page.directory %}
-  <a href="/{{ page.directory }}/{{ each.title }}">{{ each.title }}</a>
-{% if each.subtitle %} /{{ each.subtitle }}/{% endif %}<br></br>
+    <li><a href="/{{ page.directory }}/{{ each.title }}">{{ each.title }}</a></li>
 {% endif %}
 {% endfor %}
+</ul>
 {% include foot.html %}
