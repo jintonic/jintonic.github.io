@@ -41,7 +41,7 @@ page](https://help.github.com/articles/troubleshooting-github-pages-build-failur
 If one encounters building errors on Travis CI related to ruby verson, one can
 specify the ruby version in *.travis.yml* the following way:
 
-~~~yml
+~~~yaml
 language: ruby
 rvm:
     - 2.1.0

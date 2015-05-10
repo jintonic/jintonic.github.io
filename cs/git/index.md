@@ -10,7 +10,7 @@ How to create a new repository
 Suppose you already have a directory containing all files related to a project.
 Then what you need to do is just:
 
-~~~ shell
+~~~bash
 $ cd /path/to/your/project/
 $ git init # create a .git/ directory in /root/of/your/project/
 $ git add * # make sure no temporary files in the directory!
@@ -26,7 +26,7 @@ it. If a directory is empty, simply rm it. Git does not need to know about it.
 steps to create and then delete a branch
 ========================================
 
-~~~ bash
+~~~bash
 $ git branch # list existing branches
 $ git branch a-new-branch # create a new branch
 $ git checkout a-new-branch # switch to that branch
@@ -41,7 +41,7 @@ $ git branch -d a-new-branch # delete it after deleting it on server
 Add files to gitignore
 ======================
 
-~~~ bash
+~~~bash
 $ vi .gitignore
 $ git commit -m "updated" .gitignore
 ~~~
@@ -59,7 +59,7 @@ There are two scenarios
 
 In case of failed merging
 
-~~~ bash
+~~~bash
 $ git status # to find which file has conflict
 $ vi theConflictFile # fix conflict manually
 $ git add theConflictFile
@@ -78,13 +78,13 @@ Undo "git add"
 
 If you have not *git commit* changes, run
 
-~~~ bash
+~~~bash
 $ git reset things-added-but-not-committed
 ~~~
 
 Otherwise, run
 
-~~~ bash
+~~~bash
 $ git rm --cached things-added-and-committed
 ~~~
 
@@ -107,7 +107,7 @@ Show file name in git log
 *git log* does not show modified file by default. According to [Stack
 Overflow][sd], one has to use one of the followings,
 
-~~~ bash
+~~~bash
 $ git log --name-status
 $ git log --name-only
 $ git log --stat

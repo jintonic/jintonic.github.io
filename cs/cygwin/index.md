@@ -9,14 +9,14 @@ Issue of slow start of shell
 
 Disable the completion function of bash and it will be fixed:
 
-~~~
+~~~bash
 $ cd /etc/profile.d
 $ mv bash_completion.sh bash_completion.sh.disabled
 ~~~
 
 One can enable completion manually this way:
 
-~~~
+~~~bash
 $ . /etc/bash_completion
 ~~~
 
@@ -96,14 +96,14 @@ cache_dir ufs /var/cache/squid 1000 64 1024
 
 to /etc/squid/squid.conf and run
 
-~~~
+~~~bash
 $ squid -z # initialize some folders
 $ squid -N -d1 # run squid not as a daemon with debug info
 ~~~
 
 Set environment variable
 
-~~~
+~~~bash
 export HTTPS_PROXY="http://localhost:3128"
 export HTTP_PROXY="http://localhost:3128"
 export FTP_PROXY="http://localhost:3128"

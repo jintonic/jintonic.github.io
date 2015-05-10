@@ -119,7 +119,7 @@ Hyperlinks in reference
 One has to find out first which entries in a bibtex item can be shown as
 specified by the style file with the surfix *.bst*,
 
-~~~ bibtex
+~~~ 
 $ vi a-specific-bibtex-style-file.bst
 ...
 ENTRY
@@ -158,7 +158,7 @@ ENTRY
 
 Entry *note* is your best bet,
 
-~~~ bibtex
+~~~
 @article{eg,
 author = {Some Body and others},
 note = {\url{http://some.body.com}},
