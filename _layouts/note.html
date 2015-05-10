@@ -1,11 +1,10 @@
 {% include head.html %}
 <h1 class="page-header">
   {% if page.title %}{{ page.title }}{% endif %}
-  <span id="subtitle">
+  <small>
     {% if page.subtitle %} /{{ page.subtitle }}/{% endif %}
-  </span>
+  </small>
 </h1>
-<p><span class="glyphicon glyphicon-time"></span>{{ page.date | date: "%b %d, %Y" }}</p>
 {{ content }}
 {% include disqus.html %}
 {% include foot.html %}
