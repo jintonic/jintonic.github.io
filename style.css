@@ -1,6 +1,7 @@
 body {
   padding-top: 60px; /* skip navbar-fixed-top */
 }
+h1,h2 { font-variant: small-caps; }
 .post-date{
   float:right;
   padding:5px;
