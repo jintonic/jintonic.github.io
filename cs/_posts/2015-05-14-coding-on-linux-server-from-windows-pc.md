@@ -1,6 +1,6 @@
 ---
 layout: post
-tags: [Windows, Linux, text editor, SSH, X-window]
+tags: [tutorial, Windows, Linux, text editor, SSH, X-window]
 ---
 
 ![MobaXterm screen shot](http://mobaxterm.mobatek.net/img/moba/features/feature-sftp-browser.png)
