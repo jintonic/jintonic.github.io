@@ -1,5 +1,5 @@
 ---
-layout: note
+layout: post
 ---
 
 ![home made acrylic glove box](/engineering/humidity/home-made-acrylic-glove-box.jpg)
