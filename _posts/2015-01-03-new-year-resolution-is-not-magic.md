@@ -1,5 +1,6 @@
 ---
-layout: note
+layout: post
+tags: [personal development, health]
 ---
 
 New Year resolution is not magic! You will be YOURSELF with or without it. I
