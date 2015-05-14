@@ -1,5 +1,6 @@
 ---
-layout: note
+layout: post
+tags: [radon, radiation, health]
 ---
 
 ![radon concentration vermillion south dakota basement](/radiation/radon-concentration-vermillion-basement.jpg)
