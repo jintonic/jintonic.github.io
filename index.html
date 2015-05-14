@@ -6,7 +6,7 @@ subtitle: blog
 <div class="well well-sm">
   Research and education quanta of an experimental physicist
 </div>
-{% for post in site.posts %}
+{% for post in paginator.posts %}
 <h2>
   <a href="{{ post.url }}">{{ post.title }}</a>
   <div class="post-date">
@@ -18,3 +18,33 @@ subtitle: blog
 <a href="{{ post.url }}">&raquo; Read full story ...</a>
 <hr>
 {% endfor %}
+
+{% if paginator.total_pages > 1 %}
+  <ul class="pagination">
+     {% if paginator.previous_page %}
+         <li><a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">Previous</a></li>
+     {% else %}
+         <li class="disabled"><a>Previous</a></li>
+     {% endif %}
+
+     {% for page in (1..paginator.total_pages) %}
+
+     {% if page == paginator.page %}
+         <li class="active"><a>{{ page | pnumber }}</a></li>
+     {% elsif page == 1 %}
+         <li><a href="{{ '/index.html' | prepend: site.baseurl | replace: '//', '/' }}">{{ page | pnumber }}</a></li>
+     {% else %}
+         <li><a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page | pnumber }}</a></li>
+     {% endif %}
+
+     {% endfor %}
+
+     {% if paginator.next_page %}
+         <li><a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next</a></li>
+     {% else %}
+         <li class="disabled"><a>Next</a></li>
+     {% endif %}
+  </ul>
+{% endif %}
+
+
