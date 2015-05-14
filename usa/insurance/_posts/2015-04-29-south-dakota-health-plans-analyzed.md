@@ -1,5 +1,6 @@
 ---
-layout: note
+layout: post
+tags: [South Dakota, health, insurance, analysis]
 ---
 
 ![south dakota employee health plan plot with premium](/usa/insurance/south-dakota-employee-health-plan+premium.jpg)
