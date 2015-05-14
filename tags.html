@@ -1,0 +1,34 @@
+---
+layout: page
+title: Tags
+---
+
+{% assign sorted_tags = (site.tags | sort:0) %}
+
+<div class="well well-sm">
+  <ul class="nav nav-pills">
+    {% for each in sorted_tags %}
+    {% assign name = each | first %}
+    {% assign posts = each | last %}
+    <li><a href="/tags.html#{{name}}">{{name}}({{ posts | size }})</a></li>
+    {% endfor %}
+  </ul>
+</div>
+
+{% for each in sorted_tags %}
+{% assign name = each | first %}
+{% assign posts = each | last %}
+<span class="glyphicon glyphicon-tag"></span>
+<a name="{{name}}" style="font-variant: small-caps">{{name}}</a>
+<ul>
+  {% for post in posts %}
+  {% if post.tags contains name %}
+  <li>
+  <a href="{{ post.url }}">{{ post.title }}</a>
+  <span class="glyphicon glyphicon-time"></span>
+  {{ post.date | date: "%B %-d, %Y" }}
+  </li>
+  {% endif %}
+  {% endfor %}
+</ul>
+{% endfor %}
