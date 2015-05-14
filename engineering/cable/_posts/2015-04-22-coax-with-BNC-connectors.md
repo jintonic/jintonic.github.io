@@ -1,5 +1,5 @@
 ---
-layout: note
+layout: post
 tags: [teaching, tutorial, electronics, cable]
 ---
 
