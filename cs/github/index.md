@@ -22,9 +22,8 @@ site.categories and site.tags work only for posts not for pages.
 posts in subdirectories
 -----------------------
 
-site.posts only lists posts in the \_posts/ directory. It does not list posts in
-a subdirectory/\_posts/ directory. One has to use
-site.categories.subdirectoryName for the latter.
+To list posts in a subdirectory/\_posts/ directory, one has to use
+site.categories.subdirectoryName.
 
 debugging on Travis CI
 ----------------------
