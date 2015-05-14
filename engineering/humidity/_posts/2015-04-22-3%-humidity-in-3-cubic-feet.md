@@ -1,5 +1,6 @@
 ---
 layout: post
+tags: [tutorial, teaching]
 ---
 
 ![home made acrylic glove box](/engineering/humidity/home-made-acrylic-glove-box.jpg)
