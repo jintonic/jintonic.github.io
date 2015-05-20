@@ -52,7 +52,7 @@ X
 ===
 
 - Install xinit from setup.exe
-- touch ~/.startxwinrc
+- `echo "exec sleep infinity" > ~/.startxwinrc`
 - launch "XWin Server" from windows
 
 
