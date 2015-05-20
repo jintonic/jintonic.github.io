@@ -1,6 +1,6 @@
 {% include head.html %}
 <div class="well well-sm">
-<ul class="nav nav-pills">
+<ul class="nav nav-pills" style="font-variant: small-caps">
 {% assign sorted = site.pages | sort:"path" %}
 {% for each in sorted %}
   {% if each.category == page.directory %}
