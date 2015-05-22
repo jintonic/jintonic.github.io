@@ -1,10 +1,9 @@
 ---
-layout: post
-tags: [tutorial, teaching]
+tags: [tutorial, phys-332]
 ---
 
-![home made acrylic glove box](/engineering/humidity/home-made-acrylic-glove-box.jpg)
-![relative humidity in glove box over time](/engineering/humidity/glove-box-humidity-vs-time.jpg)
+![home made acrylic glove box]({{site.ina}}/home-made-acrylic-glove-box.jpg)
+![relative humidity in glove box over time]({{site.ina}}//glove-box-humidity-vs-time.jpg)
 
 Students in PHYS-332 successfully assembled an acrylic glove box with 80/20
 quick frames and swagelok fittings. The relative humidity in this 3 cubic feet

@@ -1,9 +1,8 @@
 ---
-layout: post
-tags: [neutrino oscillation, teaching, quantum mechanics]
+tags: [neutrino oscillation, quantum mechanics]
 ---
 
-![better understanding of neutrino oscillations](/physics/neutrino/better-understanding-of-neutrino-oscillation.jpg)
+![better understanding of neutrino oscillations]({{site.ina}}/better-understanding-of-neutrino-oscillation.jpg)
 
 The following explanation of [neutrino
 oscillation](http://en.wikipedia.org/wiki/Neutrino_oscillation) is often heard:
@@ -14,7 +13,7 @@ oscillation](http://en.wikipedia.org/wiki/Neutrino_oscillation) is often heard:
 
 Such an explanation can be illustrated as
 
-![common understanding of neutrino oscillations](/physics/neutrino/common-understanding-of-neutrino-oscillation.jpg)
+![common understanding of neutrino oscillations]({{site.ina}}/common-understanding-of-neutrino-oscillation.jpg)
 
 The magic oscillation on the way is normally explained as the following. A
 neutrino created from a weak interaction is in one of its flavor eigenstates,

@@ -1,3 +1,5 @@
+ina: /assets
+exa: http://d.physino.xyz/u/19851056/0
 exclude: [ 'Gemfile' ]
 markdown: redcarpet
 redcarpet:

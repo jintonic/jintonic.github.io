@@ -1,9 +1,8 @@
 ---
-layout: post
 tags: [South Dakota, health, insurance, analysis]
 ---
 
-![south dakota employee health plan plot with premium](/usa/insurance/south-dakota-employee-health-plan+premium.jpg)
+![south dakota employee health plan plot with premium]({{site.ina}}/south-dakota-employee-health-plan+premium.jpg)
 
 Out of an experimentalist's habit, I compared with graphs the three health plans
 provided to employees by the state of South Dakota. The assumed scenario is a
@@ -32,4 +31,4 @@ I did not analyze other scenarios, but it is fairly easy to generate similar
 plots for other scenarios using a spreadsheet program. The important message
 here is that **plots help you understand data, in physics or in daily life.**
 
-![south dakota employee health plan plot](/usa/insurance/south-dakota-employee-health-plan.jpg)
+![south dakota employee health plan plot]({{site.ina}}/south-dakota-employee-health-plan.jpg)

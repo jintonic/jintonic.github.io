@@ -1,9 +1,8 @@
 ---
-layout: post
 tags: [radon, radiation, health]
 ---
 
-![radon concentration vermillion south dakota basement](/radiation/radon-concentration-vermillion-basement.jpg)
+![radon concentration vermillion south dakota basement]({{site.ina}}/radon-concentration-vermillion-basement.jpg)
 
 "I don't make nukes in my basement, why should I care?", you may ask. Well, if
 you've never thought about radiation protection at home, chances are that the
