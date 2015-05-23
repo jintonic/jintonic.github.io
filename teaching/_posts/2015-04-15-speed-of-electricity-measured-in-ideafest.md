@@ -14,3 +14,4 @@ we measured the speed of electricity in cables with a function generator, two
 [IdeaFest]: http://www.usd.edu/cage/ideafest
 [USD]: http://www.usd.edu
 [coaxial cables]: {% post_url 2015-04-22-coax-with-BNC-connectors %}
+[phys-332]: /tags/#phys-332
