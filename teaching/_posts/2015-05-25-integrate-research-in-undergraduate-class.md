@@ -1,5 +1,5 @@
 ---
-tags = [phys-332]
+tags: [phys-332, undergraduate research]
 ---
 
 [PHYS-332], Experimental Modern Physics was one of the first classes I taught
