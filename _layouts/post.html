@@ -1,23 +1,27 @@
 {% include head.html %}
+{% include banner.html %}
 <h1 class="page-header">{{ page.title }}</h1>
 <p>
 <span class="glyphicon glyphicon-time"></span>{{ page.date | date: "%b %d, %Y" }}
+{% for cat in page.categories %}
+  <span class="glyphicon glyphicon-folder-open"></span> <a href="/{{cat}}">{{cat}}</a>
+{% endfor %}
 {% for tag in page.tags %}
-  <span class="glyphicon glyphicon-tag"></span><a href="/tags.html#{{tag}}">{{tag}}</a>
-  {% endfor %}
+  <span class="glyphicon glyphicon-tag"></span><a href="/tags/#{{tag}}">{{tag}}</a>
+{% endfor %}
 </p>
 {{ content }}
 <ul class="pager">
   {%if page.next%}
     <li class="previous">
-    <a href="{{page.next.url}}">&larr; Newer</a>
-    </li>
-  {%endif%}
+  <a href="{{page.next.url}}">&larr; Newer</a>
+  </li>
+{%endif%}
   {%if page.previous%}
     <li class="next">
-    <a href="{{page.previous.url}}">Earlier &rarr;</a>
-    </li>
-  {%endif%} 
+  <a href="{{page.previous.url}}">Earlier &rarr;</a>
+  </li>
+{%endif%} 
 </ul>
 {% include disqus.html %}
 {% include foot.html %}

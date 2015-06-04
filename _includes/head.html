@@ -1,51 +1,28 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 <meta charset="UTF-8">
-<meta name="description" content="Research and education quanta of an experimental physicsist">
+<meta name="description"
+content="Research and education quanta of an experimental physicsist">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-<link rel="stylesheet" href="/style.css">
-<link rel="stylesheet" href="/syntax.css">
-
-<!-- jQuery library -->
+<link rel="stylesheet"
+href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+<link rel="stylesheet" href="/style.css"><!--extra tuning-->
+<link rel="stylesheet" href="/syntax.css"><!--for pygments-->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-
-<!-- Latest compiled JavaScript -->
 <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-         })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-  ga('create', 'UA-61659360-1', 'auto');
-    ga('send', 'pageview');
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+ (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+ })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-61659360-1', 'auto');
+ga('send', 'pageview');
 </script>
-<title>{% if page.title %}{{ page.title }}{% else %}Jing LIU{% endif %}</title>
+<title>{% if page.title %}{{ page.title }}{% else %}physino.xyz{% endif %}</title>
 </head>
 
 <body>
-<nav class="navbar navbar-inverse navbar-fixed-top">
-  <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-	<span class="icon-bar"></span>
-	<span class="icon-bar"></span>
-	<span class="icon-bar"></span> 
-      </button>
-      <a class="navbar-brand" href="/index.html"><span class="glyphicon glyphicon-home"></span> physino.xyz</a>
-    </div>
-    <div  class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav navbar-right">
-	<li><a href="/tags"><span class="glyphicon glyphicon-tags"></span> Tags</a></li>
-	<li><a href="/archive.html"><span class="glyphicon glyphicon-calendar"></span> Archives</a></li>
-	<li><a href="/list.html"><span class="glyphicon glyphicon-folder-open"></span> Categories</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
-
-<div class="container">
-  <div class="row">
-    <div class="col-md-8">
+{% include navi.html %}

@@ -1,12 +1,39 @@
 {% include head.html %}
-<div class="well well-sm">
-<ul class="nav nav-pills" style="font-variant: small-caps">
-{% assign sorted = site.pages | sort:"path" %}
-{% for each in sorted %}
-  {% if each.category == page.directory %}
-    <li><a href="/{{ page.directory }}/{{ each.title }}">{{ each.title }}</a></li>
-{% endif %}
+{% include banner.html %}
+
+{% for each in site.categories %}
+  {% assign cat = each|first %}
+  {% assign dir = page.path|split:'/'|first %}
+  {% if cat == dir %}
+    {% assign posts = each|last %}
+    <!-- for the first post -->
+    {% assign p1 = posts|first %}
+    <h2><a href="{{ p1.url }}">{{ p1.title }}</a></h2>
+    <p>
+    <span class="glyphicon glyphicon-time"></span>{{ p1.date | date: "%b %d, %Y" }}
+    {% for cat in p1.categories %}
+      <span class="glyphicon glyphicon-folder-open"></span> <a href="/{{cat}}">{{cat}}</a>
+    {% endfor %}
+    {% for tag in p1.tags %}
+      <span class="glyphicon glyphicon-tag"></span><a href="/tags/#{{tag}}">{{tag}}</a>
+    {% endfor %}
+    </p>
+    {{ p1.excerpt }}
+    <a href="{{ p1.url }}">&raquo; Read full story ...</a>
+    <hr>
+    <!-- for the other posts -->
+    <ul class="list-unstyled">
+      {% for post in posts offset:1 %}
+	<li>
+          <span class="glyphicon glyphicon-time"></span>
+	  {{ post.date | date: "%B %-d, %Y" }}
+	  <a href="{{ post.url }}">{{ post.title }}</a>
+	</li>
+      {% endfor %}
+    </ul>
+  {% endif %}
 {% endfor %}
-</ul>
-</div>
+
+{{ content }}
+
 {% include foot.html %}
