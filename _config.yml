@@ -7,7 +7,7 @@ redcarpet:
 paginate: 5
 highlighter: pygments
 
-permalink: /blog/:year/:month/:day/:title/
+permalink: pretty
 
 defaults:
   -
