@@ -1,0 +1,18 @@
+<div class="well well-sm">
+  {% if page.path|split:'/'|size > 1 %}
+    {% assign cat = page.path|split:'/'|first %}
+  {% endif %}
+  {% if cat == 'research' %}
+    Work as an experimental physicist
+  {% elsif cat == 'career' %}
+    Survive as an experimental physicist
+  {% elsif cat == 'living' %}
+    How an experimental physicist lives
+  {% elsif cat == 'teaching' %}
+    Teach as an experimental physicist
+  {% elsif cat == 'learning' %}
+    Learn from an experimental physicist
+  {% else %}
+    Research and education quanta of an experimental physicist
+  {% endif %}
+</div>
