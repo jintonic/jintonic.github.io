@@ -1,6 +1,5 @@
 ---
-layout: post
-tags: [presentation, teaching, exam, slide]
+tags: [presentation, slide, speech]
 ---
 
 - be loud, better have soothing voice
