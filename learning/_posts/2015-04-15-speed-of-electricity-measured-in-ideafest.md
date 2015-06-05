@@ -1,5 +1,5 @@
 ---
-tags: [IdeaFest, phys-332, oscilloscope, cable, electronics]
+tags: [IdeaFest, phys-332, oscilloscope, coax, electronics]
 ---
 
 ![speed of electricity measured in IdeaFest]({{site.exa}}/speed-of-electricity-measured-in-ideafest.jpg)
