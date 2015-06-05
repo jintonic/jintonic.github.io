@@ -1,5 +1,5 @@
 ---
-tags: [grant]
+tags: [South Dakota, grant]
 ---
 
 Sometimes your grant proposal will be reviewed by people from fields other than
