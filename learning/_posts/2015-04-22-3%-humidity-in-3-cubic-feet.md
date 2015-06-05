@@ -1,5 +1,5 @@
 ---
-tags: [tutorial, phys-332]
+tags: [humidity, phys-332]
 ---
 
 ![home made acrylic glove box]({{site.ina}}/home-made-acrylic-glove-box.jpg)
