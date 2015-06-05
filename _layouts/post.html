@@ -1,6 +1,6 @@
 {% include head.html %}
 {% include banner.html %}
-<h1 class="page-header">{{ page.title }}</h1>
+<h3 class="page-header">{{ page.title|upcase }}</h3>
 <p>
 <span class="glyphicon glyphicon-time"></span>{{ page.date | date: "%b %d, %Y" }}
 {% for cat in page.categories %}
