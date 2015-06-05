@@ -16,8 +16,10 @@
 {% for each in sorted_tags %}
 {% assign name = each | first %}
 {% assign posts = each | last %}
-<span class="glyphicon glyphicon-tag"></span>
-<a name="{{name}}" style="font-variant: small-caps">{{name}}</a>
+<h4>
+  <span class="glyphicon glyphicon-tag"></span>
+  <a name="{{name}}">{{name}}</a>
+</h4>
 <ul>
   {% for post in posts %}
   {% if post.tags contains name %}
@@ -30,3 +32,14 @@
   {% endfor %}
 </ul>
 {% endfor %}
+
+<div class="well well-sm">
+  <ul class="nav nav-pills">
+    {% for each in sorted_tags %}
+    {% assign name = each | first %}
+    {% assign posts = each | last %}
+    <li><a href="/tags/#{{name}}">{{name}}({{ posts | size }})</a></li>
+    {% endfor %}
+  </ul>
+</div>
+
