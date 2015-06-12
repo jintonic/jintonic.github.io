@@ -55,6 +55,6 @@ Creator]({{site.exa}}/git-operations-enabled-in-Qt-Creator.png)
 [qtlib]:http://en.wikipedia.org/wiki/Qt_%28software%29
 [GitHub]:https://github.com/
 [git]:https://git-scm.com/
-[gw]:https://git-scm.com/
+[gw]:https://windows.github.com/
 [SSH]:https://en.wikipedia.org/wiki/Secure_Shell
 [key]:https://help.github.com/articles/generating-ssh-keys/
