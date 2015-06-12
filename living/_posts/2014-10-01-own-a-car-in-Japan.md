@@ -2,6 +2,9 @@
 tags: [Japan, car]
 ---
 
+![parking in Japan 
+cities](http://traveljapanblog.com/wordpress/wp-content/uploads/2010/08/26114121trim.jpg)
+
 ### Get license without going to school
 
 It is very expensive to get the license in Japan (200,000 ~ 400,000 yen) if you 
