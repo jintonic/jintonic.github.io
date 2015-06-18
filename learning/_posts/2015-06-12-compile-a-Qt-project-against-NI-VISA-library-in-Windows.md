@@ -3,24 +3,17 @@ tags: [Qt, Windows, NI-VISA]
 ---
 
 [NI-VISA library][visa] provides a set of C++ functions to communicate with 
-hardwares connected to a PC, while [Qt] library can be used to create a [GUI] 
-to control those communications. Your [GUI] written with [Qt] has to be 
-compiled against the [NI-VISA library][visa] to realize it.
+hardwares connected to a PC, while [Qt][] library can be used to create a 
+[GUI][] to control those communications. Your [GUI][] written with [Qt][] has 
+to be compiled against the [NI-VISA library][visa] to realize it.
 
-I downloaded the [NI-VISA][visa] and installed it in my 64-bit Windows-7 PC. 
-The library is located at
-```
-C:\Program Files (x86)\IVI Foundation\VISA\WinNT\lib\msc\visa32.lib
-```
-Note that there is also a 64-bit version of the library:
-```
-C:\Program Files (x86)\IVI Foundation\VISA\WinNT\Lib_x64\msc\visa64.lib
-```
-But I cannot compile a [Qt] project against it. There is also a 32-bit library 
-compiled with [Borland] C++ compiler:
-```
-C:\Program Files (x86)\IVI Foundation\VISA\WinNT\lib\bc\visa32.lib
-```
+I downloaded the [NI-VISA][visa] and installed it in my 64-bit Windows-7 PC.  
+The library is located at `C:\Program Files (x86)\IVI 
+Foundation\VISA\WinNT\lib\msc\visa32.lib`. Note that there is also a 64-bit 
+version of the library: `C:\Program Files (x86)\IVI 
+Foundation\VISA\WinNT\Lib_x64\msc\visa64.lib`. But I cannot compile a [Qt] 
+project against it. There is also a 32-bit library compiled with [Borland] C++ 
+compiler: `C:\Program Files (x86)\IVI Foundation\VISA\WinNT\lib\bc\visa32.lib`.  
 Since [Qt][] is compiled with [Microsoft Visual C++][msc], I use **visa32.lib** 
 in the **msc** directory instead of the one in the **bc** directory.
 
@@ -36,7 +29,6 @@ available:
 
 ![select 32 bit compiler in Qt 
 Creator]({{site.exa}}/select-32-bit-compiler-in-Qt-Creator.png)
-
 
 I had to add the following two lines in my [project file][qp] (the one ended 
 with **.pro**):
@@ -88,9 +80,11 @@ int main(int argc, char *argv[])
 
 Note that I had to explicitly cast strings in the double quotes to 
 **ViString**. Otherwise, I would get the following error message:
+
 ```
 cannot convert argument from 'const char []' to 'ViString'
 ```
+
 [visa]:https://www.ni.com/visa/
 [Qt]:https://www.qt.io/
 [GUI]:https://en.wikipedia.org/wiki/Graphical_user_interface
