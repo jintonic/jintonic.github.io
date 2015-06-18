@@ -17,15 +17,14 @@ Windows][gw]:
 your desktop.
 2. Right click the icon, select **Propertries**. In a text box labelled 
 **Target** you can find the location of your [GitHub for Windows][gw] 
-installation: *C:\Users\jing.liu\AppData\Local\GitHub*
+installation:`C:\Users\jing.liu\AppData\Local\GitHub`
 3. Go to that folder and you will find a sub folder with all git commands 
-included: 
-*C:\Users\jing.liu\AppData\Local\GitHub\PortableGit_c2ba306e536fdf878271f7fe636a147ff37326ad\bin*
+included:`C:\Users\jing.liu\AppData\Local\GitHub\PortableGit_c2ba306e536fdf878271f7fe636a147ff37326ad\bin`
 4. Open your [Qt][] [Creator][], select **Tools** menu and then **Options...** 
 and follow the screen shot at the beginning of this post. Click **Ok** and you 
-are done!
+are done.
 
-### Work flow
+### Work flow ###
 
 1. I prefer to create an empty repository using [GitHub][] web interface, where 
 you can add a **.gitignore** and a **LICENCE** file easily:
