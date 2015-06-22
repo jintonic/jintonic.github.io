@@ -1,4 +1,5 @@
 ---
+tags: [GitHub, Windows, Qt]
 ---
 
 ![set git shipped with GitHub for Windows in Qt Creator 
