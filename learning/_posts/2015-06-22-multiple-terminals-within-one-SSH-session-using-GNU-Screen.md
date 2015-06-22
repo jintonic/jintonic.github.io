@@ -5,37 +5,59 @@ tags: [screen, Linux]
 ![GNU screen with running commands shown in window title 
 bar]({{site.exa}}/GNU-screen-with-running-commands-as-titles-of-terminals-shown-in-window-title-bar.png)
 
-Does the following scenario ever happen to you? You log into a Linux server 
-through SSH and edit a file within the terminal and you need another terminal 
-to run some commands to see whether you modifications take effect. So you just 
-open another terminal and SSH to the Linux server, type in the user name and 
-password again. You will have to repeat this again and again whenever you need 
-a new terminal. If it happens to you very often, consider typing
+Does the following scenario ever happen to you? You open a terminal and log 
+into a Linux server through [SSH][] to edit a file within the terminal. Now you 
+need another terminal to run some commands to see whether you modifications 
+take effect. So you have to open another terminal and `ssh` to the Linux 
+server, type in the user name and password again. You will have to repeat this 
+again and again whenever you need a new terminal. If it happens to you very 
+often, try the command `screen` in your terminal after you `ssh` in your 
+server:
 
+~~~ bash
+user@local$ ssh user@server
+user@server$ screen
 ~~~
-$ screen
-~~~
 
-after you log into your server. This will launch a program, which can provide 
-you as many terminals as you want in your current SSH session.
+This will launch a program called [GNU Screen][screen]. It can provide you as 
+many terminals as you want in one [SSH][] session.
 
-One won't find anything relevant if he searches in Google with the keyword 
-*screen*. The full name of this program is *GNU screen*. It is a program to 
-create multiple virtual terminals in a physical terminal. It provides a set of 
-commands (the commonly used ones are binded to hot keys) to create, delete, 
-switch in between virtual terminals. By default, <kbd>Ctrl</kbd>-<kbd>a</kbd> 
-is used to tell screen that the following key stroke is a hot key binded for a 
-command to manipulate virtual terminals, instead of a key that is sent to the 
-shell. It is basically a mode switch key. It switches from working-in-a-shell 
-mode to manipulate-virtual-terminal mode.
+The first time you launch it, you will see some welcome messages in your 
+terminal. Type <kbd>Enter</kbd> to dismiss the messages and you will be back to 
+your SHELL prompt again. Where are my multiple terminals? You may ask. Well, 
+there is only one at this moment. You will have to launch a new one by holding 
+<kbd>Ctrl</kbd> and press <kbd>a</kbd> and then <kbd>c</kbd>. Now press 
+<kbd>Ctrl</kbd>+<kbd>a</kbd> and then <kbd>"</kbd>, you will see a list of all 
+terminals opened in your `screen`:
 
-### Change mode-switch key ###
+![GNU screen window list]({{site.exa}}/GNU-screen-window-list.png)
 
-The default mode-switch key binding <kbd>Ctrl</kbd>-<kbd>Ca</kbd> is not 
+Press arrow keys to select one and <kbd>Enter</kbd> to go to that terminal. 
+What!? Do I have to type so many keys to switch from one terminal to another 
+You may ask. Yes, if you are used to tabs on top of your web browser, this is 
+not acceptable. However, it is actually very easy to configure your `screen` to 
+have something like a tab bar as shown in the top screen shot.
+
+But before we get into details, let's cover a basic concept of this program. 
+`screen` is a program to create multiple virtual terminals in a physical 
+terminal.  It provides a set of commands (the commonly used ones are binded to 
+hot keys) to create, delete, switch in between virtual terminals. By default, 
+<kbd>Ctrl</kbd>+<kbd>a</kbd> is used to tell screen that the following key 
+stroke is a hot key binded for a command to manipulate virtual terminals, 
+instead of a key that is sent to the SHELL. It is basically a mode switch key. 
+It switches from *working-in-a-shell* mode to *manipulate-virtual-terminal* 
+mode. It is easy to find good introductions to the program if you search on 
+*Google* **GNU screen**.  Be sure to search for **GNU screen** instead of just 
+**screen**, otherwise, you won't find anything relevant.
+
+### Mode-switch key ###
+
+The default mode-switch key binding <kbd>Ctrl</kbd>+<kbd>a</kbd> is not 
 convenient to type and conflict with the shell shortcut for moving to the start 
-of a line.  Vi uses <kbd>Esc</kbd> to switch between insert and command modes.  
-One can use the key below it, that is, <kbd>\`</kbd> as the mode-switch key for 
-screen.  This can be done by insert the following command in `~/.screenrc`:
+of a line.  [VI][] uses <kbd>Esc</kbd> to switch between *insert* and *command* 
+modes. One can use the key below it, that is, <kbd>\`</kbd> as the mode-switch 
+key for screen.  This can be done by insert the following line in 
+`~/.screenrc`:
 
 ~~~
 escape ``
@@ -70,8 +92,7 @@ bindkey -k F2 next # press F12 to go to next window
 ~~~
 
 The *-k* option tells the *bindkey* command the following string is not a 
-normal string but a [termcap keyboard capability
-name](https://www.gnu.org/software/termutils/manual/termcap-1.3/html_chapter/termcap_5.html)
+normal string but a [termcap keyboard capability name][termcap].
 
 ### Use the title bar of physical terminal as tab bar###
 
@@ -108,4 +129,9 @@ screen)
   ;;
 esac
 ~~~ 
+
+[SSH]:https://en.wikipedia.org/wiki/Secure_Shell
+[screen]:https://www.gnu.org/software/screen/
+[VI]:http://www.vim.org/
+[termcap]:https://www.gnu.org/software/termutils/manual/termcap-1.3/html_chapter/termcap_5.html
 
