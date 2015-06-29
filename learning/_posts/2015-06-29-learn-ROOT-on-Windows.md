@@ -34,10 +34,7 @@ bar]({{site.exa}}/hightlight-Windows-explorer-address-bar.jpg)
 browser]({{site.exa}}/launch-ROOT-from-Windows-file-browser.jpg)
 
 5. Now you can run [ROOT][] scripts in the folder `C:\root_v5.34.32\tutorials` 
-by typing in the ROOT interactive session:
-		```
-		.x hsimple.C
-		```
+by typing in the ROOT interactive session `.x hsimple.C`:
 ![Launch ROOT script]({{site.exa}}/launch-ROOT-script.jpg)
 
 That's it. It takes about 10 minutes and 5 steps for you to start running ROOT 
