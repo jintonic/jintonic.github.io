@@ -23,13 +23,13 @@ layers of foil with an approximate shielding effectiveness of -90 dB.
   diameter: 6.1, 6.86, 10.5 mm, respectively. Used with F connectors for TV
 - RG-58, RG-142 from low end to high end uses, impedance: 50 Ohm, outer 
   diameter: 5, 4.95 mm, respectively
-- RG-316/U, impedance: 50 Ohm, outer diameter: 2.6 mm, single shield, used with 
-  LEMO 00 connector
+- RG-316/U, RG-174, impedance: 50 Ohm, outer diameter: 2.6 mm, single shield, 
+  used with LEMO 00 connector
 
 *LMR*, [nobody knows what it stands for][k3dav]. Made by [Times Microwave
 Systems][times]. Low loss coax, 50 Ohm. [Catalog]:
 
-- LMR-100A, outer diameter: 2.79 mm, replace RG-316
+- LMR-100A, outer diameter: 2.79 mm, replace RG-316/RG-174
 - LMR-195, outer diameter: 4.95 mm (0.195 inch), replace RG-58, RG-142
 
 [k3dav]:http://www.k3dav.com/lmrcoaxialcables.htm
