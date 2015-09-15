@@ -13,7 +13,6 @@ FY 09-15 | Applicants | Approved
 Associate| 76         | 67 (88.2%)
 Tenure   | 81         | 74 (91.4%)
 Full     | 30         | 22 (73.3%)
-{: class="table"}
 
 According to him, the rate is way above the national average, which is about 
 60% if I remember correctly.
