@@ -18,9 +18,9 @@ According to him, the rate is way above the national average, which is about
 60% if I remember correctly.
 
 He then asked some FAQ to three panelists, [Jill Tyler][jill], [Mike 
-Allgrum][mike] and [Dave Burrow][dave], who are members of the [USD] Promotion 
-& Tenure Committee. Things that I learned from the discussion are summarized 
-here.
+Allgrunn][mike] and [David Burrow][dave], who are members of the [USD] 
+Promotion & Tenure Committee. Things that I learned from the discussion are 
+summarized here.
 
 - It is natural that your performance in teaching in the first year is bad. 
   Admit it, try to fix it, and don't be defensive. It is OK, as long as you 
@@ -48,3 +48,11 @@ here.
   leading to the decision is fair or not.
 - Try to do services that you are passionated about. Don't take too much 
   services that you don't have time to teach and conduct research.
+
+[ctl]: http://www.usd.edu/ctl
+[USD]: http://www.usd.edu
+[jill]: http://www.usd.edu/faculty-and-staff/Jill-Tyler
+[mike]: http://www.usd.edu/faculty-and-staff/Mike-Allgrunn
+[dave]: http://www.usd.edu/faculty-and-staff/David-Burrow
+
+
