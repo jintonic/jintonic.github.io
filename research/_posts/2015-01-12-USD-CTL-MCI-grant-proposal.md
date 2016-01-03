@@ -1,3 +1,9 @@
+---
+tags: [South Dakota, grant]
+---
+
+![USD CTL MCI grant proposal budget 2015]({{site.ina}}/USD-CTL-MCI-grant-proposal-budget-2015.png)
+
 Dear Members in the CTL Grants Task Force,
 
 I am writing to apply for the MCI grant to **develop a digital laboratory to
@@ -57,3 +63,18 @@ Sincerely,
 Dr. Jing LIU
 
 Assistant professor, Physics
+
+## Budget Justification##
+
+The men and women’s lab coats are used to protect students and provide a
+convenient way to carry a tablet. The digital pen, the table and the stylus are
+used to write digital logs. The digital pen also comes with 1 year subscription
+to EVERNOTE Premium, which is necessary to remove the limitation on the amount
+of log books that can be uploaded to EVERNOTE cloud storage system monthly. The
+camera on the tablet and the tripod are used to take video tutorials and blogs
+to post on YouTube. The tablet armor case is necessary to protect the tablet in
+extensive laboratory uses. The AppleCare+ warranty is recommended by the ITS.
+The keyboard is to facilitate fast data input into the tablet. The external
+hard drive is used to keep a local backup of all digital data uploaded to
+various cloud storage systems.
+
