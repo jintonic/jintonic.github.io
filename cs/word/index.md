@@ -30,7 +30,9 @@ breaks words at the end of a line with hyphens to keep lines aligned to both
 ends. By default, Microsoft word does not automatically break words. It
 enlarges spaces between words to achieve both-side alignment instead. This
 results in a very unprofessional looking. The LaTeX-like hyphenation can be
-easily enabled in Microsoft Word: Page Layout -> Hyphenation -> Automatic.
+easily enabled in Microsoft Word: Page Layout -> Hyphenation -> Automatic. 
+Sometimes you also need to modify the "Paragraph" format in the "Normal" style. 
+In the "Line and Page Breaks" tab, clear "Don't hyphenate".
 
 Insertion
 =========
