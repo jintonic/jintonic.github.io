@@ -113,6 +113,7 @@ LaTeX
 ======
 
 Install *texlive-collection-publisher* (*elsarticle*),
+*texlive-collection-science* (*siunitx*),
 *texlive-collection-fontsrecommanded* (*txfonts*),
 *texlive-collection-latexextra* (*tabulary.sty*), and
 *texlive-collection-binextra* (*latexmk*) from *setup.exe*
