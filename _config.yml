@@ -1,11 +1,13 @@
 ina: /assets
 exa: https://dl.dropboxusercontent.com/u/19851056/0
 exclude: [ 'Gemfile' ]
-markdown: redcarpet
-redcarpet:
-  extensions: ["tables", "autolink", "strikethrough", "no_intra_emphasis", "space_after_headers", "with_toc_data", "fenced_code_blocks"]
+markdown: kramdown
+kramdown:
+  input: GFM
+  auto_ids: true
+  syntax_highlighter: rouge
 paginate: 5
-highlighter: pygments
+highlighter: rouge
 
 permalink: pretty
 
