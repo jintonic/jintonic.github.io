@@ -59,7 +59,7 @@ X
 vifm
 ====
 
-Install libcursesw, wget from setup.exe, wget vifm tar ball, and then
+Install libncurses-devel, wget from setup.exe, wget vifm tar ball, and then
 
 ~~~bash
 $ ./configure --without-libmagic --without-gtk --disable-extended-keys
@@ -73,7 +73,7 @@ Install mutt, msmtp, offlineimap, abook, ncurses (infocmp) from setup.exe
 git
 ===
 
-Install git, git-completion from setup.exe
+Install git from setup.exe
 
 taskwarrior
 ===========
