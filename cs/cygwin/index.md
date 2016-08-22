@@ -118,3 +118,19 @@ Install *texlive-collection-publisher* (*elsarticle*),
 *texlive-collection-latexextra* (*tabulary.sty*), and
 *texlive-collection-binextra* (*latexmk*) from *setup.exe*
 
+sc
+===
+
+Install *bison*, from *setup.exe* and
+
+~~~bash
+git clone https://github.com/jintonic/sc.git
+cd sc
+make
+~~~
+
+R
+===
+
+Install *R* package in the *Math* section from *setup.exe*
+
