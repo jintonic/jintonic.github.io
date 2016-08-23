@@ -1,5 +1,5 @@
 ---
-tags: [grant undergraduate]
+tags: [grant, undergraduate]
 ---
 
 I became a member of the Council for Undergraduate Research & Creative 
