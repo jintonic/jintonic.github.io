@@ -40,11 +40,18 @@ When you become a postdoc, you may have to coauthor several papers in a certain
 field. This is when you need to consider switching to a more sophisticated 
 reference system. The most common approach in natural science publications is 
 to use a combination of [BibTeX][] and [natbib][] as described in 
-[this][seterm] and [this][seuse] posts on *StackExchange*. An example 
-[BibTeX][] entry is given at the beginning of this post. Detailed description 
-of the [BibTeX][] format is available from [bibtex.org][format] and 
-[wikibooks][]. How to cite an [arXiv][] article using [BibTeX][] is described 
-[here][eprint] and shown in the top example.
+[this][seterm] and [this][seuse] posts on *StackExchange*:
+
+```tex
+\usepackage[numbers,sort&compress]{natbib}
+\bibliographystyle{unsrtnat} % sort by order of appearance
+\bibliography{BibTeXFileWithoutSuffix}
+```
+
+An example [BibTeX][] entry is given at the beginning of this post. Detailed 
+description of the [BibTeX][] format is available from [bibtex.org][format] 
+and [wikibooks][]. How to cite an [arXiv][] article using [BibTeX][] is 
+described [here][eprint] and shown in the top example.
 
 It looks like that eventually the good and old combination of [BibTeX][] + 
 [natbib][] will be replaced by the new and shining combination of [Biber][] 
