@@ -1,5 +1,5 @@
 ---
-tags: [zotero, bibtex]
+tags: [zotero, bibtex, phys-492/592]
 ---
 
 ![Zotero in Firefox as a reference manager]({{site.exa}}/zotero4firefox.png)

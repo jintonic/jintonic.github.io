@@ -1,5 +1,5 @@
 ---
-tags: [LaTeX]
+tags: [LaTeX, phys-492/592]
 ---
 
 ![edit LaTeX in Overleaf]({{site.exa}}/overleaf.png)

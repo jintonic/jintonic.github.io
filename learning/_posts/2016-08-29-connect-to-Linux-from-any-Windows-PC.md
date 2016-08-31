@@ -1,5 +1,5 @@
 ---
-tags: [Linux, SSH]
+tags: [Linux, SSH, phys-492/592]
 ---
 
 ![Windows Command Prompt]({{site.exa}}/win.cmd.png)

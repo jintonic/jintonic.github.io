@@ -1,5 +1,5 @@
 ---
-tags: [LaTeX]
+tags: [LaTeX, phys-492/592]
 ---
 
 ``` tex
