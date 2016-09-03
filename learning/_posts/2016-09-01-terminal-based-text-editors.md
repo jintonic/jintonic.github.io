@@ -38,5 +38,28 @@ export EDITOR='yourFavoriteTextEditor'
 ```
 
 Save the setting to your `.bashrc` if you want to use this setting for later 
-ssh sessions. If none of the environment variable (`$VISUAL` or `$EDITOR`) is 
-set, `less` will use `vi` to edit the file. 
+ssh sessions.
+
+If none of the environment variable (`$VISUAL` or `$EDITOR`) is set, `less` 
+will use `vi` to edit the file. [Vi][] is one of the oldest and most popular 
+text editors together with [Emacs][]. [Vi][] is quite unique in its way to 
+handle keyboard shortcuts. Unlike most other editors, where shortcuts are 
+combinations of modifier keys and other keys, for example, <kbd>Ctrl+c</kbd> 
+is a shortcut of `copy` and <kbd>Ctrl+v</kbd> is a shortcut of `paste`, in 
+[Vi][] you have to switch to a special state, called *Command mode*, where 
+normal keys can be pressed directly to issue commands without the need to hold 
+a modifier key at the same time, for example, <kbd>yw</kbd> copies a word, 
+<kbd>p</kbd> pastes the word. Normal keys behave normally only in the *Insert 
+mode*. Such a concept is quite counter intuitive, or more precisely, quite 
+different from the editing habit most people have established from their daily 
+usage of *Windows*. According to [a 
+study](http://www.textfiles.com/programming/vivsemacs.txt), it takes beginners 
+much more time to learn [Vi][] than to learn [Emacs][], while experienced 
+[Vi][] and [Emacs][] users are equally efficient. Given such a result, a 
+regular *Windows* user who wants to learn Linux command line operation should 
+avoid learning [Vi][] to save time.
+
+Many editors have emerged after [Vi][] and [Emacs][]. They normally have 
+keyboard shortcuts that most people have got used to. It is much easier to 
+learn them than to learn both [Vi][] and [Emacs][]. They may not be as 
+powerful, but should be good enough for most casual editing.
