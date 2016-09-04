@@ -1,5 +1,5 @@
 ---
-tags: [text editor]
+tags: [text editor, phys-492/592]
 ---
 
 When you [log into a Linux machine using PuTTY from a Windows PC]({% post_url 
@@ -59,7 +59,13 @@ much more time to learn [Vi][] than to learn [Emacs][], while experienced
 regular *Windows* user who wants to learn Linux command line operation should 
 avoid learning [Vi][] to save time.
 
-Many editors have emerged after [Vi][] and [Emacs][]. They normally have 
-keyboard shortcuts that most people have got used to. It is much easier to 
-learn them than to learn both [Vi][] and [Emacs][]. They may not be as 
-powerful, but should be good enough for most casual editing.
+Many terminal based editors have emerged after [Vi][] and [Emacs][]. They 
+normally have keyboard shortcuts that most people have got used to. It is much 
+easier to learn them than to learn both [Vi][] and [Emacs][]. They may not be 
+as powerful, but should be good enough for most casual editing. [micro][] is 
+one of them. It is meant to be a successor to the [nano][] editor.
+
+[Vi]:https://en.wikipedia.org/wiki/Vi
+[Emacs]:https://en.wikipedia.org/wiki/Emacs
+[micro]:https://github.com/zyedidia/micro
+[nano]:https://www.nano-editor.org
