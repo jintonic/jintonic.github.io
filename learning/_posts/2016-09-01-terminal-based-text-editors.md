@@ -63,7 +63,28 @@ Many terminal based editors have emerged after [Vi][] and [Emacs][]. They
 normally have keyboard shortcuts that most people have got used to. It is much 
 easier to learn them than to learn both [Vi][] and [Emacs][]. They may not be 
 as powerful, but should be good enough for most casual editing. [micro][] is 
-one of them. It is meant to be a successor to the [nano][] editor.
+one of them. Since it is meant to be a successor to the [nano][] editor, which 
+is small and easy to use already, [micro][] strives to be even easier to use 
+and intuitive. Two important editing functions that are missing from both are
+
+1. word completion, that is, to press a key, normally <kbd>Tab</kbd>, to 
+   complete a long word based on the first two or three letters
+2. column mode editing, that is, change several letters in the same columns 
+across multiple lines
+
+Another problem of [micro][] is that it is impossible to copy from and paste 
+into it in Windows through PuTTY.
+
+Otherwise, they have the following features that are important for text 
+editing:
+
+1. syntax highlighting, that is, keywords in a certain programming language 
+   will be highlighted in color. This will help you to identify misspelt 
+   keywords, since they won't be highlighted.
+2. Searching and replacing words.
+3. undo and redo.
+4. auto indent, that is, when you press enter to open a new line, the new line 
+will be indented the same amount as the previous line automatically.
 
 [Vi]:https://en.wikipedia.org/wiki/Vi
 [Emacs]:https://en.wikipedia.org/wiki/Emacs
