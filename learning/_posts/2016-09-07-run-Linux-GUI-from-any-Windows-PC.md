@@ -7,7 +7,7 @@ post_url 2016-08-29-connect-to-Linux-from-any-Windows-PC %}). However, this
 will only give you a command line user interface (CLI). Of course, CLI is 
 powerful enough for you to do most of your analysis task remotely, but sooner 
 or later you will hit the limit of it when you want to visualize your analysis 
-results as plots. This when you need the help of the [X-window][] system in 
+results as plots. This is when you need the help of the [X-window][] system in 
 version 11. According to the [wikibooks][X-window]:
 
 > X11 is the graphical environment for most Unix or Unix-like systems ... If 
