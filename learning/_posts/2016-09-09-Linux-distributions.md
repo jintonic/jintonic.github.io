@@ -14,11 +14,11 @@ When a Windows user wants to install a new program, for example, firefox, he or 
 
 Because of this, two things you need to consider when you choose a distribution. 1. How many packages are maintained in the central repository, this determines the likelihood of your favorite program to be in the repository; 2. How often the packages in the repository are updated, this determines how fast you can upgrade to the latest version of a program.
 
-According to [Wikipedia](https://en.wikipedia.org/w/index.php?title=Comparison_of_Linux_distributions), [OpenSUSE][] (an off-spring of [Slackware][]) has the largest number of packages available in the official repository. [Debian][] based distributions are very close. [Fedora][] (an off-spring of [RedHat][]) has about half of the numbers. I personally did experience that one program was included in [Debian][]'s repository but not in [Fedora][]'s. Most distributions are regularly updated so that second concern does not matter much in most of the cases.
+According to [Wikipedia](https://en.wikipedia.org/w/index.php?title=Comparison_of_Linux_distributions), [OpenSUSE][] (an off-spring of [Slackware][]) has the largest number of packages available in the official repository. [Debian][] based distributions are very close. [Fedora][] (an off-spring of [RedHat][]) has about half of the numbers. I personally did experience that one program was included in [Debian][]'s repository but not in [Fedora][]'s. Most distributions are regularly updated so that the second concern does not matter much in most of the cases.
 
 The top three distributions, [Mint][], [Debian][] and [Ubuntu][] in the [top ten Linux distributions](https://distrowatch.com/dwres.php?resource=major) listed in [DistroWatch][] are all [Debian][] based. As for a beginner, [Mint][] would be the best choice, given its Windows-like desktop, pre-installed commonly used programs and easy installation process.
 
-You can install [Mint][] in a USB stick, boot your machine from the stick so that you can test [Mint][] without installing it to your hard disk. You can also start with a [Mint][] virtual machine in your Windows desktop using [Virtualbox][]. This way, you can always safely go back to Windows in case of something goes wrong.
+You can install [Mint][] in a USB stick, boot your machine from the stick so that you can test [Mint][] without installing it to your hard disk. You can also start with a [Mint][] virtual machine in your Windows desktop using [Virtualbox][]. This way, you can always safely go back to Windows in case of something goes wrong in your first adventure to Linux.
 
 [DistroWatch]:https://distrowatch.com
 [Debian]:https://www.debian.org
