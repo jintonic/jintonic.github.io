@@ -1,5 +1,5 @@
 ---
-tags: [ROOT, browser]
+tags: [ROOT, browser, phys-492/592]
 ---
 
 ![keyword search ROOT class reference in firefox]({{site.exa}}/keywordSearchInFirefox.png)
@@ -12,7 +12,7 @@ This is achieved using the Firefox [smart keyword][] technique. General tutorial
 
 The string you should put in the *Location:* dialog is:
 
-http://www.google.com/search?q=site%3Aroot.cern.ch%2Froot%2Fhtml+%s&btnI=I%27m+Feeling+Lucky
+[http://www.google.com/search?q=site%3Aroot.cern.ch%2Froot%2Fhtml+%s&btnI=I%27m+Feeling+Lucky](http://www.google.com/search?q=site%3Aroot.cern.ch%2Froot%2Fhtml+%s&btnI=I%27m+Feeling+Lucky)
 
 This technique is not unique to Firefox. All main stream web browsers should have something very similar.
 
