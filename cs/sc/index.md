@@ -54,7 +54,8 @@ date as 2013-01-25.
 Set type of data format of a collumn
 ====================================
 
-Press *f* followed by a number to change format type:
+Press *f* followed by 3 numbers (width of the column, precision and format
+type) to change format type:
 
 |-----+--------------
 |type | format
