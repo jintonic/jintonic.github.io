@@ -1,5 +1,5 @@
 ---
-tags: [Linux]
+tags: [Linux, phys-492/592]
 ---
 
 There are many versions of Windows, but there is only ONE Windows. Things are quite different in the world of Linux. There are literally hundreds of Linux distributions out there. Many of them look completely different from each other. In fact, some web sites are created to help people compare and choose different distributions. [DistroWatch][] is one of them. The list there is overwhelming for a regular Windows user.
