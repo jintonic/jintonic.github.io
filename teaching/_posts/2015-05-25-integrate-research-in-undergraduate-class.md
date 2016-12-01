@@ -19,7 +19,7 @@ two. In the first half, I sticked to traditional teaching materials; and in the
 second half, I might introduce new material from my research depending on the
 capabilities of my students shown in the first half of the semester. This also gave
 time for the students to get familiar with my teaching style and get trained
-step by step so that they were ready for something more challenge. After the
+step by step so that they were ready for something more challenging. After the
 first half, I was convinced that they were ready for the challenge.
 
 To make sure that my research activities can be used as teaching materials, I
@@ -33,7 +33,7 @@ their own preference. The tasks chosen were:
 - construct a [large glove box] which can be flushed with pure nitrogen gas so
   that the relative humidity in the box can be as low as 3%. This will be used
   to handle naked NaI and CsI scintillators in my laboratory.
-- assemble a [cryogenic vacuum chamber], which will be used to house inorganic
+- assemble a cryogenic vacuum chamber, which will be used to house inorganic
   scintillating crystals or high-purity germanium detectors operated at liquid
   nitrogen temperature in my laboratory.
 
