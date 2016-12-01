@@ -1,5 +1,5 @@
 ---
-tags: [J1, visa, US]
+tags: [J-1, visa, US]
 ---
 
 Three undergraduate students from the [Department of Engineering Physics][dep] 
