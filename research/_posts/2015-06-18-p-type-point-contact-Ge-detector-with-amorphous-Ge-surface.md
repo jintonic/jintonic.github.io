@@ -2,10 +2,6 @@
 tags: [germanium]
 ---
 
-<iframe width="560" height="315" 
-src="https://www.youtube.com/embed/pe3Jk1nk-I8" frameborder="0" 
-allowfullscreen></iframe>
-
 I got an Email from the [Department of Marketing Communications & University 
 Relations][mcur] telling me that 
 
