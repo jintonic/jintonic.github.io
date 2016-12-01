@@ -1,5 +1,5 @@
 ---
-tags: [Qt, Windows, NI-VISA]
+tags: [Qt, Windows, NI-VISA, phys-332]
 ---
 
 [NI-VISA library][visa] provides a set of C++ functions to communicate with 
