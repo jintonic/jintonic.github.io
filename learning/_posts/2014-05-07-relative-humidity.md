@@ -1,5 +1,5 @@
 ---
-tags: [humidity]
+tags: [humidity, phys-332]
 ---
 
 At a certain temperature and pressure, a blob of gas can only hold a certain 
