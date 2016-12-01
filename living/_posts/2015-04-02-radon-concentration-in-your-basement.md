@@ -1,5 +1,5 @@
 ---
-tags: [South Dakota, radon, radiation, health]
+tags: [South Dakota, radon, radiation, health, phys-332]
 ---
 
 ![radon concentration vermillion south dakota basement]({{site.ina}}/radon-concentration-vermillion-basement.jpg)
@@ -15,4 +15,10 @@ over several days. It is always higher than the [level set by
 EPA](http://www.epa.gov/radon/zonemap.html). The owner never heard about radon
 and did not take any action to reduce the concentration. If you are alike,
 please consider following the [advice from EPA](http://www.epa.gov/radon/).
+
+Two undergraduate students from my class PHYS-332, Experimental Modern Physics,
+accept requests from individual residences at Vermillion, SD to measure the
+radon concentration in their houses for two days. We charge $20 dollars for
+each measurement, which is way below the market price. The money will be used
+to support research activities of undergraduate students.
 
