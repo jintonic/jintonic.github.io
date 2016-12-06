@@ -12,7 +12,7 @@ This is achieved using the Firefox [smart keyword][] technique. General tutorial
 
 The string you should put in the *Location:* dialog is:
 
-[http://www.google.com/search?q=site%3Aroot.cern.ch%2Froot%2Fhtml+%s&btnI=I%27m+Feeling+Lucky](http://www.google.com/search?q=site%3Aroot.cern.ch%2Froot%2Fhtml+%s&btnI=I%27m+Feeling+Lucky)
+[http://www.google.com/search?q=site%3Aroot.cern.ch%2Fdoc%2Fmaster+%s&btnI=I%27m+Feeling+Lucky](http://www.google.com/search?q=site%3Aroot.cern.ch%2Fdoc%2Fmaster+%s&btnI=I%27m+Feeling+Lucky)
 
 This technique is not unique to Firefox. All main stream web browsers should have something very similar.
 
