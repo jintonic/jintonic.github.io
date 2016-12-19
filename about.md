@@ -1,7 +1,6 @@
 ---
 layout: page
-title: about
-subtitle: Jing LIU
+title: about Jing LIU
 ---
 
 Jing Liu is an experimental physicist [developing novel particle detectors](/rdlab) for
