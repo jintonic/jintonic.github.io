@@ -6,7 +6,7 @@ title: about Jing LIU
 Jing Liu is an experimental physicist [developing novel particle detectors](/rdlab) for
 astroparticle physics and civil use. His public profiles can be found at
 
-- [University of South Dakota](http://www.usd.edu/arts-and-sciences/physics/jing-liu.cfm)
+- [University of South Dakota](http://www.usd.edu/faculty-and-staff/Jing-Liu)
 - [ORCID](http://orcid.org/0000-0003-1869-2407)
 - [Google Scholar](https://scholar.google.com/citations?user=yKumdPcAAAAJ)
 - [arXiv](http://arxiv.org/a/liu_j_2)
