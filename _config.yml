@@ -1,5 +1,5 @@
 ina: /assets
-exa: https://dl.dropboxusercontent.com/u/19851056/0
+exa: https://dl.dropboxusercontent.com/s/9zy32n82ppo0hj6
 exclude: [ 'Gemfile' ]
 markdown: kramdown
 kramdown:
