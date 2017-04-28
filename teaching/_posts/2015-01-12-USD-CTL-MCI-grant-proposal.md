@@ -2,7 +2,7 @@
 tags: [phys-332, South Dakota, grant]
 ---
 
-![USD CTL MCI grant proposal budget 2015]({{site.exa}}/USD-CTL-MCI-grant-proposal-budget-2015.png)
+![USD CTL MCI grant proposal budget 2015]({{site.ina}}/USD-CTL-MCI-grant-proposal-budget-2015.png)
 
 Dear Members in the CTL Grants Task Force,
 

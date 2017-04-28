@@ -41,5 +41,5 @@ headsep=0.5em, footskip=2em]{geometry}
 
 Snippet of the [final results](https://www.overleaf.com/read/wpwgqfwgfkrh):
 
-![LaTeX style tuning]({{site.exa}}/latex-style-tuning.png)
+![LaTeX style tuning]({{site.ina}}/latex-style-tuning.png)
 

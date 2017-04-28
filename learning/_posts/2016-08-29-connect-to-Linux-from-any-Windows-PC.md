@@ -2,7 +2,7 @@
 tags: [Linux, SSH, phys-492/592]
 ---
 
-![Windows Command Prompt]({{site.exa}}/win.cmd.png)
+![Windows Command Prompt]({{site.ina}}/win.cmd.png)
 
 Press the key with the *Windows* logo, and then type `cmd` and 
 <kbd>Enter</kbd>, you will be able to open a terminal in *Windows* as shown in 
@@ -38,9 +38,9 @@ to save any setting in the local PC's registry. Instead, settings can be saved
 into files, which can be carried with you using a USB stick or saved in a 
 cloud storage service, as shown in the following screen shot. A nice default 
 setup for connecting to hpc.usd.edu can be downloaded from 
-[here]({{site.exa}}/puttytrayhpcsession).
+[here]({{site.ina}}/puttytrayhpcsession).
 
-![PuTTYtray]({{site.exa}}/puttytray.png)
+![PuTTYtray]({{site.ina}}/puttytray.png)
 
 It is as simple as 1,2,3 to use it:
 
@@ -54,12 +54,12 @@ asked to save the server's key (It's like the server's ID). Simply select
 *Yes* and you will be given a terminal for you to type in your user name, 
 password as shown in the following screen shot:
 
-![PuTTY login screen]({{site.exa}}/puttylogin.png)
+![PuTTY login screen]({{site.ina}}/puttylogin.png)
 
 Once logged in successfully, you will be able to use this terminal to issue 
 commands to the remote machine:
 
-![PuTTY controlling remote server]({{site.exa}}/puttyconnected.png)
+![PuTTY controlling remote server]({{site.ina}}/puttyconnected.png)
 
 [PuTTY]:http://www.putty.org
 [PuTTYtray]:https://puttytray.goeswhere.com

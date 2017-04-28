@@ -2,7 +2,7 @@
 tags: [phys-492/592, PMT, CsI, dark matter experiment, ROOT]
 ---
 
-![light yield at room temperature and 77K]({{site.exa}}/csily.png)
+![light yield at room temperature and 77K]({{site.ina}}/csily.png)
 
 Thulium doped cesium iodide, CsI(Tl) in short, is widely used as scintillation 
 detectors. The [KIMS][] dark matter experiment has reached a light yield of 5 
@@ -12,7 +12,7 @@ directly coupled to a photomultiplier tube (PMT) that worked at that low
 temperature. The experimental setup is shown in the following schematic 
 drawing.
 
-![experimental setup of undoped CsI coupled to PMT]({{site.exa}}/csisetup.png)
+![experimental setup of undoped CsI coupled to PMT]({{site.ina}}/csisetup.png)
 
 The first thing we measured was the single PE response of the PMT as shown in 
 the following plots. The left plot shows 70 digitized electronic pulses 
@@ -21,13 +21,13 @@ shows the distribution of number of PE. The mean of the second peak is used to
 convert (ADC counts x ns) to number of PE, which was obtained by Gaussian 
 fitting.
 
-![One PE distribution]({{site.exa}}/csi1pe.png)
+![One PE distribution]({{site.ina}}/csi1pe.png)
 
 The system was then exposed to various radioactive sources to find out the 
 relationship between the number of PE and the energy in the unit of keV. The 
 energy spectra is shown below.
 
-![Energy spectrum at 77K]({{site.exa}}/csiespec.png)
+![Energy spectrum at 77K]({{site.ina}}/csiespec.png)
 
 The light yields at room and liquid nitrogen temperature are shown in the top 
 figures.

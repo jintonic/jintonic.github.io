@@ -3,7 +3,7 @@ tags: [phys-492/592]
 ---
 
 
-![histogram of oil change frequency]({{site.exa}}/oil.png)
+![histogram of oil change frequency]({{site.ina}}/oil.png)
 
 I bought a second handed car last year. The dealer showed me a long maintenance 
 record from [CARFAX][] and claimed that the car was very well served. Well, by 
@@ -16,20 +16,20 @@ The spreadsheet was created with a command-line tool [sc][]. The following
 screenshot shows part of it. The last column shows the mileage increase 
 between two oil changes. The histogram shows the statistic distribution of it.
 
-![oil change spreadsheet created with sc]({{site.exa}}/oilsc.png)
+![oil change spreadsheet created with sc]({{site.ina}}/oilsc.png)
 
 What else can we plot out of a nice maintenance record? I recorded the amount 
 of fuel I added each time and the mileage when I added fuel for a mini jeep 
 when I was in Japan. The following spreadsheet shows part of the record:
 
-![fuel efficiency recorded in sc]({{site.exa}}/fueleffsc.png)
+![fuel efficiency recorded in sc]({{site.ina}}/fueleffsc.png)
 
 The fuel efficiency (how many kilometer the car can run by consuming 1 L of 
 gas) versus the date as shown in the plot below shows clearly an annual 
 modulation of the efficiency. In winter the efficiency drops because of heavy 
 snow in the town where I lived in Japan.
 
-![fuel efficiency of pajero mini]({{site.exa}}/fueleff.png)
+![fuel efficiency of pajero mini]({{site.ina}}/fueleff.png)
 
 All the data and analysis codes are available in
 

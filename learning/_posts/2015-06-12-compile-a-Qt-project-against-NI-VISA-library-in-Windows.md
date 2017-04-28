@@ -22,13 +22,13 @@ instead of the 64-bit one in the Qt installer. If you already installed [Qt][],
 you can select the 32-bit msvc using the Qt Maintenance Tools:
 
 ![enable 32-bit msvc compiler in 
-Qt]({{site.exa}}/select-32-bit-msvc-in-qt-installer.png)
+Qt]({{site.ina}}/select-32-bit-msvc-in-qt-installer.png)
 
 and then select the 32-bit compiler for a project if there are other compilers 
 available:
 
 ![select 32 bit compiler in Qt 
-Creator]({{site.exa}}/select-32-bit-compiler-in-Qt-Creator.png)
+Creator]({{site.ina}}/select-32-bit-compiler-in-Qt-Creator.png)
 
 I had to add the following two lines in my [project file][qp] (the one ended 
 with **.pro**):

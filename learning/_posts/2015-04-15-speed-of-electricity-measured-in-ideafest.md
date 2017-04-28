@@ -2,7 +2,7 @@
 tags: [IdeaFest, phys-332, oscilloscope, coax, electronics]
 ---
 
-![speed of electricity measured in IdeaFest]({{site.exa}}/speed-of-electricity-measured-in-ideafest.jpg)
+![speed of electricity measured in IdeaFest]({{site.ina}}/speed-of-electricity-measured-in-ideafest.jpg)
 
 [IdeaFest][] is an annual event at [USD][] celebrating student research, 
 creative scholarship and academic engagement. Most students in [phys-332][] 

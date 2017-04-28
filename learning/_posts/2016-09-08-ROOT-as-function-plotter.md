@@ -2,7 +2,7 @@
 tags: [ROOT, phys-492/592]
 ---
 
-![ROOT plot settings]({{site.exa}}/rootPlotSettings.png)
+![ROOT plot settings]({{site.ina}}/rootPlotSettings.png)
 
 If you know how to [use PuTTY to log into a remote Linux server from any Windows PC]({% post_url 2016-08-29-connect-to-Linux-from-any-Windows-PC %}) and [run an X-Window server in your Windows PC]({% post_url 2016-09-07-run-Linux-GUI-from-any-Windows-PC%}), you will be able to use [ROOT][] as a function plotter, as described in the [ROOT primer](https://root.cern.ch/guides/primer):
 
@@ -15,7 +15,7 @@ The [ROOT primer](https://root.cern.ch/guides/primer) explains the meaning of ea
 
 The results would look like the following screen shot:
 
-![sin(x)/x shown in ROOT canvas]({{site.exa}}/tf1result.png)
+![sin(x)/x shown in ROOT canvas]({{site.ina}}/tf1result.png)
 
 The default window has a menu bar on top and a canvas below, where the function is drawn in a frame with x and y axes. The plot has a title. There are margins between the frame and the border of the canvas.
 
@@ -29,7 +29,7 @@ This window is highly interactive. Try to use your mouse to resize the frame and
 
 Click on `View` in the menu bar, enable `Editor` and `Event Statusbar` and you will see something like this:
 
-![ROOT canvas structure]({{site.exa}}/rootcanvasstructure.png)
+![ROOT canvas structure]({{site.ina}}/rootcanvasstructure.png)
 
 The contents of the `Editor` side bar change when you click on different things on canvas. Left click on the function curve, the `Editor` should show settings of `TF1`, where you can change the line width and color of the curve, etc.
 

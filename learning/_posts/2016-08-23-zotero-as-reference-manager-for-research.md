@@ -2,7 +2,7 @@
 tags: [zotero, bibtex, phys-492/592, phys-332]
 ---
 
-![Zotero in Firefox as a reference manager]({{site.exa}}/zotero4firefox.png)
+![Zotero in Firefox as a reference manager]({{site.ina}}/zotero4firefox.png)
 
 A local folder with some downloaded PDF files in it is how most of us manage 
 our research references at the very beginning. When the number of files 
@@ -52,12 +52,12 @@ firefox tool bar and select the right importing method from the drop down list
 as shown in the screen shot below. The firefox version of zotero provides the 
 most complete list of the importing methods.
 
-![import arXiv article to zotero from firefox]({{site.exa}}/zotero4arXiv.png)
+![import arXiv article to zotero from firefox]({{site.ina}}/zotero4arXiv.png)
 
 Now, you can export the saved reference to a bibtex file as shown in the 
 following screen shot:
 
-![export reference in zotero to bibtex]({{site.exa}}/zoteroexport.png)
+![export reference in zotero to bibtex]({{site.ina}}/zoteroexport.png)
 
 The bibtex file can be then uploaded to your [Overleaf][] project and ready to 
 be used in LaTeX.

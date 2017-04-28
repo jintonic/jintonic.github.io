@@ -2,7 +2,7 @@
 tags: [Linux, text editor, terminal, SSH, phys-492/592]
 ---
 
-![ROOT macro opened in nano text editor]({{site.exa}}/root-macro-in-nano.png)
+![ROOT macro opened in nano text editor]({{site.ina}}/root-macro-in-nano.png)
 
 We edit texts in Microsoft Office, web browsers in a Windows PC very often. But
 the concept of *text editor* is not very familiar to most *windows* users. Most

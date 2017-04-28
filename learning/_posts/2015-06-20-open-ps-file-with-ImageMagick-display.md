@@ -3,7 +3,7 @@ tags: [Linux]
 ---
 
 ![ps file shown in ImageMagick 
-display]({{site.exa}}/ps-file-shown-in-ImageMagick-display.jpg)
+display]({{site.ina}}/ps-file-shown-in-ImageMagick-display.jpg)
 
 It is quite often for an experimental physicist to create some postscript files 
 (ended with .ps) on a Linux server for data analysis or writing up papers. For 

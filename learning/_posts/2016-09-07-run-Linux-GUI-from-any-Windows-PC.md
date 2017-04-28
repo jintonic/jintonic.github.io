@@ -44,9 +44,9 @@ A portable [Xming][] shipped together with [PuTTYtray][] is available as
 to download it, extract it (if you cannot extract it to `C:`, just extract it 
 to your desktop) and run it:
 
-![extract Xming+PuTTY on a Stick to local disk]({{site.exa}}/extractXming.png)
+![extract Xming+PuTTY on a Stick to local disk]({{site.ina}}/extractXming.png)
 
-![run Xming+PuTTY from the notification area]({{site.exa}}/runXmingPuTTY.png)
+![run Xming+PuTTY from the notification area]({{site.ina}}/runXmingPuTTY.png)
 
 The [PuTTYtray][] shipped in [Xming+PuTTY on a Stick][stick] has many saved 
 sessions, which can be safely deleted if you don't need them. Now you can 
@@ -55,7 +55,7 @@ follow [this post]({% post_url 2016-08-29-connect-to-Linux-from-any-Windows-PC
 enable communication between the [X-window][] server and clients through SSH 
 is called "Enable X11 forwarding" as shown in the following screen shot:
 
-![enable X11 forwarding in PuTTY]({{site.exa}}/EnableX11forwardingPuTTY.png)
+![enable X11 forwarding in PuTTY]({{site.ina}}/EnableX11forwardingPuTTY.png)
 
 Once you log into the remote Linux server using PuTTY, type the following 
 command to bring up a graphical program:
@@ -69,7 +69,7 @@ Linux server, you should now be able to see something like the following
 screen shot:
 
 ![remote Emacs displayed in local X server with X11 forwarding 
-enabled]({{site.exa}}/remoteEmacs.png)
+enabled]({{site.ina}}/remoteEmacs.png)
 
 If the "Enable X11 forwarding" box is unchecked in [PuTTYtray][] or the X 
 server is not running, you are going to see some error messages like this: 
@@ -98,7 +98,7 @@ $ jobs # list jobs running in background
 
 The result is shown in the following screen shot:
 
-![bash job control]({{site.exa}}/bashjobcontrol.png)
+![bash job control]({{site.ina}}/bashjobcontrol.png)
 
 Enjoy the pleasure of being able to use your mouse to click around again :)
 

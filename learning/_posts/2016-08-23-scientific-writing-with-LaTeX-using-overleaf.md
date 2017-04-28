@@ -2,7 +2,7 @@
 tags: [LaTeX, phys-492/592]
 ---
 
-![edit LaTeX in Overleaf]({{site.exa}}/overleaf.png)
+![edit LaTeX in Overleaf]({{site.ina}}/overleaf.png)
 
 [LaTeX][] is a document preparation system widely used for scientific 
 publications. Simply put, a [LaTeX][] document is just a text file written in a 
@@ -32,7 +32,7 @@ Experimental setup is described here.
 A set of programs is used to convert this source file into a well formated PDF
 file for electronic publication or printing:
 
-![LaTeX output]({{site.exa}}/latexoutput.png)
+![LaTeX output]({{site.ina}}/latexoutput.png)
 
 The final product of [LaTeX][] and *Microsoft Word* can be equally good. The 
 biggest difference between [LaTeX][] and *Microsoft Word* is that [LaTeX][] is 

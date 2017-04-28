@@ -3,7 +3,7 @@ tags: [Qt]
 ---
 
 ![widgets dragged to centralWidget area need to be laid 
-out]({{site.exa}}/widgets-dragged-to-centralWidget-area-need-to-be-laid-out.png)
+out]({{site.ina}}/widgets-dragged-to-centralWidget-area-need-to-be-laid-out.png)
 
 If this is your first time to create a GUI application using the QMainWindow 
 widget in the Qt Creator, you may have a hard time to get access to the child 
@@ -38,7 +38,7 @@ ui->lineEdit->setText("works!");// works after it's laid out in centralWidget
 ```
 
 ![laying out widgets in 
-centralWidget]({{site.exa}}/laying-out-widgets-in-centralWidget.png)
+centralWidget]({{site.ina}}/laying-out-widgets-in-centralWidget.png)
 
 
 

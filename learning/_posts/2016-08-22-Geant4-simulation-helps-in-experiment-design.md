@@ -2,7 +2,7 @@
 tags: [phys-492/592, Geant4]
 ---
 
-![gamma in air, Geant4 simulation]({{site.exa}}/ginair.png)
+![gamma in air, Geant4 simulation]({{site.ina}}/ginair.png)
 
 I wanted to buy a scintillation crystal to study its light yield at cryogenic 
 temperatures. It had to be large enough to fully absorb 2.6 MeV gamma-rays and 
@@ -16,9 +16,9 @@ the target material from air to a certain scintillation crystal in [Geant4][]
 to study the penetration length of the incident particle in the crystal. The 
 size of the crystal can then be determined.
 
-![beta in air, Geant4 simulation]({{site.exa}}/binair.png)
+![beta in air, Geant4 simulation]({{site.ina}}/binair.png)
 
-![alpha in air, Geant4 simulation]({{site.exa}}/ainair.png)
+![alpha in air, Geant4 simulation]({{site.ina}}/ainair.png)
 
 [Geant4]:https://geant4.web.cern.ch/geant4
 [gears]:https://github.com/jintonic/gears

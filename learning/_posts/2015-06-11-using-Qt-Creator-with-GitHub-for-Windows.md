@@ -3,7 +3,7 @@ tags: [GitHub, Windows, Qt]
 ---
 
 ![set git shipped with GitHub for Windows in Qt Creator 
-Options]({{site.exa}}/set-git-shipped-with-GitHub-for-Windows-in-Qt-Creator-Options.png)
+Options]({{site.ina}}/set-git-shipped-with-GitHub-for-Windows-in-Qt-Creator-Options.png)
 
 [Qt][] [Creator][] is an [IDE][] for writing C++ programs (mostly [GUI][]s) 
 with [Qt library][qtlib]. [GitHub][] is a cloud service where you can save your 
@@ -28,7 +28,7 @@ are done.
 
 1. I prefer to create an empty repository using [GitHub][] web interface, where 
 you can add a **.gitignore** and a **LICENCE** file easily:
-![add repository in GitHub]({{site.exa}}/create-repository-in-GitHub.JPG)
+![add repository in GitHub]({{site.ina}}/create-repository-in-GitHub.JPG)
 2. Run [GitHub for Windows][gw] on your desktop. You will be asked to log into 
 [GitHub][] and setup your local git preference if this is the first time you 
 run it. This will also generate an [SSH][] [key pair][key] automatically so 
@@ -36,14 +36,14 @@ that you can communicate with your remote repositories without typing your user
 name and password again and again.
 3. Clone you repository in [GitHub][] to your local machine:
 ![clone repository in GitHub for 
-Windows]({{site.exa}}/clone-repository-in-GitHub-for-Windows.png)
+Windows]({{site.ina}}/clone-repository-in-GitHub-for-Windows.png)
 4. Create a new project in [Qt][] [Creator][] in the same directory of your 
 local [git][] repository:
 ![create Qt project in local git 
-repository]({{site.exa}}/create-Qt-project-in-local-git-copy.png)
+repository]({{site.ina}}/create-Qt-project-in-local-git-copy.png)
 5. Git related operations are now enabled in [Qt][] [Creator][]:
 ![git operations enabled in Qt 
-Creator]({{site.exa}}/git-operations-enabled-in-Qt-Creator.png)
+Creator]({{site.ina}}/git-operations-enabled-in-Qt-Creator.png)
 6. Now you can do all kinds of things related to [git][] within [Qt][] 
 [Creator][] without even opening [GitHub for Windows][gw].
 

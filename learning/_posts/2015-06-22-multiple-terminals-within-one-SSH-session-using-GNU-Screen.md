@@ -3,7 +3,7 @@ tags: [screen, Linux]
 ---
 
 ![GNU screen with running commands shown in window title 
-bar]({{site.exa}}/GNU-screen-with-running-commands-as-titles-of-terminals-shown-in-window-title-bar.png)
+bar]({{site.ina}}/GNU-screen-with-running-commands-as-titles-of-terminals-shown-in-window-title-bar.png)
 
 Does the following scenario ever happen to you? You open a terminal and log 
 into a Linux server through [SSH][] to edit a file within the terminal. Now you 
@@ -30,7 +30,7 @@ there is only one at this moment. You will have to launch a new one by holding
 <kbd>Ctrl</kbd>+<kbd>a</kbd> and then <kbd>"</kbd>, you will see a list of all 
 terminals opened in your `screen`:
 
-![GNU screen window list]({{site.exa}}/GNU-screen-window-list.png)
+![GNU screen window list]({{site.ina}}/GNU-screen-window-list.png)
 
 Press arrow keys to select one and <kbd>Enter</kbd> to go to that terminal. 
 What!? Do I have to type so many keys to switch from one terminal to another 
