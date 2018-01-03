@@ -21,7 +21,13 @@ if you chance folder in your terminal, its contents will be shown in the left
 panel automatically. Double click on a file in the left panel will download
 that file to the Windows PC and open the local copy with a text editor
 specified in *MobaXterm*'s settings window. Once you save your changes, the
-updated local copy will be automatically uploaded to the server.
+updated local copy will be automatically uploaded to the server. In case that a
+file type is not associated with the default editor (Surprisingly, *.cc* suffix
+is not associated with the default text editor shipped together with
+*MobaXterm*), one can right click the file and select "Open with default text
+editor" to open it. One cannot associate any file type to the default text
+editor shipped with *MobaXterm* in windows system because it is embedded in
+*MobaXterm*, and not a standalone executable.
 
 The default text editor shipped together with *MobaXterm* is good enough for
 most of the tasks you may face as a student. In case that you need some fancy
