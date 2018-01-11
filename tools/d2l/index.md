@@ -9,3 +9,7 @@ Click the right most menu, "Edit Course", on the menu bar, click "Course Offerin
 # Re-arrange home page
 
 Scroll down to the bottom of a course home page, click the pencil icon to re-arrange the course home page.
+
+# Compared to other LMS
+
+https://www.slideshare.net/MarkMaxwellMEd/which-lms-is-the-best-pros-and-cons-of-blackboard-d2l-and-canvas
