@@ -4,8 +4,7 @@ category: cs
 title: markdown
 ---
 
-Syntax
-======
+# Syntax
 
 - [original markdown](http://daringfireball.net/projects/markdown/syntax)
 - [GitHub Flavored Markdown](https://help.github.com/articles/github-flavored-markdown)
@@ -15,8 +14,12 @@ Nested list is created by indent.
 
 A list, code block must be separated from its previous text by a blank line.
 
-Drawbacks
-=========
+# Drawbacks
 
 - [Wilfred Hughes](http://www.wilfred.me.uk/blog/2012/07/30/why-markdown-is-not-my-favourite-language/)
 
+# Code block
+
+## Syntax highlighting
+
+Languages that can be highlighted in GitHub are listed here: https://github.com/github/linguist/blob/master/lib/linguist/languages.yml
