@@ -1,13 +1,12 @@
 ---
 layout: note
-category: cs
 title: sed
 subtitle: stream editor
 ---
 
-Basic concept
-=============
-~~~bash
+# Basic concept
+
+~~~shell
 $ sed -options 'address command' input.txt > output.txt
 ~~~
 It reads every line in "input.txt", do something if the line is specified in
@@ -26,3 +25,10 @@ One may find almost everything about sed in [Grymoire][grymoire] and
 Stack Overflow.
 
 [grymoire]: http://www.grymoire.com/unix/Sed.html
+
+# Search something in one line, change something in the next line
+
+~~~shell
+sed '/patternInALine/N; s/patternInNextLine/newString/' inputFile
+~~~
+where `N` is used to join the next line to the current line.
