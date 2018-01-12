@@ -5,8 +5,7 @@ title: sc
 subtitle: Spreadsheet Calculator
 ---
 
-Basic
-=====
+# Basic
 
 It is very old spreadsheet program working in a terminal. It is amazing that
 such a small program achieved most of the common functionalities provided in
@@ -16,11 +15,10 @@ many forks. Resources:
 
 - man sc. Hard to understand like any other man pages, but very useful once you
   start to understand it.
-- [http://www.linuxjournal.com/article/10699](http://www.linuxjournal.com/article/10699)
-- [http://www.economics.utoronto.ca/jfloyd/stats/minmansc.pdf](http://www.economics.utoronto.ca/jfloyd/stats/minmansc.pdf)
+- http://www.linuxjournal.com/article/10699
+- http://www.economics.utoronto.ca/jfloyd/stats/minmansc.pdf
 
-undo
-====
+# undo
 
 There is no *undo* function in the original *sc*. One can use a version
 control program to save the history of a sc file.
@@ -29,32 +27,28 @@ a try. Check [this question][se] in StackExchange for detail.
 
 [se]:http://unix.stackexchange.com/questions/55056/how-to-undo-in-spreadsheet-calculator-sc
 
-Save expression instead of value in cells
-=========================================
+# Save expression instead of value in cells
 
-This is controlled by the option 'o'. It can be toggled in sc using the
-following key strokes: *Ctrl-t* followed by *o*, or in the configuration file
+This is controlled by the option 'o'. It can be toggled in sc using the following key strokes: <kbd>Ctrl-t</kbd> followed by <kbd>o</kbd>, or in the configuration file
 
 ~~~
 set !optimize
 ~~~~
 
-Insert date
-===========
+# Insert date
 
-Press *=* or *e* to insert the date as follows
+Press <kbd>=</kbd> or <kbd>e</kbd> to insert the date as follows
 
 ~~~
 @dts(2013,1,25)
 ~~~
 
-Press *F* and *Ctrl-d* followed by *%F* to specify the display format of the
+Press <kbd>F</kbd> and <kbd>Ctrl-d</kbd> followed by <kbd>%F</kbd> to specify the display format of the
 date as 2013-01-25.
 
-Set type of data format of a collumn
-====================================
+# Set type of data format of a collumn
 
-Press *f* followed by 3 numbers (width of the column, precision and format
+Press <kbd>f</kbd> followed by 3 numbers (width of the column, precision and format
 type) to change format type:
 
 |-----+--------------
@@ -67,46 +61,41 @@ type) to change format type:
 |4    | 6 Apr 1979
 |5~9  | user-defined 
 
-The new format type can be defined either inside sc by *f=* followed
+The new format type can be defined either inside sc by <kbd>f=</kbd> followed
 by a number, or in .scrc 
 
 ~~~
 format 5 = "^D%F"
 ~~~
 
-Set precision and length of numbers
-===================================
+# Set precision and length of numbers
 
-Press *f* to enable setting display format of numbers in a column, and then
-press *h* or *l* to change the length of the column, *j* or *k* to change the
-precision of the numbers in a column. The *hljk* trick does not seem to work in
+Press <kbd>f</kbd> to enable setting display format of numbers in a column, and then
+press <kbd>h</kbd> or <kbd>l</kbd> to change the length of the column, <kbd>j</kbd> or <kbd>k</kbd> to change the
+precision of the numbers in a column. The <kbd>hljk</kbd> trick does not seem to work in
 cygwin.
 
-Sum up a range of numbers
-=========================
+# Sum up a range of numbers
 
-Press *=* or *e* to insert the function as follows
+Press <kbd>=</kbd> or <kbd>e</kbd> to insert the function as follows
 
 ~~~
 @sum(B2:F25)
 ~~~
 
-Sort a range of cells
-=====================
+# Sort a range of cells
 
 - put cursor at the top left cell of the region to be sorted
-- press *rs*
+- press <kbd>rs</kbd>
 - move cursor to the bottom right cell of the region to be sorted
-- press *tab*
+- press <kbd>tab</kbd>
 - input "-#a+#b" for example
 - return
 
-Set date format for a range of cells
-====================================
+# Set date format for a range of cells
 rF -> use hjkl to select range -> tab -> "^D%F -> return
 
-Update formula when copy, delete rows or columns
-================================================
+# Update formula when copy, delete rows or columns
 
 Range operations, copying or deleting many rows or columns for example,
 trigger update of formula in the whole sheet. Cell operations do not change
@@ -118,9 +107,8 @@ formula at all. Rules of update:
 - To allow variables like A19 to update, one can use @nval("A",@myrow-1)
   instead.
 
-Text justification
-==================
+# Text justification
 
 Numbers are always justified to the right. Strings can be justified to the
-left/center/right using *{/|/}*, respectively.
+left/center/right using <kbd>{/|/}</kbd>, respectively.
 

@@ -5,25 +5,24 @@ title: latex
 subtitle: typesetting scientific documents
 ---
 
-Install packages in HOME directory
-==================================
+# Install packages in HOME directory
 
 Check the definition of TEXMFHOME in your system tex config file:
 
-~~~bash
+~~~sh
 $ kpsewhich texmf.cnf # locate system tex config file
 $ cat /path/to/system/texmf.cnf | grep TEXMFHOME
 ~~~
 
 or change it in your shell:
 
-~~~bash
+~~~sh
 $ export TEXMFHOME=/where/you/like
 ~~~
 
 Put new packages into directory specified in TEXMFHOME and run
 
-~~~bash
+~~~sh
 $ cd /path/specified/in/TEXMFHOME
 $ texhash . # or mktexlsr .
 ~~~
@@ -32,19 +31,17 @@ $ texhash . # or mktexlsr .
 *.bst* files should go to *TEXMFHOME/bibtex/bst/*. Those files won't be found
 if you don't follow this conventional path specification.
 
-Maths
-=====
+# Maths
 
-Long bar over expression
-------------------------
+## Long bar over expression
 
 ~~~latex
 $\bar{\nu_{\mu}}$ % short bar
 $\overline{\nu_{\mu}}$ % long bar
 ~~~
 
-Text in math mode
------------------
+## Text in math mode
+
 To put it simple,
 
 ~~~latex
@@ -59,13 +56,11 @@ $\operatorname{foo}$ % similar to \sin, with small spaces before and after
 $\mathrm{foo}$ % without small spaces before and after
 ~~~
 
-Figures
-=======
+# Figures
 
-Margins of eps
---------------
+## Margins of eps
 
-~~~ bash
+~~~sh
 head figure.eps
 ~~~
 
@@ -81,11 +76,11 @@ Sizes of the margins are defined by the *BoundingBox*, which can be editted
 directly. Several tools are available to find the optimized the bounding box
 automatically:
 
-~~~ bash
+~~~sh
 epstool --copy --bbox orignal.eps new.eps
 ~~~
 
-~~~ bash
+~~~sh
 ps2epsi orignal.eps new.eps
 ~~~
 
@@ -96,8 +91,7 @@ the latex file using the [graphicx](http://ctan.org/pkg/graphicx) package:
 \includegraphics[trim=lx ly rx ry, clip]{figure}
 ~~~
 
-Hyperlinks
-==========
+# Hyperlinks
 
 ~~~ latex
 \usepackage{ifpdf}
@@ -114,8 +108,8 @@ Hyperlinks
 \fi
 ~~~
 
-Hyperlinks in reference
------------------------
+## Hyperlinks in reference
+
 One has to find out first which entries in a bibtex item can be shown as
 specified by the style file with the surfix *.bst*,
 
@@ -168,8 +162,8 @@ note = {\url{http://some.body.com}},
 *\url* is provided by [hyperref](http://www.ctan.org/pkg/hyperref) package or
 the old [url](http://www.ctan.org/pkg/url) package.
 
-Version control
-===============
+# Version control
+
 If you regret from time to time that you should have not deleted some parts of
 your latex document, you should consider put your file under version control.
 If you are the only one working on the document, both [RCS](../rcs) and
@@ -189,7 +183,7 @@ out of [Dropbox][db] while keep the directory for version control in it.
 The way to realize that using [RCS](../rcs) + [Dropbox][db] is to symbol link
 the *RCS* directory to Dropbox as shown in the following example:
 
-~~~ bash
+~~~sh
 ~/Dropbox $ ls -F
 rcs/
 ~/Dropbox $ cd ~/Working
@@ -201,7 +195,7 @@ drwxr-xr-x 3 user group 4.0K time RCS->~/Dropbox/rcs/doc1/
 The way to realize that using [Git](../git) + [Dropbox][db] is to at first turn
 */path/to/latex/doc/* into a working directory controlled by [Git](../git),
 
-~~~ bash
+~~~sh
 /path/to/latex/doc $ git init
 Initialized empty Git repository in /path/to/latex/doc/.git/
 /path/to/latex/doc $ git add .
@@ -213,14 +207,14 @@ create mode 100644 doc.tex
 
 then create an empty [bare repository][br] in [Dropbox][db],
 
-~~~ bash
+~~~sh
 $ git init --bare ~/Dropbox/git/my-latex-doc.git 
 ~~~
 
 and at last, connect and push contents in your working directory to the bare
 repository in [Dropbox][db],
 
-~~~ bash
+~~~sh
 /path/to/latex/doc $ git remote add dropbox ~/Dropbox/git/my-latex-doc.git
 /path/to/latex/doc $ git push -u dropbox master
 ~~~
@@ -228,9 +222,16 @@ repository in [Dropbox][db],
 When you have updated your working directory, you can push changes to your bare
 repository in [Dropbox][db],
 
-~~~ bash
+~~~sh
 /path/to/latex/doc $ git push
 ~~~
+
+# How to escape LaTeX special characters
+
+According to http://www.cespedes.org/blog/85/how-to-escape-latex-special-characters, there are 10 special characters, # \$ % & \ ^ _ { } ~, in LaTeX.  Most of them can be escaped prepending a simple backslash, but \, ^ and ~ need special treatment:
+- for backslash (\) use \textbackslash{}
+- for caret (^) use \^{} or \textasciicircum{}
+- for tilde (~) use \~{} or \textasciitilde{}
 
 [db]: https://www.dropbox.com/
 [br]: https://www.google.com/search?q=git+bare+repository
