@@ -1,6 +1,5 @@
 ---
 layout: note
-category: cs
 title: markdown
 ---
 
@@ -23,3 +22,30 @@ A list, code block must be separated from its previous text by a blank line.
 ## Syntax highlighting
 
 Languages that can be highlighted in GitHub are listed here: https://github.com/github/linguist/blob/master/lib/linguist/languages.yml
+
+# Jekyll
+
+## MAC installation
+
+~~~sh
+homebrew install ruby
+gem install jekyll
+gem install github-pages
+gem install html-proofer
+~~~
+
+Run
+
+~~~sh
+gem update
+~~~
+
+from time to time to keep updated with the packages.
+
+## Usage
+
+### Refer to another post
+
+~~~liquid
+{% post_url subfolder/yyyy-mm-dd-post-title-without-suffix %}
+~~~
