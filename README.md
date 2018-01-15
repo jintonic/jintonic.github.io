@@ -12,3 +12,10 @@ Posts are categorized to sub directories
 - [toolbox](toolbox/)
 
 Banners for the categories are defined globally in [_includes/banner.html](_includes/banner.html).
+
+# Test
+
+~~~sh
+jekyll build
+htmlproofer ./_site --only-4xx --check-html
+~~~
