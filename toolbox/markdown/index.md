@@ -46,6 +46,8 @@ from time to time to keep updated with the packages.
 
 ### Refer to another post
 
+{% raw %}
 ~~~liquid
-{% post_url subfolder/yyyy-mm-dd-post-title-without-suffix %}
+{% post_url subfolder/without/leading/slash/yyyy-mm-dd-post-title-without-suffix %}
 ~~~
+{% endraw %}
