@@ -1,27 +1,24 @@
+# https://jekyllrb.com/docs/configuration/#default-configuration
 ina: /assets
 exa: https://dl.dropboxusercontent.com/s/9zy32n82ppo0hj6
-exclude: [ 'Gemfile' ]
-markdown: kramdown
-kramdown:
-  input: GFM
-  auto_ids: true
-  syntax_highlighter: rouge
+
 paginate: 5
-gems: [jekyll-paginate]
-highlighter: rouge
+plugins: [jekyll-paginate]
 
 permalink: pretty
 
+# https://jekyllrb.com/docs/configuration/#front-matter-defaults
+# "path" is mendatory to define a scope. "type" is optional, it can be chosen
+# from "posts", "pages", "drafts", or a self-defined collection.
 defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: "page"
   -
     scope:
       path: ""
       type: "posts"
     values:
       layout: "post"
-  -
-    scope:
-      path: ""
-      type: "pages"
-    values:
-      layout: "page"
