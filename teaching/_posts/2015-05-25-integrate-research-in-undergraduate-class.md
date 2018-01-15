@@ -42,6 +42,6 @@ the semester more than the first half. They felt that they learned something
 real. I was as happy since my lab started to take shape :)
 
 [PHYS-332]: /tags/#phys-332
-[coaxial cables]: {% post_url 2015-04-22-coax-with-BNC-connectors %}
-[measure speed of electricity]: {% post_url 2015-04-15-speed-of-electricity-measured-in-ideafest %}
-[large glove box]: {% post_url 2015-04-22-3%-humidity-in-3-cubic-feet %}
+[coaxial cables]: {% post_url learning/2015-04-22-coax-with-BNC-connectors %}
+[measure speed of electricity]: {% post_url learning/2015-04-15-speed-of-electricity-measured-in-ideafest %}
+[large glove box]: {% post_url learning/2015-04-22-3%-humidity-in-3-cubic-feet %}

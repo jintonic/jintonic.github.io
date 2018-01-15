@@ -34,7 +34,7 @@ Being a regular Windows and Linux user for 10 years. I would say that Windows ca
 
 *Tip 9.* Use *Windows* key plus number keys to launch and switch in between programs you pin to your task bar. Use *Windows* key plus arrow keys to tile your windows on your desktop. There are so many hot keys on Windows to help you speed up your daily operations. Check them out on Google.
 
-*Tip 10.* Install [Cygwin][] to have a decent command line interface for your daily task. Install [PuTTY+Xming][] or [MobaXterm][] to [do your physics analysis on a remote powerful Linux server from your Windows desktop]({% post_url 2016-09-07-run-Linux-GUI-from-any-Windows-PC %}). Install all kinds of Linux distributions using [Virtualbox][] if you feel like it is really necessary.
+*Tip 10.* Install [Cygwin][] to have a decent command line interface for your daily task. Install [PuTTY+Xming][] or [MobaXterm][] to [do your physics analysis on a remote powerful Linux server from your Windows desktop]({% post_url learning/2016-09-07-run-Linux-GUI-from-any-Windows-PC %}). Install all kinds of Linux distributions using [Virtualbox][] if you feel like it is really necessary.
 
 To summarize, Windows and Linux are just tools. Pick up one based on practically considerations. Spend less time playing in your Linux box, so that you have more time to study physics. Being a good physicist is a more effective way to change the money-driven society than installing Linux in a laptop shipped with Windows.
 
@@ -42,6 +42,6 @@ To summarize, Windows and Linux are just tools. Pick up one based on practically
 [LibreOffice]:https://www.libreoffice.org
 [CCleaner]:https://www.piriform.com/ccleaner
 [Cygwin]:https://cygwin.com
-[PuTTY+Xming]:{% post_url 2016-09-07-run-Linux-GUI-from-any-Windows-PC %}
-[MobaXterm]:{% post_url 2015-05-14-coding-on-linux-server-from-windows-pc %}
+[PuTTY+Xming]:{% post_url learning/2016-09-07-run-Linux-GUI-from-any-Windows-PC %}
+[MobaXterm]:{% post_url learning/2015-05-14-coding-on-linux-server-from-windows-pc %}
 [Virtualbox]:https://www.virtualbox.org

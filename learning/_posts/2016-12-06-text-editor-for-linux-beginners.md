@@ -132,6 +132,6 @@ paste, which is provided by its host terminal.
 [Emacs]:https://www.gnu.org/software/emacs/
 [Gedit]:https://wiki.gnome.org/Apps/Gedit
 [Sublime Text]: https://www.sublimetext.com/
-[MobaXterm]:{% post_url /learning/2015-05-14-coding-on-linux-server-from-windows-pc %}
+[MobaXterm]:{% post_url learning/2015-05-14-coding-on-linux-server-from-windows-pc %}
 [Nano]:https://www.nano-editor.org/
 [Micro]:https://micro-editor.github.io/

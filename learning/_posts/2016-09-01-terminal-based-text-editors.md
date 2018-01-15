@@ -3,7 +3,7 @@ tags: [text editor, phys-492/592]
 ---
 
 When you [log into a Linux machine using PuTTY from a Windows PC]({% post_url 
-/learning/2016-08-29-connect-to-Linux-from-any-Windows-PC %}), you need a 
+learning/2016-08-29-connect-to-Linux-from-any-Windows-PC %}), you need a 
 terminal based text editor to create or modify text files. If all you want to 
 do is to read a text file, you need the following commands instead of a text 
 editor:

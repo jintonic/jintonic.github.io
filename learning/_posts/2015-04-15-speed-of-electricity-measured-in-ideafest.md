@@ -13,5 +13,5 @@ function generator, two [coaxial cables][] and an oscilloscope.
 
 [IdeaFest]: http://www.usd.edu/cage/ideafest
 [USD]: http://www.usd.edu
-[coaxial cables]: {% post_url /learning/2015-04-22-coax-with-BNC-connectors %}
+[coaxial cables]: {% post_url learning/2015-04-22-coax-with-BNC-connectors %}
 [phys-332]: /tags/#phys-332

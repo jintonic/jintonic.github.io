@@ -4,14 +4,14 @@ tags: [ROOT, phys-492/592]
 
 ![ROOT plot settings]({{site.ina}}/rootPlotSettings.png)
 
-If you know how to [use PuTTY to log into a remote Linux server from any Windows PC]({% post_url 2016-08-29-connect-to-Linux-from-any-Windows-PC %}) and [run an X-Window server in your Windows PC]({% post_url 2016-09-07-run-Linux-GUI-from-any-Windows-PC%}), you will be able to use [ROOT][] as a function plotter, as described in the [ROOT primer](https://root.cern.ch/guides/primer):
+If you know how to [use PuTTY to log into a remote Linux server from any Windows PC]({% post_url learning/2016-08-29-connect-to-Linux-from-any-Windows-PC %}) and [run an X-Window server in your Windows PC]({% post_url learning/2016-09-07-run-Linux-GUI-from-any-Windows-PC%}), you will be able to use [ROOT][] as a function plotter, as described in the [ROOT primer](https://root.cern.ch/guides/primer):
 
 ``` c++
 ROOT [0] TF1 *f1 = new TF1("f1", "sin(x)/x", 0.,10.);
 ROOT [1] f1->Draw();
 ```
 
-The [ROOT primer](https://root.cern.ch/guides/primer) explains the meaning of each terms nicely. If you do not quite understand the concept of *class* in C++, please read [this post]({% post_url 2016-09-12-class-in-C++ %}) first. The contents in the second pair of quotes is actually the math expression of the function. For a complete list of all available math expressions that is acceptable in the second pair of quotes, please refer to the [class reference web page of TFormula](https://root.cern.ch/doc/master/classTFormula.html), which is a ROOT class that actually handles the math expression.
+The [ROOT primer](https://root.cern.ch/guides/primer) explains the meaning of each terms nicely. If you do not quite understand the concept of *class* in C++, please read [this post]({% post_url learning/2016-09-12-class-in-C++ %}) first. The contents in the second pair of quotes is actually the math expression of the function. For a complete list of all available math expressions that is acceptable in the second pair of quotes, please refer to the [class reference web page of TFormula](https://root.cern.ch/doc/master/classTFormula.html), which is a ROOT class that actually handles the math expression.
 
 The results would look like the following screen shot:
 

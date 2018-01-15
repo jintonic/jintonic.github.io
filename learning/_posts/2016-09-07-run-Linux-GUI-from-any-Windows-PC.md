@@ -3,7 +3,7 @@ tags: [Windows, Linux, X-window, SSH, phys-492/592]
 ---
 
 [One can use PuTTY to log into a remote Linux server from any Windows PC]({% 
-post_url 2016-08-29-connect-to-Linux-from-any-Windows-PC %}). However, this 
+post_url learning/2016-08-29-connect-to-Linux-from-any-Windows-PC %}). However, this 
 will only give you a command line user interface (CLI). Of course, CLI is 
 powerful enough for you to do most of your analysis task remotely, but sooner 
 or later you will hit the limit of it when you want to visualize your analysis 
@@ -50,7 +50,7 @@ to your desktop) and run it:
 
 The [PuTTYtray][] shipped in [Xming+PuTTY on a Stick][stick] has many saved 
 sessions, which can be safely deleted if you don't need them. Now you can 
-follow [this post]({% post_url 2016-08-29-connect-to-Linux-from-any-Windows-PC 
+follow [this post]({% post_url learning/2016-08-29-connect-to-Linux-from-any-Windows-PC 
 %}) to configure your [PuTTYtray][]. One extra setting that is a must to 
 enable communication between the [X-window][] server and clients through SSH 
 is called "Enable X11 forwarding" as shown in the following screen shot:
@@ -106,7 +106,7 @@ Enjoy the pleasure of being able to use your mouse to click around again :)
 [RDC]:https://support.microsoft.com/en-us/help/17463/windows-7-connect-to-another-computer-remote-desktop-connection#1TC=windows-8
 [Cygwin/X]:http://x.cygwin.com
 [Xming]:https://sourceforge.net/projects/xming
-[MobaXTerm]:{% post_url 2015-05-14-coding-on-linux-server-from-windows-pc %}
+[MobaXTerm]:{% post_url learning/2015-05-14-coding-on-linux-server-from-windows-pc %}
 [PuTTYtray]:https://puttytray.goeswhere.com
 [stick]:http://www.scrc.umanitoba.ca/doc/tutorial/T19_3a_xmingputty.htm
 [Emacs]:https://www.gnu.org/software/emacs
