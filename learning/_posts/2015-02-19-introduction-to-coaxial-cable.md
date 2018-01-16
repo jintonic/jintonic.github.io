@@ -27,14 +27,13 @@ layers of foil with an approximate shielding effectiveness of -90 dB.
   used with LEMO 00 connector
 
 *LMR*, [nobody knows what it stands for][k3dav]. Made by [Times Microwave
-Systems][times]. Low loss coax, 50 Ohm. [Catalog]:
+Systems][times]. Low loss coax, 50 Ohm.
 
 - LMR-100A, outer diameter: 2.79 mm, replace RG-316/RG-174
 - LMR-195, outer diameter: 4.95 mm (0.195 inch), replace RG-58, RG-142
 
 [k3dav]:http://www.k3dav.com/lmrcoaxialcables.htm
 [times]:http://www.timesmicrowave.com/cms/products/cables/lmr/
-[Catalog]:http://www.timesmicrowave.com/documents/resources/Complete%20Catalog.pdf
 
 ### Connectors
 

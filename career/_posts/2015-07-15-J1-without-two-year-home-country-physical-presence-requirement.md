@@ -17,5 +17,5 @@ delay in their applications to US graduate schools a year later.
 [dep]:http://www.tsinghua.edu.cn/publish/epen/index.html
 [ts]:http://www.tsinghua.edu.cn/publish/newthuen/index.html
 [USD]:http://www.usd.edu
-[wv]:http://travel.state.gov/content/visas/english/study-exchange/student/residency-waiver.html
+[wv]:https://internationalaffairs.uchicago.edu/twoyearreq
 

@@ -19,7 +19,7 @@ carried on immediately. I encouraged all my undergraduate students to take this
 chance. No matter what would be the result, they will gain experience on 
 funding application which is not so common among undergraduates.
 
-[CURCS]: http://www.usd.edu/cage/curcs
+[CURCS]: http://www.usd.edu/cage/undergrad-research-and-creative-scholarship
 [USD]: http://www.usd.edu
 [mini]: http://www.usd.edu/cage/on-campus-programs
 [sarah]: http://www.usd.edu/faculty-and-staff/Sarah-Wittmuss

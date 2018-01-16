@@ -29,7 +29,7 @@ DIFFERENT email addresses for each applicants. It seems that the system regards
 email addresses as accounts. The same address for different accounts may 
 confuse the system.
 
-[H-1B]:http://travel.state.gov/content/visas/english/employment/temporary.html
+[H-1B]:https://en.wikipedia.org/wiki/H-1B_visa
 [USD]:http://www.usd.edu
 [H-4]:http://www.wikihow.com/Apply-For-a-Dependent-Visa
 [DS-160]:https://ceac.state.gov/genniv/

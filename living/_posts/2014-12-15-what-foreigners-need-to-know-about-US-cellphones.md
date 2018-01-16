@@ -10,12 +10,10 @@ and vice versa, unless it supports multi frequencies.
 
 ### Carriers and dealers
 
-A carrier is a company who provides you cellphone communication survice. Its
-service may be provided through dealers. For example, [Kitty Wireless][kw] is
-one of the dealers for [Page Plus][pp], a carrier providing cheap and flexible
-service.
+A carrier is a company who provides you cellphone communication service. Its
+service may be provided through dealers. [Page Plus][pp] is a carrier providing
+cheap and flexible service.
 
-[kw]:http://www.kittywireless.com/index.html
 [pp]:https://www.pagepluscellular.com
 
 ### Plans

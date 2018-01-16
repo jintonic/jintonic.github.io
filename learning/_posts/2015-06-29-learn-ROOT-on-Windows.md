@@ -14,9 +14,10 @@ The good news is that learning ROOT can be separated from learning Unix/Linux
 commands. Students can start learning ROOT from day one without any knowledge 
 about Linux server, SSH, SHELL, *etc*., on Windows. Here is how.
 
-1. go to http://root.cern.ch, click [Download][], select [Pro, version 
-5.34/32][pro], navigate to the bottom of the page, read the instruction for 
-Windows, download the recommended [exe][] version of the installer.
+1. go to <http://root.cern.ch>, HOVER your mouse on the "Download" menu, click
+   [All Release][releases] in the drop down menu, scroll down to "Version 5"
+   section of the page, click [Release 5.34/36 - 2016-04-05][r5], download
+   [root_v5.34.36.win32.vc12.exe][r53].
 
 2. double click the downloaded ROOT installer, accept the licence and select to 
 *add ROOT to system PATH* as shown in the following screen shot and accept all 
@@ -43,7 +44,6 @@ prepared for using ROOT in some Linux servers, which is not a must to start
 with though.
 
 [ROOT]:https://root.cern.ch/drupal
-[Download]:https://root.cern.ch/drupal/content/downloading-root
-[pro]:https://root.cern.ch/drupal/content/production-version-534
-[exe]:http://root.cern.ch/download/root_v5.34.32.win32.vc12.exe
-
+[releases]:https://root.cern.ch/releases
+[r5]:https://root.cern.ch/content/release-53436
+[r53]:https://root.cern.ch/download/root_v5.34.36.win32.vc12.exe
