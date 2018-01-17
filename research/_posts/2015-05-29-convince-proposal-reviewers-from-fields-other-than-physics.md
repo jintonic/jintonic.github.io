@@ -60,6 +60,6 @@ between me and my collaborators from other institutions.
 
 I should have asked some native English speakers to proof-read the proposal.
 
-[CRG]: https://www.sdbor.edu/services/research/RFPs.htm
+[CRG]: https://www.sdbor.edu/administrative-offices/academics/research/Pages/Request-for-Proposal.aspx
 [sdbor]: https://www.sdbor.edu
 [USD]: http://www.usd.edu

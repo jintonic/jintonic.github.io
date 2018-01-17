@@ -21,6 +21,6 @@ funding application which is not so common among undergraduates.
 
 [CURCS]: http://www.usd.edu/cage/undergrad-research-and-creative-scholarship
 [USD]: http://www.usd.edu
-[mini]: http://www.usd.edu/cage/on-campus-programs
+[mini]: http://www.usd.edu/cage/undergrad-research-and-creative-scholarship
 [sarah]: http://www.usd.edu/faculty-and-staff/Sarah-Wittmuss
 [cage]: http://www.usd.edu/cage
