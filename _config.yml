@@ -1,10 +1,18 @@
-# https://jekyllrb.com/docs/configuration/#default-configuration
+# settings different from https://jekyllrb.com/docs/configuration/#default-configuration
+
+# external assets (exa) and internal assets (ina)
+# One can get a link to a shared dropbox file:
+# https://dl.dropboxusercontent.com/s/HOST_ID/filename.suffix
+# where HOST_ID changes from file to file
+exa: https://dl.dropboxusercontent.com/s/
 ina: /assets
-exa: https://dl.dropboxusercontent.com/s/9zy32n82ppo0hj6
 
-paginate: 5
+# https://jekyllrb.com/docs/pagination/
+# jekyll-paginate has to be installed by gem or bundle
 plugins: [jekyll-paginate]
+paginate: 5
 
+# https://jekyllrb.com/docs/permalinks/#builtinpermalinkstyles
 permalink: pretty
 
 # https://jekyllrb.com/docs/configuration/#front-matter-defaults
