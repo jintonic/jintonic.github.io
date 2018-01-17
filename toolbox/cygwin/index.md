@@ -1,6 +1,4 @@
 ---
-layout: note
-category: cs
 title: cygwin
 ---
 
@@ -19,8 +17,6 @@ One can enable completion manually this way:
 ~~~bash
 $ . /etc/bash_completion
 ~~~
-
-Ref: [code for concinity](http://cfc.kizzx2.com/index.php/cygwin-slow-start-up-the-culprit-discovered/)
 
 Issue of wrong file permission
 ==============================

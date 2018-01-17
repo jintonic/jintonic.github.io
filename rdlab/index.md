@@ -9,7 +9,7 @@ Radiation Detector Laboratory
 Safety training materials
 -------------------------
 
-- [Radiation Safety](http://www.usd.edu/~/media/files/research/ehsradiationsafetymanual.ashx?la=en)
+- [Radiation Safety](https://drive.google.com/file/d/0B4rDM_WjOh95YTdRVjM0ZG1HR3M/view?usp=sharing)
 - [Chemical Safety](https://www-training.llnl.gov/training/hc/HS4240-W/)
 - [Electrical Safety](https://www-training.llnl.gov/training/hc/HS5220/index.html)
 - [Pressure Safety](https://www-training.llnl.gov/training/hc/HS5030/index.html)
