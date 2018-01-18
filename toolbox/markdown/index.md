@@ -23,24 +23,26 @@ A list, code block must be separated from its previous text by a blank line.
 
 Languages that can be highlighted in GitHub are listed here: https://github.com/github/linguist/blob/master/lib/linguist/languages.yml
 
-# Jekyll
+# Jekyll for github pages
 
-## MAC installation
+For MAC, run `homebrew install ruby`.
+For [cygwin](https://cygwin.com),
+install `ruby-devel`, `libffi-devel`, `libiconv-devel`, `zlib-devel`, `ruby-bigdecimal` through `setup-x86_64.exe`.
 
 ~~~sh
-homebrew install ruby
-gem install jekyll
-gem install github-pages
+gem install github-pages # it will install jekyll as dependence
 gem install html-proofer
 ~~~
 
 Run
 
 ~~~sh
-gem update
+gem update github-pages
 ~~~
 
 from time to time to keep updated with the packages.
+
+Run
 
 ## Usage
 
