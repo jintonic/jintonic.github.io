@@ -13,7 +13,14 @@ Gem in cygwin
 
 rubygems is provided in cygwin.
 
-~~~bash
+~~~sh
 $ gem help
 $ gem install somepackage
+~~~
+
+# Gem basics
+
+~~~sh
+gem cleanup # remove old versions of packages
+gem list -l # list local gems
 ~~~
