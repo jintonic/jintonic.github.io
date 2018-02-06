@@ -26,3 +26,14 @@ htmlproofer ./_site --only-4xx --check-html
 
 <https://creativecommons.org/publicdomain/zero/1.0/>
 Ref.: <https://choosealicense.com/>
+
+# To-do's
+
+- add updated date
+  - <https://zzz.buzz/2016/02/13/add-an-updated-field-to-your-jekyll-site/>
+- remove category from url to make the url stable (I may rename category later)
+- use collections to organize TEDTalks, books, grants, students, postdocs, talks, etc.
+- use tags in collections as well
+  - <https://stackoverflow.com/questions/36958975/listing-jekyll-collection-pages-by-tags>
+- user cases instead of manual
+  - tags, collections, categories for organization
