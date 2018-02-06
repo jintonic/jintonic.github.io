@@ -1,6 +1,5 @@
 ---
 layout: note
-category: cs
 title: sc
 subtitle: Spreadsheet Calculator
 ---
@@ -112,3 +111,14 @@ formula at all. Rules of update:
 Numbers are always justified to the right. Strings can be justified to the
 left/center/right using <kbd>{/|/}</kbd>, respectively.
 
+# Compile from source code
+
+The source code maintained by Debian distribution is the best. [Some patches](https://github.com/jintonic/dots/blob/master/sc.patch) have to be made to compile and install it in one's home directory smoothly:
+
+``` sh
+git clone git://git.debian.org/collab-maint/sc.git
+cd ~/github/sc
+git apply /path/to/sc.patch
+make install
+
+```
