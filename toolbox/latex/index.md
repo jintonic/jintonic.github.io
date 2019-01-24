@@ -10,26 +10,42 @@ subtitle: typesetting scientific documents
 Check the definition of TEXMFHOME in your system tex config file:
 
 ~~~sh
-$ kpsewhich texmf.cnf # locate system tex config file
-$ cat /path/to/system/texmf.cnf | grep TEXMFHOME
+kpsewhich texmf.cnf # locate system tex config file
+cat /path/to/system/texmf.cnf | grep TEXMFHOME
 ~~~
 
-or change it in your shell:
+or simply
+```sh
+kpsewhich --var-value TEXMFHOME
+```
+
+You can change it in your shell:
 
 ~~~sh
-$ export TEXMFHOME=/where/you/like
+export TEXMFHOME=/where/you/like
 ~~~
 
 Put new packages into directory specified in TEXMFHOME and run
 
 ~~~sh
-$ cd /path/specified/in/TEXMFHOME
-$ texhash . # or mktexlsr .
+cd /path/specified/in/TEXMFHOME
+texhash . # or mktexlsr .
 ~~~
 
 *NOTE*: *.cls* and *.sty* files should go to *TEXMFHOME/tex/latex/*, while
 *.bst* files should go to *TEXMFHOME/bibtex/bst/*. Those files won't be found
 if you don't follow this conventional path specification.
+
+One can use the [ctanify][] script to automatically organize a flat latex package based on the tex directory structure:
+
+```sh
+cd /path/to/a/flat/latex/package
+$TEXMF/scripts/ctanify/ctanify *
+tar xfvz package.tar.gz
+unzip -d $TEXMFHOME package.tds.zip
+```
+
+[ctanify]: https://ctan.org/pkg/ctanify
 
 # Maths
 
