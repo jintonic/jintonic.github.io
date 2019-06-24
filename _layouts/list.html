@@ -1,6 +1,8 @@
 {% include head.html %}
 {% include banner.html %}
 
+{{ content }}
+
 {% for each in site.categories %}
   {% assign cat = each|first %}
   {% assign dir = page.path|split:'/'|first %}
@@ -33,7 +35,5 @@
     </ul>
   {% endif %}
 {% endfor %}
-
-{{ content }}
 
 {% include foot.html %}

@@ -21,6 +21,6 @@ title: Radiation Detector Laboratory
 
 ## Online resouces
 
-- Programming: https://github.com/. Please register there, let [Jing Liu][/about] know your user name. 
-- LaTeX: https://www.overleaf.com/. Please register there, let [Jing Liu][/about] know your user name.
-- References: https://www.zotero.org/. Please register there, let [Jing Liu][/about] know your user name, install the desktop version of zotero as well as the web browser plugin.
+- Programming: https://github.com/. Please register there, let [Jing Liu][group] know your user name. 
+- LaTeX: https://www.overleaf.com/. Please register there, let [Jing Liu][group] know your user name.
+- References: https://www.zotero.org/. Please register there, let [Jing Liu][group] know your user name, install the desktop version of zotero as well as the web browser plugin.

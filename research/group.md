@@ -1,10 +1,11 @@
 ---
 layout: page
-title: about Jing LIU
+title: Liu's Group
 ---
 
-Jing Liu is an experimental physicist [developing novel particle detectors](/rdlab) for
-astroparticle physics and civil use. His public profiles can be found at
+# Senior Personnel
+## Jing Liu
+Assistant professor. His public profiles can be found at
 
 - [University of South Dakota](http://www.usd.edu/faculty-and-staff/Jing-Liu)
 - [ORCID](http://orcid.org/0000-0003-1869-2407)
@@ -19,3 +20,12 @@ astroparticle physics and civil use. His public profiles can be found at
 - [Google+](https://plus.google.com/101717075408086641466)
 - [Twitter](https://twitter.com/jingliusd)
 - [Mendeley](http://www.mendeley.com/profiles/jing-liu36)
+
+# Postdoc
+## Dmitry Chernyak
+
+- [LinkedIn](https://www.linkedin.com/in/dmitry-chernyak-78a9352a/)
+
+# Alumni
+
+- [Arun Kumar Soma](https://www.facebook.com/Arun.Kumar.Soma), postdoc, Jan. 2016 - Nov. 2016.
