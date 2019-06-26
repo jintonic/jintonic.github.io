@@ -25,6 +25,7 @@ Assistant professor. His public profiles can be found at
 ## Dmitry Chernyak
 
 - [LinkedIn](https://www.linkedin.com/in/dmitry-chernyak-78a9352a/)
+- 605-677-7220
 
 # Alumni
 
