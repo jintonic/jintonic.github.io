@@ -30,3 +30,7 @@ title: Radiation Detector Laboratory
 
 ## Equipment
 
+## Funding opportunities
+
+- https://www.hsfoundation.org/programs/science/fundamental-physics/
+- https://www.aps.org/programs/innovation/moore/
