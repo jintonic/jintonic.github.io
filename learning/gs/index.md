@@ -37,3 +37,11 @@ According to [an article online](http://www.documentsnap.com/reduce-pdf-file-siz
 ```sh
 gs -sDEVICE=pdfwrite -dPDFSETTINGS=/ebook -dNOPAUSE -dQUIET -dBATCH -sOutputFile=out.pdf in.pdf
 ```
+
+Available settings to optimize the file size include
+
+- PDFSETTINGS=/screen   (screen-view-only quality, 72 dpi images)
+- PDFSETTINGS=/ebook    (low quality, 150 dpi images)
+- PDFSETTINGS=/printer  (high quality, 300 dpi images)
+- PDFSETTINGS=/prepress (high quality, color preserving, 300 dpi imgs)
+- PDFSETTINGS=/default  (almost identical to /screen)
