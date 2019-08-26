@@ -28,6 +28,8 @@ title: Radiation Detector Laboratory
 
 ## Facility
 
+- Please apply for an [USD High Performance Computing (HPC) cluster](https://www.usd.edu/technology/research/high-performance-computing) account (Lawrence instead of Legacy), asking to be added to the "liu_lab" group, and then follow the instruction at <http://rcg.usd.edu/docs> and <https://github.com/jintonic/lawrence>.
+
 ## Equipment
 
 ## Funding opportunities
