@@ -18,6 +18,6 @@ subtitle: I teach
 |2016 | Spring | Experimental Modern Physics I | Laboratory | Undergraduate | University of South Dakota
 |2015 | Fall | Radiation Detection Technologies | Lecture | Graduate | University of South Dakota
 |2015 | Spring | Experimental Modern Physics I | Laboratory | Undergraduate | University of South Dakota
-|2015 | Spring | Introduction to Astronomy II Lab | Laboratory | University of South Dakota
-|2006 | Fall | Exercises for Computational Physics I | Exercise | Technische Universität München
+|2015 | Spring | Introduction to Astronomy II Lab | Laboratory | Undergraduate | University of South Dakota
+|2006 | Fall | Exercises for Computational Physics I | Exercise | Undergraduate | Technische Universität München
 
