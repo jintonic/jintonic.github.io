@@ -1,3 +1,27 @@
+# Configuration
+
+Frequently used `gs` options can be saved in an environment variable as default:
+
+```sh
+export GS_OPTIONS="-dSAFER -dBATCH -dNOPAUSE -sDEVICE=pdfwrite"
+```
+
+They can be overwritten by command line options.
+
+This way, the command to combine PDF files can be shortened from
+
+```sh
+gs -dNOPAUSE -dBATCH -sDEVICE=pdfwrite -sOutputFile=combined.pdf file1.pdf file2.pdf
+```
+
+to
+
+```sh
+gs -o combined.pdf file1.pdf file2.pdf
+```
+
+where, `-o` is a short form of `-sOutputFile=`.
+
 # Convert pdf to pdf/a
 
 pdf/a has all fonts embedded in the file. According to [a stackoverflow post](https://stackoverflow.com/questions/1659147/how-to-use-ghostscript-to-convert-pdf-to-pdf-a-or-pdf-x), the following command can be used to achieve this:
