@@ -22,6 +22,8 @@ Assistant professor. His public profiles can be found at
 - [Twitter](https://twitter.com/jingliusd)
 - [Mendeley](http://www.mendeley.com/profiles/jing-liu36)
 
+---
+
 ## Postdoc
 
 ### Dmitry Chernyak
@@ -38,6 +40,8 @@ Assistant professor. His public profiles can be found at
 
 - Aug. 2017 - now, HPGe detector R&D
 - Sep. 2014 - Aug. 2017, Ph.D. student
+
+---
 
 ## Graduate Student
 
@@ -56,6 +60,8 @@ Assistant professor. His public profiles can be found at
 
 - Jan. 2018 - now, HPGe detector simulation.
 - May. 2015 - Dec. 2017, [GEARS](https://github.com/jintonic/gears/), [GeFiCa](http://physino.xyz/gefica/)
+
+---
 
 ## Alumni
 
