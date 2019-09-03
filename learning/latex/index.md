@@ -1,11 +1,11 @@
 ---
 layout: note
 category: cs
-title: latex
+title: LaTeX
 subtitle: typesetting scientific documents
 ---
 
-# Install packages in HOME directory
+## Install packages in HOME directory
 
 Check the definition of TEXMFHOME in your system tex config file:
 
@@ -47,16 +47,16 @@ unzip -d $TEXMFHOME package.tds.zip
 
 [ctanify]: https://ctan.org/pkg/ctanify
 
-# Maths
+## Maths
 
-## Long bar over expression
+### Long bar over expression
 
 ~~~latex
 $\bar{\nu_{\mu}}$ % short bar
 $\overline{\nu_{\mu}}$ % long bar
 ~~~
 
-## Text in math mode
+### Text in math mode
 
 To put it simple,
 
@@ -72,9 +72,9 @@ $\operatorname{foo}$ % similar to \sin, with small spaces before and after
 $\mathrm{foo}$ % without small spaces before and after
 ~~~
 
-# Figures
+## Figures
 
-## Margins of eps
+### Margins of eps
 
 ~~~sh
 head figure.eps
@@ -107,7 +107,7 @@ the latex file using the [graphicx](http://ctan.org/pkg/graphicx) package:
 \includegraphics[trim=lx ly rx ry, clip]{figure}
 ~~~
 
-# Hyperlinks
+## Hyperlinks
 
 ~~~ latex
 \usepackage{ifpdf}
@@ -124,7 +124,7 @@ the latex file using the [graphicx](http://ctan.org/pkg/graphicx) package:
 \fi
 ~~~
 
-## Hyperlinks in reference
+### Hyperlinks in reference
 
 One has to find out first which entries in a bibtex item can be shown as
 specified by the style file with the surfix *.bst*,
@@ -178,7 +178,7 @@ note = {\url{http://some.body.com}},
 *\url* is provided by [hyperref](http://www.ctan.org/pkg/hyperref) package or
 the old [url](http://www.ctan.org/pkg/url) package.
 
-# Version control
+## Version control
 
 If you regret from time to time that you should have not deleted some parts of
 your latex document, you should consider put your file under version control.
@@ -242,7 +242,7 @@ repository in [Dropbox][db],
 /path/to/latex/doc $ git push
 ~~~
 
-# How to escape LaTeX special characters
+## How to escape LaTeX special characters
 
 According to http://www.cespedes.org/blog/85/how-to-escape-latex-special-characters, there are 10 special characters, # \$ % & \ ^ _ { } ~, in LaTeX.  Most of them can be escaped prepending a simple backslash, but \, ^ and ~ need special treatment:
 - for backslash (\) use \textbackslash{}
