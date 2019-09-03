@@ -1,6 +1,7 @@
 ---
 layout: note
-title: Video tools
+title: Video
+subtitle: tools
 ---
 
 # Screen cast and streaming

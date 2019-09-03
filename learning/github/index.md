@@ -1,7 +1,7 @@
 ---
 layout: note
 category: cs
-title: github 
+title: GitHub
 subtitle: cloud service hosting Git repositories
 ---
 

@@ -1,6 +1,7 @@
 ---
 layout: note
-title: Hight Performance Computing
+title: HPC
+subtitle: Hight Performance Computing
 ---
 
 According to Wikipedia:
@@ -17,7 +18,7 @@ According to Wikipedia:
 >(OSCAR)), different operating systems can be used on each computer, and/or 
 >different hardware.
 
-# Job scheduler}
+## Job scheduler
 According to Wikipedia:
 >A job scheduler is a computer application for controlling unattended 
 >background program execution of jobs. This is commonly called batch 
