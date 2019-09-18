@@ -48,6 +48,8 @@ Assistant professor. His public profiles can be found at
 ### Keyu Ding
 
 - Aug. 2019 - now, Cryogenic scintillator R&D.
+- [GitHub](https://github.com/Keyu-Ding)
+- [Zotero](https://www.zotero.org/keyu.ding)
 
 ### Kyler Kooi
 
