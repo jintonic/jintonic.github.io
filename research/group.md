@@ -21,6 +21,7 @@ Assistant professor. His public profiles can be found at
 - [Google+](https://plus.google.com/101717075408086641466)
 - [Twitter](https://twitter.com/jingliusd)
 - [Mendeley](http://www.mendeley.com/profiles/jing-liu36)
+- [Rate My Professor](https://www.ratemyprofessors.com/ShowRatings.jsp?tid=2008328)
 
 ---
 
