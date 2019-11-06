@@ -14,8 +14,8 @@ many forks. Resources:
 
 - man sc. Hard to understand like any other man pages, but very useful once you
   start to understand it.
-- http://www.linuxjournal.com/article/10699
-- http://www.economics.utoronto.ca/jfloyd/stats/minmansc.pdf
+- <http://www.linuxjournal.com/article/10699>
+- <http://www.economics.utoronto.ca/jfloyd/stats/minmansc.pdf>
 
 # undo
 
@@ -92,7 +92,7 @@ Press <kbd>=</kbd> or <kbd>e</kbd> to insert the function as follows
 - return
 
 # Set date format for a range of cells
-rF -> use hjkl to select range -> tab -> "^D%F -> return
+<kbd>rF</kbd> -> use <kbd>h</kbd>,<kbd>j</kbd>,<kbd>k</kbd>,<kbd>l</kbd> to select range -> tab -> "^D%F -> return
 
 # Update formula when copy, delete rows or columns
 
@@ -109,7 +109,7 @@ formula at all. Rules of update:
 # Text justification
 
 Numbers are always justified to the right. Strings can be justified to the
-left/center/right using <kbd>{/|/}</kbd>, respectively.
+left/center/right using <kbd>{</kbd>/<kbd>|</kbd>/<kbd>}</kbd>, respectively.
 
 # Compile from source code
 
