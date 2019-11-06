@@ -17,6 +17,18 @@ many forks. Resources:
 - <http://www.linuxjournal.com/article/10699>
 - <http://www.economics.utoronto.ca/jfloyd/stats/minmansc.pdf>
 
+# Compile from source code
+
+The source code maintained by Debian distribution is the best. [Some patches](https://github.com/jintonic/dots/blob/master/sc.patch) have to be made to compile and install it in one's home directory smoothly:
+
+``` sh
+git clone git://git.debian.org/collab-maint/sc.git
+cd ~/github/sc
+git apply /path/to/sc.patch
+make install
+
+```
+
 # undo
 
 There is no *undo* function in the original *sc*. One can use a version
@@ -58,10 +70,10 @@ type) to change format type:
 |2    | engineering
 |3    | 6 Apr 79
 |4    | 6 Apr 1979
-|5~9  | user-defined 
+|5~9  | user-defined
 
 The new format type can be defined either inside sc by <kbd>f=</kbd> followed
-by a number, or in .scrc 
+by a number, or in `.scrc`.
 
 ~~~
 format 5 = "^D%F"
@@ -110,15 +122,3 @@ formula at all. Rules of update:
 
 Numbers are always justified to the right. Strings can be justified to the
 left/center/right using <kbd>{</kbd>/<kbd>|</kbd>/<kbd>}</kbd>, respectively.
-
-# Compile from source code
-
-The source code maintained by Debian distribution is the best. [Some patches](https://github.com/jintonic/dots/blob/master/sc.patch) have to be made to compile and install it in one's home directory smoothly:
-
-``` sh
-git clone git://git.debian.org/collab-maint/sc.git
-cd ~/github/sc
-git apply /path/to/sc.patch
-make install
-
-```
