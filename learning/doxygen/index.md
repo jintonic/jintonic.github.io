@@ -1,6 +1,7 @@
 ---
 layout: note
 title: Doxygen
+subtitle: Generate documentation from source code
 ---
 
 # Installation
@@ -39,6 +40,16 @@ FULL_PATH_NAMES = NO
 
 - Doxygen is designed to document interfaces between different parts of a program. Concrete implementation of a function, such as local variables are not meant to be shown in the generated web pages.
 - The `main` function will not be automatically documented. One has to explicitly include the `fn` keyword in the comment block before it. Moreover, the file that contains the `main` function has to be documented as well, otherwise, the `main` function documentation won't appear in the generated web pages. The easiest way to document a file is to simply add the `file` keyword in it.
+
+## Including source code snippets
+
+This can only be achieved by enabling all the three options below:
+
+```
+EXTRACT_ALL    = YES
+SOURCE_BROWSER = YES
+INLINE_SOURCES = YES
+```
 
 # Version information
 - Markdown support is available with Doxygen version >= 1.8.0.
