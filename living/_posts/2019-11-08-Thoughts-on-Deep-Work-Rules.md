@@ -1,3 +1,7 @@
+---
+tags: [book, personal development]
+---
+
 # Rules
 
 ## concious choice + frequent reflection

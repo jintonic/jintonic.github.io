@@ -1,5 +1,5 @@
 ---
-tags: [book, neuroscience, psychology]
+tags: [book, neuroscience, psychology, personal development]
 ---
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/aHDvEfiSipo" frameborder="0" allowfullscreen></iframe>
