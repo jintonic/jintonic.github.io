@@ -1,5 +1,5 @@
 ---
-tags: [presentation, slide, speech, phys-332]
+tags: [slide, speech, phys-332]
 ---
 
 - be loud, better have soothing voice
