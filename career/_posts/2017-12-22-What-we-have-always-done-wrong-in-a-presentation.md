@@ -1,5 +1,5 @@
 ---
-tags: [presentation, PowerPoint, slides]
+tags: [speech, PowerPoint, slide]
 ---
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Iwpi1Lm6dFo" frameborder="0" allowfullscreen></iframe>
