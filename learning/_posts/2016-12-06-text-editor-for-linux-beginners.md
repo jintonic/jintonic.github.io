@@ -1,5 +1,5 @@
 ---
-tags: [Linux, text editor, terminal, SSH, phys-492/592]
+tags: [Linux, text editor, terminal, SSH]
 ---
 
 ![ROOT macro opened in nano text editor]({{site.ina}}/root-macro-in-nano.png)
