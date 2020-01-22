@@ -4,6 +4,8 @@ title: TUI
 subtitle: Text User Interface
 ---
 
+<http://tldp.org/HOWTO/Text-Terminal-HOWTO.html>
+
 # NCurses
 ## Colors
 According to https://dev.yorhel.nl/dump/nccolour:
