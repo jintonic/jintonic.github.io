@@ -70,7 +70,9 @@ node26 $ ssh -R 59832:127.0.0.1:5901 linux.cluster.login.node
 login $
 ```
 
-This also takes you back to the login node. Now you have successfully connected your local PC's port 43852 to port 5901 at node26 through port 59832 at the login node. It's time for you to point your local VNC viewer to `127.0.0.1:43852`, which, in reality, is connected to `node26:5901`.
+This also takes you back to the login node. Note that you should `ssh` back instead of logging out from node26 back to the login node. This action will terminate the VNC server without removing `~/.vnc/node26.cluster:1.pid`. You think your VNC server is still running because the `pid` file is still there, but in reality it is gone already.
+
+Now you have successfully connected your local PC's port 43852 to port 5901 at node26 through port 59832 at the login node. It's time for you to point your local VNC viewer to `127.0.0.1:43852`, which, in reality, is connected to `node26:5901`.
 
 The remote port forwarding command line option `-R 59832:127.0.0.1:5901` can be saved in your `~/.ssh/config` at the Linux cluster:
 
@@ -95,5 +97,105 @@ $ vncserver -kill :1
 
 and then quit from node26 back to the login node, then quite from the login node back to your own machine.
 
+### Trouble shooting
 
-[slurm]: https://slurm.schedmd.com/
+#### **Q:** What shall I do if I forget my VNC password?
+
+The VNC password is saved in the file `~/.vnc/passwd`. You can delete it and run
+
+```sh
+$ vncpasswd
+```
+
+to regenerate this file and save your new password in it. You don't have to restart your running VNC server. This change takes effect on the fly.
+
+#### **Q:** I forgot to kill my old VNC server before starting a new one. Would that harm the cluster?
+
+If you run many VNC servers at the login node. The login node may become slow for all the cluster users. You'd better kill them immediately:
+
+```sh
+login $ vncserver -list # list all running VNC servers
+
+TigerVNC server sessions:
+
+X DISPLAY #     PROCESS ID
+:1                 12394
+:2                 25823
+:3                 43984
+
+login $ vncserver -kill :1
+login $ vncserver -kill :2
+login $ vncserver -kill :3
+```
+
+#### **Q:** I cannot remember where I started a VNC server. How can I find it out?
+
+If you run a few VNC servers in a few different nodes, while you are now at the login node, `vncserver -list` cannot help you, because it only lists running VNC servers in your current node. You should check what's in your `~/.vnc` directory:
+
+```sh
+login $ cd .vnc
+login $ ls
+config  node20.cluster:1.log  node20.cluster:1.pid  passwd  xstartup
+```
+
+A running VNC server is associated with a file that end with `.pid`. From this file, you know that you are running a VNC server at `node20` and DISPLAY `:1`. When the VNC server stops, the associated `.pid` file is gone together. So it is a good indicator for running VNC servers. Don't use the `.log` file as an indicator since it will not be deleted when the VNC server stops. You can delete the old log files by yourself safely.
+
+
+#### **Q:** I launched a VNC server in a non-login node and then logged out or closed that terminal. How can I stop the server now?
+
+If you quit from a non-login node back to your login node, your VNC server should be killed by the cluster automatically. You can also run
+
+```sh
+$ squeue -u your.username # list your submitted jobs
+JOBID  PARTITION     NAME      USER ST  TIME  NODES NODELIST(REASON)
+737341 preemptib     bash user.name CG  5:18      1 node20
+$ scancel 737341 # kill job 737341
+```
+
+To find out the job id of your VNC server and kill it using `scancel`.
+
+However, all the above have some side effect. They will leave behind a few files that should have been deleted:
+
+```sh
+~/.vnc/node20.cluster:1.log
+~/.vnc/node20.cluster:1.pid
+/tmp/.X1-lock
+/tmp/.X11-unix/X1=
+```
+
+You can delete the first two files manually if you cannot find the corresponding jobs in the output of `squeue -u your.username`. It is not easy to delete the two in `/tmp` directory because the `/tmp` directory is not shared among all nodes, each node has its own `/tmp` directory. You need to log back into that node to delete them, which can be achieved using
+
+```sh
+login $ srun -w node20 --pty bash
+```
+
+However, you may need to wait for a long time to log back to node20 if it is busy running other jobs. The good news is that files in `/tmp` will be deleted eventually by the machine automatically at some point.
+
+#### **Q:** I saw the following warning message, shall I worry about it?
+
+```sh
+node19 $ vncserver
+
+Warning: node19.cluster:1 is taken because of /tmp/.X1-lock
+Remove this file if there is no X server node19.cluster:1
+
+Warning: node19.cluster:2 is taken because of /tmp/.X2-lock
+Remove this file if there is no X server node19.cluster:2
+
+New 'node19.cluster:3 (your.username)' desktop is node19.cluster:3
+
+Starting applications specified in /home/your.usrname/.vnc/xstartup
+Log file is /home/your.usrname/.vnc/node19.cluster:3.log
+
+```
+
+No, your VNC server still managed to run at DISPLAY number `:3` eventually. The warning is issued because your VNC server detected the existence of `/tmp/.X1-lock` but cannot find a really running X-window at DISPLAY number `:1`. That file is a left over by another VNC server that was not stopped cleanly. Run
+
+```sh
+node19 $ ls -l /tmp/.X*
+```
+
+to find out if you own one of those files. If yes, please delete them to release those locked DISPLAY numbers. If no, you can inform their owners so that they can delete them using the way described in the previous question.
+
+[Slurm]: https://slurm.schedmd.com/
+
