@@ -23,19 +23,19 @@ The job of the login node is not to `run jobs`, including running VNC servers, b
 
 #### SSH local port forwarding
 
-One can connect a local port, say, 43582, to a VNC port, say, 5901, at a non-login node through the login node. The method is describe well [here](https://docs.ycrc.yale.edu/clusters-at-yale/access/vnc/) and [here](https://info.nrao.edu/computing/guide/cluster-processing/appendix/accessing-the-cvpost-cluster-with-vnc).
+One can connect a local port, say, 53925, to a VNC port, say, 5908, at a non-login node through the login node. The method is describe well [here](https://docs.ycrc.yale.edu/clusters-at-yale/access/vnc/) and [here](https://info.nrao.edu/computing/guide/cluster-processing/appendix/accessing-the-cvpost-cluster-with-vnc).
 
 #### Both local and remote port forwarding
 
-The disadvantage of the previous method is that you have to change your ssh config based on the non-login node number and the VNC port that are assigned randomly each time you run an VNC server in a non-login node. To avoid this, you can forward the random VNC port number to a fixed port number chosen by you at the login node, and forward the latter to a fixed port number, say, 59832, in your local machine. You can then use a VNC viewer to connect to `127.0.0.1:43852`, which will be forwarded to the `non.login.node:590x`. There is no need to change your loca VNC viewer settings and your local ssh config this way. Here are the steps to achieve this.
+The disadvantage of the previous method is that you have to change your ssh config based on the non-login node number and the VNC port that are assigned randomly each time you run an VNC server in a non-login node. To avoid this, you can forward the random VNC port number to a fixed port number chosen by you at the login node, and forward the latter to a fixed port number, say, 53925, in your local machine. You can then use a VNC viewer to connect to `127.0.0.1:53925`, which will be forwarded to the `node32.remote.cluster:5908`. There is no need to change your local VNC viewer settings and your local ssh config this way. Here are the steps to achieve this.
 
 First of all, add the following lines to your `~/.ssh/config`:
 
 ```sh
 Host l
-HostName linux.cluster.login.node
+HostName login.remote.cluster
 User User.Name
-LocalForward 43852 127.0.0.1:59832
+LocalForward 53925 127.0.0.1:57848
 ```
 
 Now run
@@ -44,14 +44,14 @@ Now run
 $ ssh l # ssh into the login node
 ```
 
-This not only logs you into the login node, but also forward any connection to your local port 43852 to port 59832 at the login node. At the login node, run
+This not only logs you into the login node, but also forward any connection to your local port 53925 to port 57848 at the login node. At the login node, run
 
 ```
 login $ srun --pty bash
-node26 $
+node32 $
 ```
 
-to switch from the login node to a non-login node (for example, node26) using [Slurm][]. You may need to change this command to something else based on your [job scheduler](https://en.wikipedia.org/wiki/Job_scheduler). Now that you are at node26, you can start the VNC server:
+to switch from the login node to a non-login node (for example, node32) using [Slurm][]. You may need to change this command to something else based on your [job scheduler](https://en.wikipedia.org/wiki/Job_scheduler). Now that you are at node32, you can start the VNC server:
 
 ```sh
 $ vncserver
@@ -60,42 +60,111 @@ $ vncserver -list
 TigerVNC server sessions:
 
 X DISPLAY #     PROCESS ID
-:1              10949
+:8              10949
 ```
 
-Your VNC server is running at port 5900 + the X DISPLAY number, which is 5901 in this example. Since this port cannot be accessed directly from outside, you need to forward it to port 59832 at the login node using
+Your VNC server is running at port 5900 + the X DISPLAY number, which is 5908 in this example. Since this port cannot be accessed directly from outside, you need to forward it to port 57848 at the login node using
 
 ```
-node26 $ ssh -R 59832:127.0.0.1:5901 linux.cluster.login.node
+node32 $ ssh -R 57848:127.0.0.1:5908 login.remote.cluster
 login $
 ```
 
-This also takes you back to the login node. Note that you should `ssh` back instead of logging out from node26 back to the login node. This action will terminate the VNC server without removing `~/.vnc/node26.cluster:1.pid`. You think your VNC server is still running because the `pid` file is still there, but in reality it is gone already.
+This also takes you back to the login node. Note that you should `ssh` back instead of logging out from node32 back to the login node. Logging out or closing the terminal will terminate the VNC server without removing `~/.vnc/node32.cluster:8.pid`. You think your VNC server is still running because the `pid` file is still there, but in reality it is gone already. (Please refer to the [Trouble shooting](#trouble-shooting) section for details.
 
-Now you have successfully connected your local PC's port 43852 to port 5901 at node26 through port 59832 at the login node. It's time for you to point your local VNC viewer to `127.0.0.1:43852`, which, in reality, is connected to `node26:5901`.
+Now you have successfully connected your local PC's port 53925 to port 5908 at node32 through port 57848 at the login node. It's time for you to point your local VNC viewer to `127.0.0.1:53925`, which, in reality, is connected to `node32:5908`. The connection routes are shown in the figure below:
 
-The remote port forwarding command line option `-R 59832:127.0.0.1:5901` can be saved in your `~/.ssh/config` at the Linux cluster:
+![ssh tunnel map]({{site.ina}}/ssh-tunnels.png)
 
-```
-Host l
-HostName linux.cluster.login.node
-RemoteForward 59832 127.0.0.1:5901
-```
-
-This way, the last command can be simplified to
-
-```
-node26 $ ssh l
-login $
-```
-
-To turn off the VNC server, you need to at first quit from the login node back to node26, and run
+To turn off the VNC server, you need to at first quit from the login node back to node32, and run `vncserver -kill :8`:
 
 ```sh
-$ vncserver -kill :1
+login $ exit
+node32 $ vncserver -kill :8
 ```
 
-and then quit from node26 back to the login node, then quite from the login node back to your own machine.
+and then quit from node32 back to the login node, then quite from the login node back to your own machine.
+
+#### Automation
+
+If you have no problem to follow the above steps manually. You can try to automate the process. Starting from `srun --pty bash`, all the steps afterward can be saved in a shell script, say, `vnc.sh`. You can then submit it to your job scheduler, say, [Slurm][], using the following command:
+
+```sh
+login $ sbatch vnc.sh
+login $ squeue -u Your.Username # confirm that your VNC server is running in a node
+```
+
+The contents of `vnc.sh` looks like
+
+```sh
+#!/bin/bash
+# Modified VNC job script, based on:
+# https://portal.tacc.utexas.edu/user-guides/stampede2#remote-desktop-access
+
+#SBATCH -J vncserver  # Job name
+#SBATCH -p nodes      # Queue name
+#SBATCH -o %j.out     # Output File Name
+#SBATCH -N 1          # Total number of nodes requested (20 cores/node)
+
+echo job $JOB_ID execution at: `date`
+
+NODE_HOSTNAME=`hostname -s`
+echo "running on node $NODE_HOSTNAME"
+
+VNCSERVER_BIN=`which vncserver`
+echo "using default VNC server $VNCSERVER_BIN"
+
+# Check whether a vncpasswd file exists.  If not, complain and exit.
+if [ \! -e $HOME/.vnc/passwd ] ; then
+  echo
+  echo "=================================================================="
+  echo "   You must run 'vncpasswd' once before launching a vnc session"
+  echo "=================================================================="
+  echo
+  exit 1
+fi
+
+# launch VNC session
+VNC_DISPLAY=`$VNCSERVER_BIN $@ -bs 2>&1 | grep desktop | awk -F: '{print $3}'`
+echo "got VNC display :$VNC_DISPLAY"
+
+# make sure this is a valid display
+if [ x$VNC_DISPLAY == "x" ]; then
+  echo
+  echo "===================================================="
+  echo "   ERROR: No vnc display found"
+  echo "   Error launching vncserver: $VNCSERVER"
+  echo "===================================================="
+  echo
+  exit 1
+fi
+
+LOCAL_VNC_PORT=`expr 5900 + $VNC_DISPLAY`
+echo "local (compute node) VNC port is $LOCAL_VNC_PORT"
+
+# create reverse tunnel port to login node.
+ssh -vfgN -i ~/.ssh/id_rsa -R 57848$NODE_HOSTNAME:$LOCAL_VNC_PORT login
+echo ssh -vfgN -i ~/.ssh/id_rsa -R 57848$NODE_HOSTNAME:$LOCAL_VNC_PORT login
+
+# set display for X applications
+export DISPLAY=":$VNC_DISPLAY"
+
+# run window manager; execution will hold here
+fluxbox
+#gnome-shell -d :$VNC_DISPLAY
+
+# job is done!
+echo "Stopping VNC server"
+vncserver -kill $DISPLAY
+
+# wait a brief moment so vncserver can clean up after itself
+sleep 1
+
+echo job $SLURM_JOB_ID execution finished at: `date`
+
+rm ~/.vnc/*.cluster:*.log
+mv *.out  ~/.vnc/
+```
 
 ### Trouble shooting
 
@@ -135,10 +204,10 @@ If you run a few VNC servers in a few different nodes, while you are now at the 
 ```sh
 login $ cd .vnc
 login $ ls
-config  node20.cluster:1.log  node20.cluster:1.pid  passwd  xstartup
+config  node32.cluster:1.log  node32.cluster:1.pid  passwd  xstartup
 ```
 
-A running VNC server is associated with a file that end with `.pid`. From this file, you know that you are running a VNC server at `node20` and DISPLAY `:1`. When the VNC server stops, the associated `.pid` file is gone together. So it is a good indicator for running VNC servers. Don't use the `.log` file as an indicator since it will not be deleted when the VNC server stops. You can delete the old log files by yourself safely.
+A running VNC server is associated with a file that end with `.pid`. From this file, you know that you are running a VNC server at `node32` and DISPLAY `:1`. When the VNC server stops, the associated `.pid` file is gone together. So it is a good indicator for running VNC servers. Don't use the `.log` file as an indicator since it will not be deleted when the VNC server stops. You can delete the old log files by yourself safely.
 
 
 #### **Q:** I launched a VNC server in a non-login node and then logged out or closed that terminal. How can I stop the server now?
@@ -148,7 +217,7 @@ If you quit from a non-login node back to your login node, your VNC server shoul
 ```sh
 $ squeue -u your.username # list your submitted jobs
 JOBID  PARTITION     NAME      USER ST  TIME  NODES NODELIST(REASON)
-737341 preemptib     bash user.name CG  5:18      1 node20
+737341 preemptib     bash user.name CG  5:18      1 node32
 $ scancel 737341 # kill job 737341
 ```
 
@@ -157,8 +226,8 @@ To find out the job id of your VNC server and kill it using `scancel`.
 However, all the above have some side effect. They will leave behind a few files that should have been deleted:
 
 ```sh
-~/.vnc/node20.cluster:1.log
-~/.vnc/node20.cluster:1.pid
+~/.vnc/node32.cluster:1.log
+~/.vnc/node32.cluster:1.pid
 /tmp/.X1-lock
 /tmp/.X11-unix/X1=
 ```
@@ -166,33 +235,33 @@ However, all the above have some side effect. They will leave behind a few files
 You can delete the first two files manually if you cannot find the corresponding jobs in the output of `squeue -u your.username`. It is not easy to delete the two in `/tmp` directory because the `/tmp` directory is not shared among all nodes, each node has its own `/tmp` directory. You need to log back into that node to delete them, which can be achieved using
 
 ```sh
-login $ srun -w node20 --pty bash
+login $ srun -w node32 --pty bash
 ```
 
-However, you may need to wait for a long time to log back to node20 if it is busy running other jobs. The good news is that files in `/tmp` will be deleted eventually by the machine automatically at some point.
+However, you may need to wait for a long time to log back to node32 if it is busy running other jobs. The good news is that files in `/tmp` will be deleted eventually by the machine automatically at some point.
 
 #### **Q:** I saw the following warning message, shall I worry about it?
 
 ```sh
-node19 $ vncserver
+node32 $ vncserver
 
-Warning: node19.cluster:1 is taken because of /tmp/.X1-lock
-Remove this file if there is no X server node19.cluster:1
+Warning: node32.cluster:1 is taken because of /tmp/.X1-lock
+Remove this file if there is no X server node32.cluster:1
 
-Warning: node19.cluster:2 is taken because of /tmp/.X2-lock
-Remove this file if there is no X server node19.cluster:2
+Warning: node32.cluster:2 is taken because of /tmp/.X2-lock
+Remove this file if there is no X server node32.cluster:2
 
-New 'node19.cluster:3 (your.username)' desktop is node19.cluster:3
+New 'node32.cluster:3 (your.username)' desktop is node32.cluster:3
 
 Starting applications specified in /home/your.usrname/.vnc/xstartup
-Log file is /home/your.usrname/.vnc/node19.cluster:3.log
+Log file is /home/your.usrname/.vnc/node32.cluster:3.log
 
 ```
 
 No, your VNC server still managed to run at DISPLAY number `:3` eventually. The warning is issued because your VNC server detected the existence of `/tmp/.X1-lock` but cannot find a really running X-window at DISPLAY number `:1`. That file is a left over by another VNC server that was not stopped cleanly. Run
 
 ```sh
-node19 $ ls -l /tmp/.X*
+node32 $ ls -l /tmp/.X*
 ```
 
 to find out if you own one of those files. If yes, please delete them to release those locked DISPLAY numbers. If no, you can inform their owners so that they can delete them using the way described in the previous question.
