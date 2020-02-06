@@ -229,7 +229,7 @@ However, all the above have some side effect. They will leave behind a few files
 ~/.vnc/node32.cluster:1.log
 ~/.vnc/node32.cluster:1.pid
 /tmp/.X1-lock
-/tmp/.X11-unix/X1=
+/tmp/.X11-unix/X1
 ```
 
 You can delete the first two files manually if you cannot find the corresponding jobs in the output of `squeue -u your.username`. It is not easy to delete the two in `/tmp` directory because the `/tmp` directory is not shared among all nodes, each node has its own `/tmp` directory. You need to log back into that node to delete them, which can be achieved using
