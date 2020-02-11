@@ -4,6 +4,7 @@ tags: [Linux, VNC, SSH]
 
 ![Linux Cluster Structure](https://www.hpc.iastate.edu/sites/default/files/uploads/HPCHowTo/HPCCluster.JPG)
 
+Figure taken from <https://www.hpc.iastate.edu/guides/introduction-to-hpc-clusters/what-is-an-hpc-cluster>
 
 ### Linux cluster
 

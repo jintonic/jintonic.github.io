@@ -2,6 +2,10 @@
 tags: [Git, GitHub]
 ---
 
+![distributed version control](https://homes.cs.washington.edu/~mernst/advice/version-control-fig3.png)
+
+Figure taken from <https://homes.cs.washington.edu/~mernst/advice/version-control.html>
+
 ### Create a GitHub repository
 #### Scenario 1: You already have a project
 
@@ -33,7 +37,35 @@ $ git status # see if new.txt is added
 $ git push # local repository -> GitHub repository
 $ git status # see if there is anything else you need to deal with
 ```
-If this is your first time to do this, Git may ask you to setup your username and email address. Simply follow the instruction Git prints on your screen. You can also check: <https://help.github.com/en/github/using-git/setting-your-username-in-git>
+If this is your first time to do this, Git may ask you to setup your name and email address. This is important if you work on your project with a team. Your teammates need to know who did what. That's why Git needs to attach your name and email address to each commit you do. Git saves this information in `~/.gitconfig`. Simply follow the instruction Git prints on your screen to create such a file. You can also check: <https://help.github.com/en/github/using-git/setting-your-username-in-git>. In short, you can run
+
+```sh
+$ git config --global --edit # create or edit ~/.gitconfig
+```
+
+and Git will open `~/.gitconfig` using an editor. The default `~/.gitconfig` looks like
+
+```sh
+# This is Git's per-user configuration file.
+[user]
+# Please adapt and uncomment the following lines:
+#       name = User.Name
+#       email = user@host.com
+```
+
+Remove the `#` in front of the last two lines and put your real name and email address there.
+
+Another useful section you can add to your `~/.gitconfig` is
+
+```sh
+[alias]
+  br = branch
+  co = checkout
+  ci = commit
+  st = status
+```
+
+which creates short aliases for some long Git commands.
 
 #### Method 2: do everything on GitHub
 See <https://help.github.com/en/github/managing-files-in-a-repository/creating-new-files>
