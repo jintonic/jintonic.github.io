@@ -153,10 +153,10 @@ It is too much to type such a long command just to compile such a simple program
 
 ```makefile
 test.exe: test.cc
-	g++ -std=c++11 -I /path/to/include/ test.cc -L /path/to/ROOT/lib -lCore -lMathCore -o test.exe
+	g++ -std=c++11 -I /path/to/include/ test.cc -o test.exe -L /path/to/ROOT/lib -lCore -lMathCore
 ```
 
-Be aware that the second line must start with a real `Tab` instead of a few spaces. Check <https://en.wikipedia.org/wiki/Makefile> to understand the structure of a Makefile.
+This is called a rule. Check the [make manual](https://www.gnu.org/software/make/manual/html_node/Rule-Introduction.html#Rule-Introduction) to understand the structure of a Makefile rule. Be aware that the second line (called recipe of rule) must start with a real `Tab` instead of a few spaces.
 
 Now you can run
 
@@ -165,5 +165,15 @@ $ make
 ```
 
 to compile `test.cc` to `test.exe`.
+
+#### Automatic Variables
+We typed `test.cc` and `test.exe` in the recipe of the rule above. But they are simply the prerequisite and the target of that rule. In principle, you have already told make all the information it needs. Indeed, make remembers them. You can use two automatic variables in your recipe to refer to them without defining them:
+
+```makefile
+test.exe: test.cc
+	g++ -std=c++11 -I /path/to/include/ $? -o $@ -L /path/to/ROOT/lib -lCore -lMathCore
+```
+
+where `$?` refers to `test.cc` and `$@` refers to `test.exe`. There is a full [list of automatic variables in the make manual](https://www.gnu.org/software/make/manual/html_node/Automatic-Variables.html#Automatic-Variables).
 
 [ROOT]: https://root.cern.ch
