@@ -167,7 +167,7 @@ $ make
 to compile `test.cc` to `test.exe`.
 
 #### Automatic Variables
-We typed `test.cc` and `test.exe` in the recipe of the rule above. But they are simply the prerequisite and the target of that rule. In principle, you have already told make all the information it needs. Indeed, make remembers them. You can use two automatic variables in your recipe to refer to them without defining them:
+We typed `test.cc` and `test.exe` in the recipe of the rule above. But they are simply the prerequisite and the target of that rule. In principle, you have already told make all the information it needs. Indeed, make remembers them. You can use two automatic variables in your recipe to refer to them without defining the two variables (that's why they are called automatic ones):
 
 ```makefile
 test.exe: test.cc
@@ -175,5 +175,69 @@ test.exe: test.cc
 ```
 
 where `$?` refers to `test.cc` and `$@` refers to `test.exe`. There is a full [list of automatic variables in the make manual](https://www.gnu.org/software/make/manual/html_node/Automatic-Variables.html#Automatic-Variables).
+
+#### Implicit Variables
+There is a standard name for each part of the recipe. For example, `g++` is called the compiler, `-std=c++ -I...` are flags. Make maintains a [list of standard names](https://www.gnu.org/software/make/manual/html_node/Implicit-Variables.html#Implicit-Variables) (Implicit variables) to refer to the individual parts. If we use these standard names, the `Makefile` can be rewritten as
+
+```makefile
+CXXFLAGS = -std=c++11 -I/path/to/include/
+LDLIBS = -L/path/to/ROOT/lib -lCore -lMathCore
+test.exe: test.cc
+	$(CXX) $(CXXFLAGS) $? -o $@ $(LDFLAGS) $(LDLIBS)
+```
+
+You don't have to define `$(CXX)`, since it has a default value of `g++`.
+
+#### root-config
+ROOT provides a command `root-config` for you to figure out the contents of these standard parts. Run `root-config --help` to learn more about it. Our `Makefile` can be modified to work on any machine that have ROOT properly installed:
+
+```makefile
+CXXFLAGS = $(shell root-config --cflags)
+LDLIBS = $(shell root-config --libs)
+test.exe: test.cc
+	$(CXX) $(CXXFLAGS) $? -o $@ $(LDFLAGS) $(LDLIBS)
+```
+
+`$(shell a-shell-command)` is how you call `a-shell-command` in a Makefile and get the output of it.
+
+#### Multiple targets
+
+Now let's add another C++ source file, `gaus.cc` into this directory. We need to add another rule in our Makefile to compile it:
+
+```makefile
+CXXFLAGS = $(shell root-config --cflags)
+LDLIBS = $(shell root-config --libs)
+test.exe: test.cc
+	$(CXX) $(CXXFLAGS) $? -o $@ $(LDFLAGS) $(LDLIBS)
+gaus.exe: gaus.cc
+	$(CXX) $(CXXFLAGS) $? -o $@ $(LDFLAGS) $(LDLIBS)
+```
+
+However, if you run `make` in your terminal, only `test.cc` will be compiled. This is because `make` without any argument will only run the first rule. To run a specific rule, you need to pass the target name of that rule to `make`:
+
+```sh
+$ make gaus.exe
+```
+
+What if you want to compile both of them? You need to add a special rule that depends on both exe files:
+
+```makefile
+all: test.exe gaus.exe
+```
+
+Keep this as the first rule so that you can run it when you call `make` without any argument. This rule does not have any recipe. The sole purpose of it is to call rules related to `test.exe` and `gaus.exe`.
+
+#### Pattern-specific variable values
+
+[make manual](https://www.gnu.org/software/make/manual/html_node/Pattern_002dspecific.html#Pattern_002dspecific)
+
+
+```makefile
+CXXFLAGS = $(shell root-config --cflags)
+LDLIBS = $(shell root-config --libs)
+all: test.exe gaus.exe
+%.exe: %.cc
+	$(CXX) $(CXXFLAGS) $? -o $@ $(LDFLAGS) $(LDLIBS)
+```
 
 [ROOT]: https://root.cern.ch
