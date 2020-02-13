@@ -118,8 +118,8 @@ $ g++ -I /path/to/include/ test.cc > log 2>&1
 Search on Google `bash error redirect` if you don't understand the meaning of `2>&1`. Now open `log` and you should be able to allocate the following two lines close to the beginning of the output:
 
 ```sh
-#  error "ROOT requires support for C++11 or higher."                                                    
-#  error "Pass `-std=c++11` as compiler argument."                                                      
+#  error "ROOT requires support for C++11 or higher."
+#  error "Pass `-std=c++11` as compiler argument."
 ```
 
 which says that ROOT related program needs to be compiled with `c++11` standard. Follow this instruction:
