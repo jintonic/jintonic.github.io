@@ -227,17 +227,96 @@ all: test.exe gaus.exe
 
 Keep this as the first rule so that you can run it when you call `make` without any argument. This rule does not have any recipe. The sole purpose of it is to call rules related to `test.exe` and `gaus.exe`.
 
-#### Pattern-specific variable values
+#### Phony targets
 
-[make manual](https://www.gnu.org/software/make/manual/html_node/Pattern_002dspecific.html#Pattern_002dspecific)
-
+Unlike `test.exe` and `gaus.exe`, `all` is not really a file. It is just the name of a target. We call it a phony target. To make this point clear so that make won't do something for a file named `all` in the directory, we need to add the following line to your Makefile:
 
 ```makefile
-CXXFLAGS = $(shell root-config --cflags)
-LDLIBS = $(shell root-config --libs)
+.PHONY: all
+```
+
+There are some standard phony targets you may consider to add in your Makefile:
+
+```makefile
+.PHONY: all clean install info
+clean:
+	$(RM) *.exe
+install:
+	mv *.exe ~/bin
+info:
+	@echo $(CXXFLAGS)
+	@echo $(LDLIBS)
+```
+
+where `$(RM)` is another implicit variable. It has a default value of `rm -f`. The `@` in front of `echo` is to suppress the print out of the recipe itself in the terminal window.
+
+#### Pattern-specific variable values
+
+The two rules for `test.exe` and `gaus.exe` are very similar. It would be nice if we can combine them in one rule. You can achieve this through the [patter-specific variable values](https://www.gnu.org/software/make/manual/html_node/Pattern_002dspecific.html#Pattern_002dspecific):
+
+```makefile
 all: test.exe gaus.exe
 %.exe: %.cc
 	$(CXX) $(CXXFLAGS) $? -o $@ $(LDFLAGS) $(LDLIBS)
+```
+
+The second rule can be applied to any pair of `.exe` and `.cc` files.
+
+#### wildcard
+
+Now if we want to add another C++ source file, `rndm.cc`, to the directory, we just need to add `rndm.exe` to the list after `all`:
+
+```makefile
+all: test.exe gaus.exe rndm.exe
+```
+
+It would be nice if we can automate this step. You can achieve this using a make function called `wildcard`:
+
+```makefile
+SRC = $(wildcard *.cc)
+EXE = $(SRC:.cc=.exe)
+all: $(EXE)
+```
+
+The first line creates a list of all files that end with `.cc` and save it in `$(SRC)`. The second line changes the suffix of every entry in `$(SRC)` from `.cc` to `.exe` and save the new list in `$(EXE)`. The third line uses this list.
+
+Now, when you add a new `.cc` file in this directory, you can compile it with `make`. But there is no need to modify the Makefile anymore.
+
+#### Implicit rules
+
+A command in Linux normally does not end with `.exe`. We can remove it from our final executables:
+
+```makefile
+%: %.cc
+	$(CXX) $(CXXFLAGS) $? -o $@ $(LDFLAGS) $(LDLIBS)
+```
+
+This way, `test.cc` will be compiled to `test` instead of `test.exe`. This rule is so commonly used that `make` includes it as an [implicit rule](http://www.gnu.org/software/make/manual/html_node/Implicit-Rules.html). You don' even need to write it in your Makefile. Remove it and your final Makefile looks like this:
+
+```makefile
+SRC = $(wildcard *.cc) # match all files that end with .cc
+EXE = $(SRC:.cc=)      # remove .cc from those file names
+
+# set up flags that help g++ to find ROOT headers and libs
+CXXFLAGS = $(shell root-config --cflags)
+LDLIBS = $(shell root-config --libs)
+
+.PHONY: all clean install info # declare phony targets
+
+all: $(EXE)                    # default target
+
+clean:
+	$(RM) $(EXE)
+
+install:
+	mv $(EXE) ~/bin
+
+info:
+	@echo CXXFLAGS = $(CXXFLAGS)
+	@echo LDLIBS = $(LDLIBS)
+	@echo SRC = $(SRC)
+	@echo EXE = $(EXE)
+
 ```
 
 [ROOT]: https://root.cern.ch
