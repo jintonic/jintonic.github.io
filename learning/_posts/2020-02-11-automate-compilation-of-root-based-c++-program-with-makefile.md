@@ -62,7 +62,7 @@ $ ls
 test.exe  test.cc
 ```
 
-As I mentioned at the beginning, `test.cc` is not quit correct. To see what's wrong, you can instruct `g++` to print out useful warning messages to help us debug:
+As I mentioned at the beginning, `test.cc` is not quit correct. To see what's wrong, you can require `g++` to print out useful warning messages to help us debug:
 
 ```sh
 $ g++ -Wall test.cc # turn on "all" Warnings
@@ -103,7 +103,7 @@ test.cc:2:22: fatal error: TRandom.h: No such file or directory
 compilation terminated.
 ```
 
-The second `include` causes the problem while the first does not. This is because the second is not as standard as the first one. You need to instruct `g++` the location of `TRandom.h`:
+The second `include` causes the problem while the first does not. This is because the second is not as standard as the first one. You need to tell `g++` the location of `TRandom.h`:
 
 ```sh
 $ g++ -I /path/to/include/ test.cc
@@ -137,7 +137,7 @@ test.cc:(.text+0x2b): undefined reference to `TRandom::Rndm()'
 ...
 ```
 
-This is because `TRandom.h` only declares the class `TRandom` and the function `Rndm()`, but the real definition of them are saved in a separated file called `libMathCore.so`, which is a shared object (`.so`), or a shared library file. You need to instruct `g++` to link your executable with this library for the executable to run properly:
+This is because `TRandom.h` only declares the class `TRandom` and the function `Rndm()`, but the real definition of them are saved in a separated file called `libMathCore.so`, which is a shared object (`.so`), or a shared library file. You need to tell `g++` to link your executable with this library:
 
 ```sh
 $ g++ -std=c++11 -I /path/to/include/ test.cc -L /path/to/ROOT/lib -lCore -lMathCore
@@ -155,11 +155,11 @@ Check [Linux 101]({% post_url 2016-08-30-Linux-101 %}) if you don't know about t
 
 Run `test.exe` and you will get yet again an error message:
 
-```sh
+```
 test.exe: error while loading shared libraries: libCore.so: cannot open shared object file: No such file or directory
 ```
 
-This is because `test.exe` uses the ROOT library `libCore.so` and your shell does not know where to find it. Yes, we already told `g++` where to find it. But shell and g++ are two different things. We need to instruct them individually. To tell shell where to find some libraries, you need
+This is because `test.exe` uses the ROOT library `libCore.so` and your shell does not know where to find it. Yes, we already told `g++` where to find it. But `shell` and `g++` are two different things. We need to instruct them individually. To tell shell where to find some libraries, you need
 
 ```sh
 export LD_LIBRARY_PATH=/path/to/ROOT/lib:$LD_LIBRARY_PATH
@@ -170,14 +170,14 @@ For MAC users, replace `LD_LIBRARY_PATH` with `DYLD_LIBRARY_PATH`.
 
 ### Makefile
 
-It is too much to type such a long command, `g++ -Wall -std=c++11 -I...`, just to compile a simple program `test.cc`. You'd better save this command somewhere so that you can use it later. A standard way to do this is to create a `Makefile` in the same directory as your `test.cc`:
+It is too much to type such a long command, `g++ -Wall -std=c++11 -I...`, just to compile a simple program `test.cc`. You'd better save this command somewhere so that you can use it later. A standard way to do this is to create a `Makefile` in the same directory as your `test.cc`, which contains the following two lines of code:
 
 ```makefile
 test.exe: test.cc
 	g++ -std=c++11 -I /path/to/include/ test.cc -o test.exe -L /path/to/ROOT/lib -lCore -lMathCore
 ```
 
-This is called a rule. Check the [make manual](https://www.gnu.org/software/make/manual/html_node/Rule-Introduction.html#Rule-Introduction) to understand the structure of a Makefile rule. Be aware that the second line (called the recipe of a rule) must start with a real `Tab` instead of a few spaces.
+This is called a rule. Check the [make manual](https://www.gnu.org/software/make/manual/html_node/Rule-Introduction.html#Rule-Introduction) to understand the structure of a Makefile rule. Basically, `test.exe` is the **target**. `test.cc` is the **prerequisite** of this target. If the target is older than its prerequisite, the command in the second line, or the **recipe**, will be used to update the target. Otherwise, no action will be taken. Be aware that a recipe must start with a real `Tab` instead of a few spaces.
 
 Now you can run
 
@@ -259,8 +259,8 @@ There are some standard phony targets you may consider to add in your Makefile:
 clean:
 	$(RM) *.exe
 install:
-	mv *.exe ~/bin
-debug
+	install *.exe ~/bin
+debug:
 	@echo $(CXXFLAGS)
 	@echo $(LDLIBS)
 ```
@@ -308,24 +308,24 @@ A command in Linux normally does not end with `.exe`. We can remove it from our 
 	$(CXX) $(CXXFLAGS) $? -o $@ $(LDFLAGS) $(LDLIBS)
 ```
 
-This way, `test.cc` will be compiled to `test` instead of `test.exe`. This rule is so commonly used that `make` includes it as an [implicit rule](http://www.gnu.org/software/make/manual/html_node/Implicit-Rules.html). You don' even need to write it in your Makefile. (Run `make -p |less` to get a list of all implicit rules.) Remove this rule and your Makefile still works! It seems crazy that we spend so much effort to improve our rules, only to get rid of them at last!
+This way, `test.cc` will be compiled to `test` instead of `test.exe`. This rule is so commonly used that `make` includes it as an [implicit rule](http://www.gnu.org/software/make/manual/html_node/Implicit-Rules.html). You don' even need to write it in your Makefile. (Run `make -np |less` to get a list of all implicit rules.) Remove this rule and your Makefile still works! It seems crazy that we spend so much effort to improve our rules, only to get rid of them at last!
 
 #### Final touch
 
 As a final touch, we'd like to add some protections, print out some instructions here and there. Your final Makefile would look like this:
 
 ```makefile
-# set up flags that allocate ROOT headers and libs
+# variables used by implicit rules to allocate ROOT headers and libs
 CXXFLAGS = $(shell root-config --cflags)
 LDLIBS = $(shell root-config --libs)
 
-SRC = $(wildcard *.cc) # match all files that end with .cc
+SRC = $(wildcard *.cc) # list all files that end with .cc
 EXE = $(SRC:.cc=)      # remove .cc from those file names
 
 all: $(EXE)
 	@echo make install: copy $(EXE) to ~/bin
 	@echo make clean: delete $(EXE)
-	@echo make debug: check contents of Mafile variables
+	@echo make debug: check contents of Makefile variables
 
 clean:
 	$(RM) $(EXE)
