@@ -40,15 +40,27 @@ have something like a tab bar as shown in the top screen shot.
 
 But before we get into details, let's cover a basic concept of this program. 
 `screen` is a program to create multiple virtual terminals in a physical 
-terminal.  It provides a set of commands (the commonly used ones are binded to 
+terminal.  It provides a set of commands (the commonly used ones are bound to 
 hot keys) to create, delete, switch in between virtual terminals. By default, 
 <kbd>Ctrl</kbd>+<kbd>a</kbd> is used to tell screen that the following key 
-stroke is a hot key binded for a command to manipulate virtual terminals, 
+stroke is a hot key bound for a command to manipulate virtual terminals, 
 instead of a key that is sent to the SHELL. It is basically a mode switch key. 
 It switches from *working-in-a-shell* mode to *manipulate-virtual-terminal* 
 mode. It is easy to find good introductions to the program if you search on 
 *Google* **GNU screen**.  Be sure to search for **GNU screen** instead of just 
 **screen**, otherwise, you won't find anything relevant.
+
+### Detach and attach
+
+<kbd>Ctrl</kbd>+<kbd>a</kbd> and <kbd>d</kbd> to detach the screen from your current terminal. To attach again to your detached screen, try the following:
+
+```sh
+# list all screens running in the system
+$ screen -list
+# re-attach to one of them
+# a list will be given for you to choose if there are more than one
+$ screen -r
+```
 
 ### Mode-switch key
 
@@ -105,6 +117,9 @@ You need a tab bar to show all terminals you create just as the tab bar in your
 web browser. This can be achieved with the following simple setup:
 
 ~~~
+# define things to be shown in the status bar (mimicking tabs)
+hardstatus lastline "%{= Bk}%H | %-w%{= kB}%n*%t %{-}%+w"
+# use the terminal title bar if possible
 hardstatus on
 ~~~
 
