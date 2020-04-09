@@ -50,7 +50,7 @@ mode. It is easy to find good introductions to the program if you search on
 *Google* **GNU screen**.  Be sure to search for **GNU screen** instead of just 
 **screen**, otherwise, you won't find anything relevant.
 
-### Mode-switch key ###
+### Mode-switch key
 
 The default mode-switch key binding <kbd>Ctrl</kbd>+<kbd>a</kbd> is not 
 convenient to type and conflict with the shell shortcut for moving to the start 
@@ -71,7 +71,7 @@ However, <kbd>`</kbd> is used often by other programs as well. It's better to us
 escape ^``
 ```
 
-### Use the function keys ###
+### Use the function keys
 
 If you'd like to jump to a terminal with just one key stroke, try the 
 followings. F1 ~ F12 are not used by shell.  They can be set in `~/.screenrc` 
@@ -99,7 +99,7 @@ bindkey -k F2 next # press F12 to go to next window
 The *-k* option tells the *bindkey* command the following string is not a 
 normal string but a [termcap keyboard capability name][termcap].
 
-### Use the title bar of physical terminal as tab bar###
+### Use the title bar of physical terminal as tab bar
 
 You need a tab bar to show all terminals you create just as the tab bar in your 
 web browser. This can be achieved with the following simple setup:
@@ -108,7 +108,7 @@ web browser. This can be achieved with the following simple setup:
 hardstatus on
 ~~~
 
-### Show running commands on title bar ###
+### Show running commands on title bar
 
 You need to do some settings in both your `~/.screenrc` and your `~/.bashrc` to 
 show the latest running commands on the window title bar.
@@ -125,7 +125,7 @@ for a new screen window, the one before `|` is the last part of the shell
 prompt, which is used to tell screen to use the first word after the prompt as 
 the title. One more setup is needed in `.bashrc` to make the whole thing work:
 
-~~~bash
+~~~sh
 case "$TERM" in
 screen)
   PROMPT_COMMAND='echo -ne "\033k\033\\"'
@@ -133,7 +133,7 @@ screen)
 *)
   ;;
 esac
-~~~ 
+~~~
 
 [SSH]:https://en.wikipedia.org/wiki/Secure_Shell
 [screen]:https://www.gnu.org/software/screen/
