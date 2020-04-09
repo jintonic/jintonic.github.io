@@ -1,5 +1,5 @@
 ---
-tags: [screen, Linux]
+tags: [terminal, screen, Linux]
 ---
 
 ![GNU screen with running commands shown in window title 
@@ -55,7 +55,7 @@ mode. It is easy to find good introductions to the program if you search on
 The default mode-switch key binding <kbd>Ctrl</kbd>+<kbd>a</kbd> is not 
 convenient to type and conflict with the shell shortcut for moving to the start 
 of a line.  [VI][] uses <kbd>Esc</kbd> to switch between *insert* and *command* 
-modes. One can use the key below it, that is, <kbd>\`</kbd> as the mode-switch 
+modes. One can use the key below it, that is, <kbd>`</kbd> as the mode-switch 
 key for screen.  This can be done by insert the following line in 
 `~/.screenrc`:
 
@@ -63,7 +63,13 @@ key for screen.  This can be done by insert the following line in
 escape ``
 ~~~
 
-Now you can jump to the 3rd terminal by typing <kbd>\`</kbd>+<kbd>3</kbd>.
+Now you can jump to the 3rd terminal by typing <kbd>`</kbd><kbd>3</kbd>, that is, press <kbd>`</kbd>, release it, press <kbd>3</kbd> and release it.
+
+However, <kbd>`</kbd> is used often by other programs as well. It's better to use <kbd>Ctrl</kbd>+<kbd>`</kbd> instead of a single <kbd>`</kbd> as the mode-switch key. To achieve this, put the following in your `~/.screenrc`:
+
+```
+escape ^``
+```
 
 ### Use the function keys ###
 
@@ -71,15 +77,14 @@ If you'd like to jump to a terminal with just one key stroke, try the
 followings. F1 ~ F12 are not used by shell.  They can be set in `~/.screenrc` 
 as hot keys for screen command without switching mode, for example,
 
-~~~ bash
+~~~sh
 bindkey -k k1 select 1 # press F1 to select window 1
 bindkey -k k2 select 2 # press F2 to select window 2
 bindkey -k k3 select 3 # press F3 to select window 3
 bindkey -k k4 select 4 # press F4 to select window 4
-bindkey -k k5 select 5 # press F5 to select window 5
-bindkey -k k6 select 6 # press F6 to select window 6
-bindkey -k k7 select 7 # press F7 to select window 7
-bindkey -k k8 select 8 # press F8 to select window 8
+
+bindkey -k k8 screen 1 # create a new screen by pressing F8
+bind c screen 1        # Window numbering starts at 1, not 0
 
 # press F9/F10 to scroll up/down
 bindkey -k k9 eval "copy" "stuff ^u"
