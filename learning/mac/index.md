@@ -1,6 +1,6 @@
 ---
 layout: note
-title: Mac OSX
+title: MacOS
 ---
 
 # git
@@ -13,7 +13,12 @@ Simply follow the instruction on <https://brew.sh/>. You may be prompt to instal
 
 There is no need to install `vim` using `brew` since `vim` is shipped with Mac.
 
-# middle click
+# Keyboard, mouse and trackpad
+## F11
+It is used by `Mission Control`, follow the following instruction to release it:
+<https://www.petenetlive.com/KB/Article/0001441>
+
+## middle click
 
 <https://www.makeuseof.com/tag/middle-click-mac/>
 
