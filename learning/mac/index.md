@@ -3,10 +3,21 @@ layout: note
 title: Mac OSX
 ---
 
+# git
+
+If you run `git clone ...` the first time, you will be prompt to install [command line developer tools](https://osxdaily.com/2014/02/12/install-command-line-tools-mac-os-x/), answer yes and be prepared to wait for a long time for this process to finish. You will have `git` available after this installation.
+
 # Homebrew
 
+Simply follow the instruction on <https://brew.sh/>. You may be prompt to install [command line developer tools](https://osxdaily.com/2014/02/12/install-command-line-tools-mac-os-x/), answer yes and be prepared to wait for a long time for this process to finish.
+
+There is no need to install `vim` using `brew` since `vim` is shipped with Mac.
 
 # middle click
+
+<https://www.makeuseof.com/tag/middle-click-mac/>
+
+It is a must if you use a VNC client in a Mac to connect to a Linux server, since you need the middle click to paste to your server.
 
 # combine PDF files
 
