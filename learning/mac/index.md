@@ -111,3 +111,7 @@ Another tool is `xattr`:
  
  $ xattr -c 1229.pdf # Remove the metadata attributes
 ~~~
+
+# LaTeX
+
+According to <http://www.tug.org/mactex/uninstalling.html>, texlive is installed to `/usr/local/texlive` if one installs MacTeX. The bin directory there has to be added to the `PATH`.
