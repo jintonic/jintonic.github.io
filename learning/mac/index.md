@@ -1,5 +1,6 @@
 ---
 layout: note
+category: cs
 title: MacOS
 ---
 
@@ -115,3 +116,7 @@ Another tool is `xattr`:
 # LaTeX
 
 According to <http://www.tug.org/mactex/uninstalling.html>, texlive is installed to `/usr/local/texlive` if one installs MacTeX. The bin directory there has to be added to the `PATH`.
+
+# Terminal
+
+Solorized dark for the default terminal: <https://gist.github.com/matijs/808eda8c133d41f9338f89a0077d6b95#file-solarized-dark-terminal>
