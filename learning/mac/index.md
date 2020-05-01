@@ -25,6 +25,14 @@ It is used by `Mission Control`, follow the following instruction to release it:
 
 It is a must if you use a VNC client in a Mac to connect to a Linux server, since you need the middle click to paste to your server.
 
+# External display
+
+If your external display works for your Mac for a while and then suddenly stopped working, please try to [reset SMC](https://thenextweb.com/lifehacks/2017/06/14/how-when-why-to-reset-the-pram-smc-on-your-mac/):
+
+- Turn off your machine. Keep the power supply plugged in for MacBooks that have the built-in battery and out for MacBooks where you can pull the battery out.
+- Press at the same time shift-option-control and the power button. Let go.
+- Turn your machine back on with the power button.
+
 # combine PDF files
 
 ## Option 1
