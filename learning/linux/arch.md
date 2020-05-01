@@ -4,6 +4,24 @@ category: cs
 title: Arch Linux
 ---
 
+# Wireless
+
+According to the [Arch][] [Linux][] [Wiki page on wireless configurations](https://wiki.archlinux.org/index.php/Network_configuration/Wireless),
+
+```sh
+$ lspci -k # check driver
+$ ip link # list available network interfaces
+$ ip link set wlp2s0 up # activate wireless interface named wlp2s0
+$ ip link show wlp2s0 # show status of the interface named wlp2s0
+$ iw dev wlp2s0 scan # show networks detected by wlp2s0
+```
+
+[These commands replace old ones, such as `ifconfig`, etc](https://dougvitale.wordpress.com/2011/12/21/deprecated-linux-networking-commands-and-their-replacements/).
+
+Authentication has to be done using [wpa_supplicant][].
+
+[wpa_supplicant]: https://wiki.archlinux.org/index.php/Wpa_supplicant
+
 # Printing
 
 According to the [Arch][] [Linux][] [Wiki][], the first step is to install [CUPS][]:
