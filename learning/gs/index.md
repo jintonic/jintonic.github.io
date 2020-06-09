@@ -38,6 +38,15 @@ gs -dPDFA -dBATCH -dNOPAUSE -sProcessColorModel=DeviceRGB
    -sOutputFile=output.pdf input.pdf
 ```
 
+If you see error messages like
+
+```
+GPL Ghostscript 9.52: Annotation set to non-printing,
+ not permitted in PDF/A, annotation will not be present in output file
+```
+
+Try to change `-sPDFACompatibilityPolicy=1` to `-dPDFACompatibilityPolicy=1`, as explained [here](https://stackoverflow.com/questions/39994410/ghostscript-wont-convert-pdf-to-pdf-a-annotation-issue).
+
 ## Extract Pages From a PDF
 
 [Set range of pages](http://www.linuxjournal.com/content/tech-tip-extract-pages-pdf):
