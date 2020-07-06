@@ -1,28 +1,82 @@
 ---
-layout: note
-category: cs
-title: Git
-subtitle: version control system
+tags: [Git, GitHub]
 ---
 
-## How to create a new repository
+![distributed version control](https://homes.cs.washington.edu/~mernst/advice/version-control-fig3.png)
 
-Suppose you already have a directory containing all files related to a project.
-Then what you need to do is just:
+Figure taken from <https://homes.cs.washington.edu/~mernst/advice/version-control.html>
 
-~~~bash
-$ cd /path/to/your/project/
-$ git init # create a .git/ directory in /root/of/your/project/
-$ git add * # make sure no temporary files in the directory!
-$ git commit -a -m "initial commit"
-~~~
+### Create a GitHub repository
+#### Scenario 1: You already have a project
 
-## How to delete an empty directory in git
+See <https://help.github.com/en/github/importing-your-projects-to-github/adding-an-existing-project-to-github-using-the-command-line>
+
+The key is to understand that you are dealing with three objects: your working copy, your local git repository, and the remote repository on GitHub.
+
+#### Scenario 2: You want to start a project
+
+You have two choices. First, you can simply follow the instruction for scenario 1. Second, you can [start a new project directly on GitHub](https://help.github.com/en/github/getting-started-with-github/create-a-repo), and then [clone it to your local PC](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository):
+
+``` sh
+$ cd /where/you/want/to/save/your/project/ # do this in your local PC
+$ git clone git@github.com:yourgithubusername/yourproject.git
+```
+
+### Add a new file to a GitHub repository
+#### Method 1: start from your local PC
+``` sh
+$ cd /path/to/your/project/ # do this in your local PC
+$ ls -a # check if there is .git/, if not, check previous section
+$ git pull # update local repository with remote one
+$ git status # check status of your working copy
+$ touch new.txt # create a new file
+$ git status # see if git detects the new file
+$ git add new.txt
+$ git commit -m "added" new.txt # working copy -> local repository
+$ git status # see if new.txt is added
+$ git push # local repository -> GitHub repository
+$ git status # see if there is anything else you need to deal with
+```
+If this is your first time to do this, Git may ask you to setup your name and email address. This is important if you work on your project with a team. Your teammates need to know who did what. That's why Git needs to attach your name and email address to each commit you do. Git saves this information in `~/.gitconfig`. Simply follow the instruction Git prints on your screen to create such a file. You can also check: <https://help.github.com/en/github/using-git/setting-your-username-in-git>. In short, you can run
+
+```sh
+$ git config --global --edit # create or edit ~/.gitconfig
+```
+
+and Git will open `~/.gitconfig` using an editor. The default `~/.gitconfig` looks like
+
+```sh
+# This is Git's per-user configuration file.
+[user]
+# Please adapt and uncomment the following lines:
+#       name = User.Name
+#       email = user@host.com
+```
+
+Remove the `#` in front of the last two lines and put your real name and email address there.
+
+Another useful section you can add to your `~/.gitconfig` is
+
+```sh
+[alias]
+  br = branch
+  co = checkout
+  ci = commit
+  st = status
+```
+
+which creates short aliases for some long Git commands.
+
+#### Method 2: do everything on GitHub
+See <https://help.github.com/en/github/managing-files-in-a-repository/creating-new-files>
+and <https://help.github.com/en/github/managing-files-in-a-repository/adding-a-file-to-a-repository>
+
+### How to delete an empty directory in git
 
 Git does not store any information about the directory, just the files within
 it. If a directory is empty, simply rm it. Git does not need to know about it.
 
-## steps to create and then delete a branch
+### steps to create and then delete a branch
 
 ~~~bash
 $ git branch # list existing branches
@@ -36,7 +90,7 @@ $ git push origin :a-new-branch # delete a-new-branch on server
 $ git branch -d a-new-branch # delete it after deleting it on server
 ~~~
 
-## Add files to gitignore
+### Add files to gitignore
 
 ~~~bash
 $ vi .gitignore
@@ -46,7 +100,7 @@ $ git commit -m "updated" .gitignore
 The *./gitignore* file in the root directory of a project effects every
 directory inside the project unless the directory has its own *.gitignore*.
 
-## Resolve conflict
+### Resolve conflict
 
 There are two scenarios
 
@@ -75,7 +129,7 @@ In case of a binary file, the automatic merging is doomed to fail. If you want t
 git checkout origin/master file.bin
 ```
 
-## Undo "git add"
+### Undo "git add"
 
 If you have not *git commit* changes, run
 
@@ -97,11 +151,11 @@ don't care about the history.
 
 [sens]:https://help.github.com/articles/remove-sensitive-data
 
-## Undo "git mv"
+### Undo "git mv"
 
 Simply use "git mv" again to rename the file back.
 
-## Show file name in git log
+### Show file name in git log
 
 *git log* does not show modified file by default. According to [Stack
 Overflow][sd], one has to use one of the followings,
@@ -114,7 +168,7 @@ $ git log --stat
 
 [sd]:http://stackoverflow.com/questions/1230084/how-to-have-git-log-show-filenames-like-svn-log-v
 
-## Change remote repository
+### Change remote repository
 
 ~~~bash
 $ git remote -v
@@ -128,7 +182,7 @@ or
 $ vi .git/config # change url setting inside directly
 ~~~
 
-## Show what was just committed
+### Show what was just committed
 
 ~~~bash
 $ git diff-tree --no-commit-id --name-only -r SHA1
@@ -137,7 +191,7 @@ $ git diff-tree --no-commit-id --name-only -r SHA1
 Ref. to [Stack Overflow][1]
 [1]: http://stackoverflow.com/questions/424071/list-all-the-files-for-a-commit-in-git
 
-## Discard local changes
+### Discard local changes
 
 According to [Stack Overflow][2], for a specific file use:
 [2]: http://stackoverflow.com/questions/52704/how-do-you-discard-unstaged-changes-in-git
@@ -154,20 +208,20 @@ git checkout -- .
 
 Make sure to include the period at the end.
 
-## Use Git to maintain .files in home directory
+### Use Git to maintain .files in home directory
 
 - [clone a repository to an existing folder](https://stackoverflow.com/questions/9864728/how-to-get-git-to-clone-into-current-directory)
 - [use a branch for each OS related settings](https://stackoverflow.com/questions/436125/two-git-repositories-in-one-directory)
 
-## Use multiple repositories to maintain a single project
+### Use multiple repositories to maintain a single project
 
 <https://softwareengineering.stackexchange.com/questions/150114/two-git-repositories-one-project/150199>
 
-## Skip typing password when connecting to remote git repository through https
+### Skip typing password when connecting to remote git repository through https
 
 <https://stackoverflow.com/questions/5343068/is-there-a-way-to-skip-password-typing-when-using-https-on-github/>
 
-## keep forked repostory synced with upstream
+### keep forked repostory synced with upstream
 
 <https://gist.github.com/CristinaSolana/1885435>:
 ```sh
