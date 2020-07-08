@@ -6,7 +6,7 @@ title: Liu's Group
 # Group Members
 ## Principal Investigator
 ### Jing Liu
-Assistant professor. His public profiles can be found at
+Associate professor. His public profiles can be found at
 
 - [University of South Dakota](http://www.usd.edu/faculty-and-staff/Jing-Liu)
 - [ORCID](http://orcid.org/0000-0003-1869-2407)
@@ -18,7 +18,6 @@ Assistant professor. His public profiles can be found at
 - [LinkedIn](https://www.linkedin.com/in/jingliuphys)
 - [StackExchange](http://stackexchange.com/users/2014017/jing)
 - [Facebook](https://www.facebook.com/liu.jing.501)
-- [Google+](https://plus.google.com/101717075408086641466)
 - [Twitter](https://twitter.com/jingliusd)
 - [Mendeley](http://www.mendeley.com/profiles/jing-liu36)
 - [Rate My Professor](https://www.ratemyprofessors.com/ShowRatings.jsp?tid=2008328)
@@ -59,15 +58,11 @@ Assistant professor. His public profiles can be found at
 - [ResearchGate](https://www.researchgate.net/profile/Kyler_Kooi)
 - [Facebook](https://www.facebook.com/kyler.kooi)
 
-### Jianchen (Byron) Li
-
-- Jan. 2018 - now, HPGe detector simulation.
-- May. 2015 - Dec. 2017, [GEARS](https://github.com/jintonic/gears/), [GeFiCa](http://physino.xyz/gefica/)
-
 ---
 
 ## Alumni
 
+- [Jianchen (Byron) Li](https://github.com/byljcron), M.S. Jan. 2018 - Dec. 2019; B.S. May. 2015 - Dec. 2017, HPGe detector simulation.
 - [Nathan Saunders](https://www.linkedin.com/in/nathan-saunders-profile/), M.S. May 2016 - Aug. 2019. [Facebook](https://www.facebook.com/nathan.saunders3).
 - Yangyang Li, M.S. Aug. 2016 - Aug. 2019
 - [Tupendra Oli](https://www.linkedin.com/in/tupendra-oli-8163b1145/), M.S. Aug. 2016 - Nov. 2018. [ResearchGate](https://www.researchgate.net/profile/Tupendra_Oli).
