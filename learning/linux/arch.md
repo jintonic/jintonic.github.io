@@ -84,3 +84,15 @@ $ pacman -S ibus
 $ ibus-setup
 $ ibus-daemon --xim -d
 ```
+
+# AUR
+
+## makepkg
+
+Create `~/.makepkg.conf` with the following contents:
+
+```sh
+PKGEXT=.kpg.tar
+```
+
+to disable compression of the package files after build.
