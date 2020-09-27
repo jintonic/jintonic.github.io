@@ -8,7 +8,7 @@ subtitle: learning management system
 
 A "Short Answer" question in a quiz demands a preset answer when setting the question up. The user's answer has to be exactly the same as the preset answer to be auto-graded as right. A quiz report will only show the preset answer instead of individual's answers.
 
-A "Written Response" question in a quiz does not need a preset answer. It will not be auto-graded and all user responses will be listed in the quiz report.
+A "Written Response" question in a quiz does not need a preset answer. It will not be auto-graded and all user responses will be listed in the quiz report. The answering text box for a "Written Response" is larger than that for a "Short Answer".
 
 ## Activate a course
 
