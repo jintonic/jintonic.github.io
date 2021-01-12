@@ -32,6 +32,7 @@ Ref.: <https://choosealicense.com/>
 - update blog with research activities
   - publications, grant applications, LEGEND, COHERENT, PIRE activities
   - youtube, bilibili updates
+  - new software updates, toward, gears, etc.
 - add updated date
   - <https://zzz.buzz/2016/02/13/add-an-updated-field-to-your-jekyll-site/>
 - remove category from url to make the url stable (I may rename category later)
