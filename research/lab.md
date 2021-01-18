@@ -32,6 +32,17 @@ title: Radiation Detector Laboratory
 
 ## Equipment
 
+### Radioactive sources
+- [Atlantic Nuclear Corp.](https://www.atnuke.com/nuclear/sources.htm) provides some common disk and tube sources with exempt quantity of gamma radiation.
+- [Table of Isotopes (ToI)](http://nucleardata.nuclear.lu.se/toi/index.asp) provides a web interface to search for radioactive decay data of all isotopes.
+- [X-ray Data Booklet](https://xdb.lbl.gov) provides information about X-ray emissions from various elements.
+
+### Material
+- [American Elements](https://www.americanelements.com) provides all kinds of materials in various forms, such as powders, foils, etc.
+
+### Electronics
+- <https://easyeda.com/>: Online PCB design and ordering platform, cheap and quick!
+
 ## Funding opportunities
 
 - https://www.hsfoundation.org/programs/science/fundamental-physics/
