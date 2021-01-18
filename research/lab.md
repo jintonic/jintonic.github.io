@@ -45,6 +45,6 @@ title: Radiation Detector Laboratory
 
 ## Funding opportunities
 
-- https://www.hsfoundation.org/programs/science/fundamental-physics/
-- https://www.aps.org/programs/innovation/moore/
-- https://blog.grants.gov/
+- <https://www.hsfoundation.org/programs/science/fundamental-physics/>
+- <https://www.aps.org/programs/innovation/moore/>
+- <https://blog.grants.gov/>
