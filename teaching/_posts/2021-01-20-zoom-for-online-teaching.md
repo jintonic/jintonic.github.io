@@ -1,5 +1,5 @@
 ---
-tags: [USD, grant, CTL]
+tags: [ZOOM, online, D2L]
 excerpt_separator: <!--more-->
 ---
 
