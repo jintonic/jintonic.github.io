@@ -7,7 +7,7 @@ title: Radiation Detector Laboratory
 
 ## Safety training
 
-- [Radiation Safety](https://drive.google.com/file/d/0B4rDM_WjOh95YTdRVjM0ZG1HR3M/view?usp=sharing)
+- [Radiation Safety](https://drive.google.com/file/d/1Vo_uD6xi9-1tCqzBISKNUU9Ia7hVQ6Ii/view?usp=sharing)
 - [Chemical Safety](https://www-training.llnl.gov/training/hc/HS4240-W/)
 - [Electrical Safety](https://www-training.llnl.gov/training/hc/HS5220/index.html)
 - [Pressure Safety](https://www-training.llnl.gov/training/hc/HS5030/index.html)
@@ -22,7 +22,7 @@ title: Radiation Detector Laboratory
 
 ## Online resouces
 
-- Programming: <https://github.com/>. Please register there, let [Jing Liu](/research/group) know your user name. 
+- Programming: <https://github.com/>. Please register there, let [Jing Liu](/research/group) know your user name.
 - LaTeX: <https://www.overleaf.com/>. Please register there, let [Jing Liu](/research/group) know your user name.
 - References: <https://www.zotero.org/>. Please register there, let [Jing Liu](/research/group) know your user name, install the desktop version of zotero as well as the web browser plugin.
 
