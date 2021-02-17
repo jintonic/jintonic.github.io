@@ -41,7 +41,12 @@ title: Radiation Detector Laboratory
 - [American Elements](https://www.americanelements.com) provides all kinds of materials in various forms, such as powders, foils, etc.
 
 ### Electronics
-- <https://easyeda.com/>: Online PCB design and ordering platform, cheap and quick!
+- <https://easyeda.com/>: Online PCB design and ordering platform, cheap and quick (about two weeks, even though it's from China)
+
+### Machining
+- <htps://www.3dhubs.com>: online machining, instant quote, standard tolerances: 0.125 mm (0.005"), if made in China, the shipping may be as long as 1 month
+- <htps://get.xometry.com>: online machining, instant quote, standard tolerances: 0.125 mm (0.005"), if made in China, the shipping may be as long as 1 month
+- <htps://www.protolabs.com>: online machining, quote available in a few minutes, same standard tolerances, part size is rather limited (less than 12"), usually more expensive than the two above
 
 ## Funding opportunities
 
