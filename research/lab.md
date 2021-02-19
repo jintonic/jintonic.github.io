@@ -39,6 +39,7 @@ title: Radiation Detector Laboratory
 
 ### Material
 - [American Elements](https://www.americanelements.com) provides all kinds of materials in various forms, such as powders, foils, etc.
+- [Refractive index database](https://refractiveindex.info/) for common materials
 
 ### Electronics
 - <https://easyeda.com/>: Online PCB design and ordering platform, cheap and quick (about two weeks, even though it's from China)
