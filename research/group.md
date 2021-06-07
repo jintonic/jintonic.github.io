@@ -57,6 +57,11 @@ Associate professor. His public profiles can be found at
 - [ResearchGate](https://www.researchgate.net/profile/Kyler_Kooi)
 - [Facebook](https://www.facebook.com/kyler.kooi)
 
+### Yongjin Yang
+
+- Aug. 2010 - now, Cryogenic scintillator R&D. HPGe crystal purification and growth
+- [GitHub](https://github.com/yyj398596791)
+
 ---
 
 ## Alumni
