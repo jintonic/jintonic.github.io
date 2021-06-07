@@ -66,12 +66,10 @@ Associate professor. His public profiles can be found at
 
 ## Alumni
 
-### Dmitry Chernyak
-
 - [Dmitry chernyak](https://www.linkedin.com/in/dmitry-chernyak-78a9352a/), Postdoc, Jun. 2019 - Jun. 2020, cryogenic scintillator R&D.
 - [Jianchen (Byron) Li](https://github.com/byljcron), M.S. Jan. 2018 - Dec. 2019; B.S. May. 2015 - Dec. 2017, HPGe detector simulation.
-- [Nathan Saunders](https://www.linkedin.com/in/nathan-saunders-profile/), M.S. May 2016 - Aug. 2019. [Facebook](https://www.facebook.com/nathan.saunders3).
-- Yangyang Li, M.S. Aug. 2016 - Aug. 2019
-- [Tupendra Oli](https://www.linkedin.com/in/tupendra-oli-8163b1145/), M.S. Aug. 2016 - Nov. 2018. [ResearchGate](https://www.researchgate.net/profile/Tupendra_Oli).
-- [Mitchell Wagner](https://www.linkedin.com/in/mitchell-wagner-90a8a374), B.S. 2015. M.S. Jan. 2016 – Jun. 2018. [Facebook](https://www.facebook.com/mitch.wagner.12).
-- [Arun Kumar Soma](https://www.facebook.com/Arun.Kumar.Soma), postdoc, Jan. 2016 - Nov. 2016.
+- [Nathan Saunders](https://www.linkedin.com/in/nathan-saunders-profile/), M.S. May 2016 - Aug. 2019, cryogenic scintillator R&D, [Facebook](https://www.facebook.com/nathan.saunders3).
+- Yangyang Li, M.S. Aug. 2016 - Aug. 2019, HPGe detector data analysis.
+- [Tupendra Oli](https://www.linkedin.com/in/tupendra-oli-8163b1145/), M.S. Aug. 2016 - Nov. 2018, cryogenic scintillator R&D, [ResearchGate](https://www.researchgate.net/profile/Tupendra_Oli).
+- [Mitchell Wagner](https://www.linkedin.com/in/mitchell-wagner-90a8a374), B.S. 2015. M.S. Jan. 2016 – Jun. 2018, HPGe detector R&D, [Facebook](https://www.facebook.com/mitch.wagner.12).
+- [Arun Kumar Soma](https://www.facebook.com/Arun.Kumar.Soma), postdoc, Jan. 2016 - Nov. 2016, HPGe detector, cryogenic scintillating detector R&D.
