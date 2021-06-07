@@ -59,7 +59,7 @@ Associate professor. His public profiles can be found at
 
 ### Yongjin Yang
 
-- Aug. 2010 - now, Cryogenic scintillator R&D. HPGe crystal purification and growth
+- Aug. 2020 - now, Cryogenic scintillator R&D. HPGe crystal purification and growth
 - [GitHub](https://github.com/yyj398596791)
 
 ---
