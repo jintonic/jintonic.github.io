@@ -26,11 +26,6 @@ Associate professor. His public profiles can be found at
 
 ## Postdoc
 
-### Dmitry Chernyak
-
-- Jun. 2019 - now, cryogenic scintillator R&D.
-- [LinkedIn](https://www.linkedin.com/in/dmitry-chernyak-78a9352a/)
-
 ### Hao Mei
 
 - May. 2019 - now, HPGe crystal purification and growth
@@ -44,6 +39,10 @@ Associate professor. His public profiles can be found at
 ---
 
 ## Graduate Student
+
+### Conan Boch
+
+- Jan. 2020 - now, neutron background for COHERENT
 
 ### Keyu Ding
 
@@ -62,6 +61,9 @@ Associate professor. His public profiles can be found at
 
 ## Alumni
 
+### Dmitry Chernyak
+
+- [Dmitry chernyak](https://www.linkedin.com/in/dmitry-chernyak-78a9352a/), Postdoc, Jun. 2019 - Jun. 2020, cryogenic scintillator R&D.
 - [Jianchen (Byron) Li](https://github.com/byljcron), M.S. Jan. 2018 - Dec. 2019; B.S. May. 2015 - Dec. 2017, HPGe detector simulation.
 - [Nathan Saunders](https://www.linkedin.com/in/nathan-saunders-profile/), M.S. May 2016 - Aug. 2019. [Facebook](https://www.facebook.com/nathan.saunders3).
 - Yangyang Li, M.S. Aug. 2016 - Aug. 2019
