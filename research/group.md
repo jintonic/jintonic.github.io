@@ -40,7 +40,7 @@ Associate professor. His public profiles can be found at
 
 ## Graduate Student
 
-### Conan Boch
+### Conan Bock
 
 - Jan. 2020 - now, neutron background for COHERENT
 
