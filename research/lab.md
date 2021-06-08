@@ -21,7 +21,7 @@ title: Radiation Detector Laboratory
 - [Responsible Conduct of Research](https://www.usd.edu/research/responsible-conduct-of-research)
 
 ## Online resouces
-- Onshape:<https://cad.onshape.com>. Please register there, let [Jing Liu](/research/group) know your user name.
+- Onshape: <https://cad.onshape.com>. Please register there, let [Jing Liu](/research/group) know your user name.
 - Programming: <https://github.com/>. Please register there, let [Jing Liu](/research/group) know your user name.
 - LaTeX: <https://www.overleaf.com/>. Please register there, let [Jing Liu](/research/group) know your user name.
 - References: <https://www.zotero.org/>. Please register there, let [Jing Liu](/research/group) know your user name, install the desktop version of zotero as well as the web browser plugin.
