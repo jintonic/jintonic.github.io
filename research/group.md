@@ -43,6 +43,7 @@ Associate professor. His public profiles can be found at
 ### Conan Bock
 
 - Jan. 2020 - now, neutron background for COHERENT
+- [GitHub](https://github.com/Croakyyyy)
 
 ### Keyu Ding
 
