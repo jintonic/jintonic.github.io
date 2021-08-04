@@ -3,10 +3,12 @@ layout: page
 title: Liu's Group
 ---
 
+Welcome to our research group! You may want to take a personality test in [16Personalities](https://www.16personalities.com/) to know yourself better and also to let us know you better.
+
 # Group Members
 ## Principal Investigator
 ### Jing Liu
-Associate professor. His public profiles can be found at
+Associate professor. Personality: [Logician](https://www.16personalities.com/intp-personality). His public profiles can be found at
 
 - [University of South Dakota](http://www.usd.edu/faculty-and-staff/Jing-Liu)
 - [ORCID](http://orcid.org/0000-0003-1869-2407)
@@ -54,6 +56,7 @@ Associate professor. His public profiles can be found at
 ### Kyler Kooi
 
 - 2018 December - now, HPGe detector R&D.
+- Personality: [Mediator](https://www.16personalities.com/infp-personality)
 - [LinkedIn](https://www.linkedin.com/in/kyler-kooi-888ab0129/)
 - [ResearchGate](https://www.researchgate.net/profile/Kyler_Kooi)
 - [Facebook](https://www.facebook.com/kyler.kooi)
