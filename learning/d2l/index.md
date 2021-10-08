@@ -4,6 +4,10 @@ title: D2L
 subtitle: learning management system
 ---
 
+## Greet students using individual names
+
+`{FirstName}` will be replaced by a student's first name in D2L contents. Ref. to <https://documentation.brightspace.com/EN/le/replace_stings/instructor/replace_strings.htm>
+
 ## "Written Response" VS "Short Answer" Question
 
 A "Short Answer" question in a quiz demands a preset answer when setting the question up. The user's answer has to be exactly the same as the preset answer to be auto-graded as right. A quiz report will only show the preset answer instead of individual's answers.
