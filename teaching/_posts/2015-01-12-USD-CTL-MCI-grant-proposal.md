@@ -1,5 +1,5 @@
 ---
-tags: [phys-332, South Dakota, grant]
+tags: [phys-332, USD, grant]
 ---
 
 ![USD CTL MCI grant proposal budget 2015]({{site.ina}}/USD-CTL-MCI-grant-proposal-budget-2015.png)
