@@ -27,6 +27,7 @@ Ref.: <https://choosealicense.com/>
 
 # To-do's
 
+- add USD COHERENT group information
 - update blog with research activities
   - publications, grant applications, LEGEND, COHERENT, PIRE activities
   - youtube, bilibili updates
