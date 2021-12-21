@@ -1,5 +1,5 @@
 ---
-tags: [Git, GitHub]
+tags: [git, GitHub]
 ---
 
 ![distributed version control](https://homes.cs.washington.edu/~mernst/advice/version-control-fig3.png)
