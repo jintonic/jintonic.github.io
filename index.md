@@ -1,4 +1,4 @@
-Hi, I'm Jing /jiŋ/, an associate [professor][] in [physics][] at the University of South Dakota ([USD][]), [SD][], [US][], also known as [jintonic][] on [GitHub][] and [physino][] on [YouTube][]. You can get connected to you through various social media channels:
+Hi, I'm Jing LIU /jiŋ liou/, an associate [professor][] in [physics][] at the University of South Dakota ([USD][]), [SD][], [US][], also known as [jintonic][] on [GitHub][] and [physino][] on [YouTube][]. You can get connected to me through various social media channels:
 <a href="https://www.youtube.com/c/PhysinoXyz"><i class="fab fa-youtube"></i></a>
 <a href="https://www.facebook.com/physino/"><i class="fab fa-facebook"></i></a>
 <a href="https://github.com/jintonic"><i class="fab fa-github"></i></a>
@@ -18,7 +18,14 @@ I am the leader of curriculum development for the Germanium Materials and Detect
 
 ### Education and Outreach
 [![Rate My Professors](https://img.shields.io/badge/Rate-My_Professors-green.svg)](https://www.ratemyprofessors.com/ShowRatings.jsp?tid=2008328)
+[![Courses taught](https://img.shields.io/badge/Courses-Taught-green.svg)](http://physino.xyz/teaching/courses/)
+[![YouTube](https://img.shields.io/badge/You-Tube-red?style=flat)](https://www.youtube.com/c/PhysinoXyz)
+[![bilibili](https://img.shields.io/badge/B-站-blue?style=flat)](https://space.bilibili.com/610308328)
+
 I initiated and co-organized GEMADARC [summer schools](http://pire.gemadarc.org/education/) and created my [YouTube][] and [bilibili][] channels to reach out to the general public.
+
+[![USD Physics](https://img.shields.io/badge/USD-Physics-blue?style=flat)](https://www.facebook.com/usdphys)
+[![Physics Club](https://img.shields.io/badge/Physics-Club-green?style=flat)](https://www.facebook.com/usdphysicsclub)
 
 I am the administrator of the USD Physics [Department][usdphysics] and [Club][club] pages on Facebook. Please let me know through [my Facebook channel][facebook] if you want to get connected or contribute to the pages.
 
