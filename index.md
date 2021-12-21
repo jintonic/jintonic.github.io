@@ -3,6 +3,8 @@
 <a href="https://www.youtube.com/c/PhysinoXyz"><i class="fab fa-youtube"></i></a>
 <a href="https://www.linkedin.com/in/jingliuphys"><i class="fab fa-linkedin"></i></a>
 <a href="https://www.facebook.com/physino/"><i class="fab fa-facebook"></i></a>
+[![arXiv](https://img.shields.io/badge/arXiv-articles-green.svg)](https://arxiv.org/a/liu_j_2.html)
+[![Google Scholar](https://img.shields.io/badge/Google-Scholar-blue.svg)](https://scholar.google.com/citations?user=yKumdPcAAAAJ)
 
 Hi, I'm Jing /jiŋ/, an associate [professor][] in [physics][] at the University of South Dakota ([USD][]), [SD][], [US][], also known as [jintonic][] on [GitHub][] and [physino][] on [YouTube][].
 
