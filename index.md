@@ -12,13 +12,19 @@ Hi, I'm Jing LIU /jiŋ liou/, an associate [professor][] in [physics][] at the U
 I am the *background coordinator* and the *deputy analysis coordinator* of the [COHERENT][] experiment at the Spallation Neutron Source ([SNS][]), Oak Ridge National Laboratory ([ORNL][]), searching for new physics through the detection of Coherent Elastic neutrino(ν)-Nucleus Scatterings ([CEvNS][]). I also represent the [USD group][group] in the COHERENT [collaboration][] board (CB).
 
 [![COHERENT Wiki](https://img.shields.io/badge/COHERENT-Wiki-green.svg)](https://coherent.phy.duke.edu)
+[![Reference list](https://img.shields.io/badge/Reference List-Wiki-green.svg)](https://coherent.phy.duke.edu)
 <a href="https://code.ornl.gov"><i class="fab fa-gitlab"></i></a>
 
 I am the leader of curriculum development for the Germanium Materials and Detectors Advancement Research Consortium ([GEMADARC][]), a global partnership funded through [NSF][] [PIRE][] to advance germanium technologies for the search of [dark matter][DM], [neutrinoless double-beta decay][0vbb] and other rare physics processes.
 
+[![My Group](https://img.shields.io/badge/My-Group-blue.svg)](http://physino.xyz/research/group)
+[![My Lab](https://img.shields.io/badge/My-Lab-magenta.svg)](http://physino.xyz/research/lab)
+
+[My group](http://physino.xyz/research/group/) is developing cryogenic scintillating crystal and high purity germanium (HPGe) crystal based particle detectors.
+
 ### Education and Outreach
 [![Rate My Professors](https://img.shields.io/badge/Rate-My_Professors-green.svg)](https://www.ratemyprofessors.com/ShowRatings.jsp?tid=2008328)
-[![Courses taught](https://img.shields.io/badge/Courses-Taught-green.svg)](http://physino.xyz/teaching/courses/)
+[![Courses taught](https://img.shields.io/badge/Courses-Taught-magenta.svg)](http://physino.xyz/teaching/courses/)
 [![YouTube](https://img.shields.io/badge/You-Tube-red?style=flat)](https://www.youtube.com/c/PhysinoXyz)
 [![bilibili](https://img.shields.io/badge/B-站-blue?style=flat)](https://space.bilibili.com/610308328)
 
