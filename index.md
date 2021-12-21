@@ -1,16 +1,16 @@
 <a href="http://orcid.org/0000-0003-1869-2407"><i class="fab fa-orcid"></i></a>
 <a href="https://github.com/jintonic"><i class="fab fa-github"></i></a>
-<a href="https://www.youtube.com/channel/UCQd4wp1ehUPXVHLjqYAMR3g"><i class="fab fa-youtube"></i></a>
+<a href="https://www.youtube.com/c/PhysinoXyz"><i class="fab fa-youtube"></i></a>
 <a href="https://www.linkedin.com/in/jingliuphys"><i class="fab fa-linkedin"></i></a>
 <a href="https://www.facebook.com/physino/"><i class="fab fa-facebook"></i></a>
 
 Hi, I'm Jing /jiŋ/, an associate [professor][] in [physics][] at the University of South Dakota ([USD][]), [SD][], [US][], also known as [jintonic][] on [GitHub][] and [physino][] on [YouTube][].
 
-I am the *background coordinator* and the *deputy analysis coordinator* of the [COHERENT][] experiment at the Spallation Neutron Source ([SNS][]), Oak Ridge National Laboratory ([ORNL][]), searching for new physics through the detection of Coherent Elastic neutrino(ν)-Nucleus Scatterings ([CEvNS][]). I also represent the [USD group][group] in the [COHERENT][] [collaboration][] board (CB).
+I am the *background coordinator* and the *deputy analysis coordinator* of the [COHERENT][] experiment at the Spallation Neutron Source ([SNS][]), Oak Ridge National Laboratory ([ORNL][]), searching for new physics through the detection of Coherent Elastic neutrino(ν)-Nucleus Scatterings ([CEvNS][]). I also represent the [USD group][group] in the COHERENT [collaboration][] board (CB).
 
-I am the leader of curriculum development for the Germanium Materials and Detectors Advancement Research Consortium ([GEMADARC][]), A global partnership funded through [NSF][] [PIRE][] to advance germanium technologies for the search of [dark matter][DM], [neutrinoless double-beta decay][0vbb] and other rare physics processes with world-class education and training opportunities.
+I am the leader of curriculum development for the Germanium Materials and Detectors Advancement Research Consortium ([GEMADARC][]), a global partnership funded through [NSF][] [PIRE][] to advance germanium technologies for the search of [dark matter][DM], [neutrinoless double-beta decay][0vbb] and other rare physics processes with world-class education and training opportunities. I initiated and co-organized GEMADARC [summer schools](http://pire.gemadarc.org/education/) and created my [YouTube][] and [bilibili][] channels to reach out to the general public.
 
-I am the administrator of the [USD Physics Department][usdphysics] and [Club][club] pages on Facebook. Please let me know through [my Facebook channel][facebook] if you want to get connected or contribute to the pages.
+I am the administrator of the USD Physics [Department][usdphysics] and [Club][club] pages on Facebook. Please let me know through [my Facebook channel][facebook] if you want to get connected or contribute to the pages.
 
 [professor]: https://www.usd.edu/faculty-and-staff/Jing-Liu
 [physics]: https://www.usd.edu/physics
@@ -34,4 +34,6 @@ I am the administrator of the [USD Physics Department][usdphysics] and [Club][cl
 [usdphysics]: https://www.facebook.com/usdphys
 [DM]: http://pire.gemadarc.org/science/#menu2
 [0vbb]: http://pire.gemadarc.org/science/#menu1
-[facebook]: https://www.youtube.com/channel/UCQd4wp1ehUPXVHLjqYAMR3g
+[facebook]: https://www.facebook.com/physino
+[YouTube]: https://www.youtube.com/c/PhysinoXyz
+[bilibili]: https://space.bilibili.com/610308328/
