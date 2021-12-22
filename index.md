@@ -13,8 +13,6 @@ Hi, I'm Jing LIU /jiŋ liou/, an associate [professor][] in [physics][] at the U
 
 I am the background coordinator and the deputy analysis coordinator of the [COHERENT][] experiment at the Spallation Neutron Source ([SNS][]), Oak Ridge National Laboratory ([ORNL][]), searching for new physics through the detection of Coherent Elastic neutrino(ν)-Nucleus Scatterings ([CEvNS][]). I also represent the USD [group][] in the COHERENT [Collaboration][] Board (CB). Please tell me your USD email address if you want to access the COHERENT [Wiki][], [Slack][] channel, and [Git repositories][GitLab].
 
-I am the leader of curriculum development for the Germanium Materials and Detectors Advancement Research Consortium ([GEMADARC][]), a global partnership funded through [NSF][] [PIRE][] to advance germanium technologies for the search of [dark matter][DM], [neutrinoless double-beta decay][0vbb] and other rare physics processes.
-
 [![My Group](https://img.shields.io/badge/My-Group-blue.svg)](http://physino.xyz/research/group)
 [![My Lab](https://img.shields.io/badge/My-Lab-orange.svg)](http://physino.xyz/research/lab)
 
@@ -23,7 +21,7 @@ My group is developing [cryogenic scintillating crystal](https://code.ornl.gov/C
 [![YouTube](https://img.shields.io/badge/You-Tube-red?style=flat)](https://www.youtube.com/c/PhysinoXyz)
 [![bilibili](https://img.shields.io/badge/B-站-blue?style=flat)](https://space.bilibili.com/610308328)
 
-I initiated and co-organized GEMADARC [summer schools](http://pire.gemadarc.org/education/) since 2018. The school became virtual in 2020 because of COVID, and I started to post tutorials about [Geant4][] in my [YouTube][] and [bilibili][] channels.
+I am the leader of curriculum development for the Germanium Materials and Detectors Advancement Research Consortium ([GEMADARC][]), a global partnership funded through [NSF][] [PIRE][] to advance germanium technologies for the search of [dark matter][DM], [neutrinoless double-beta decay][0vbb] and other rare physics processes. I initiated and co-organized GEMADARC [summer schools](http://pire.gemadarc.org/education/) since 2018. The school became virtual in 2020 because of COVID, and I started to post tutorials about [Geant4][] in my [YouTube][] and [bilibili][] channels.
 
 [![Physics Department](https://img.shields.io/badge/Physics-Department-blue?style=flat)](https://www.facebook.com/usdphys)
 [![Physics Club](https://img.shields.io/badge/Physics-Club-green?style=flat)](https://www.facebook.com/usdphysicsclub)
