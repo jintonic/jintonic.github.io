@@ -8,15 +8,15 @@ Hi, I'm Jing LIU /jiŋ liou/, an associate [professor][] in [physics][] at the U
 <a href="https://www.linkedin.com/in/jingliuphys"><i class="fab fa-linkedin"></i></a>
 
 [![arXiv](https://img.shields.io/badge/arXiv-articles-yellow.svg)](https://arxiv.org/a/liu_j_2.html)
-[![Google Scholar](https://img.shields.io/badge/Google-Scholar-9cf.svg)](https://scholar.google.com/citations?user=yKumdPcAAAAJ)
+[![Google Scholar](https://img.shields.io/badge/Google-Scholar-blue.svg)](https://scholar.google.com/citations?user=yKumdPcAAAAJ)
 <a href="https://orcid.org/0000-0003-1869-2407"><i class="fab fa-orcid"></i></a>
 
-I am the background coordinator and the deputy analysis coordinator of the [COHERENT][] experiment at the Spallation Neutron Source ([SNS][]), Oak Ridge National Laboratory ([ORNL][]), searching for new physics through the detection of Coherent Elastic neutrino(ν)-Nucleus Scatterings ([CEvNS][]). I also represent the USD [group][] in the COHERENT [Collaboration][] Board (CB). Please tell me your USD email address if you want to access the COHERENT [Wiki][], [Slack][] channel, and [Git repositories][GitLab].
+I am the background coordinator and the deputy analysis coordinator of the [COHERENT][] experiment at the Spallation Neutron Source ([SNS][]), Oak Ridge National Laboratory ([ORNL][]), searching for new physics through the detection of Coherent Elastic neutrino(ν)-Nucleus Scatterings ([CEvNS][]). I also represent the USD [group][] in the COHERENT [Collaboration][] Board (CB). Please tell me your USD email address if you want to access the COHERENT [Wiki][], [Slack][] channel, and [Git repositories][GitLab]. I maintain a series of [tutorials][] here to help you get started with <a href="http://physino.xyz/tags/#COHERENT"><i class="fab fa-tag"></i>COHERENT</a> and <a href="http://physino.xyz/tags/#ORNL"><i class="fab fa-tag"></i>ORNL</a> related research.
 
-[![My Group](https://img.shields.io/badge/My-Group-blue.svg)](http://physino.xyz/research/group)
+[![My Group](https://img.shields.io/badge/My-Group-green.svg)](http://physino.xyz/research/group)
 [![My Lab](https://img.shields.io/badge/My-Lab-orange.svg)](http://physino.xyz/research/lab)
 
-My group is developing [cryogenic scintillating crystal](https://code.ornl.gov/COHERENT/Cryogenic-CsI/docs) and high purity germanium (HPGe) crystal based particle detectors. Please tell me your preferred Gmail accounts if you want me to share with you our internal resources about [cryogenic scintillating crystals](https://drive.google.com/drive/u/0/folders/0BwM7XYhFgK7oM2lITXdBLWlBc3M) and [HPGe][] detectors hosted on Google Drive.
+My group is developing [cryogenic scintillating crystal](https://drive.google.com/drive/u/0/folders/0BwM7XYhFgK7oM2lITXdBLWlBc3M) and high purity germanium ([HPGe][]) crystal based particle detectors. Please tell me your preferred Gmail accounts for me to share with you our internal resources about them hosted on Google Drive.
 
 [![YouTube](https://img.shields.io/badge/You-Tube-red?style=flat)](https://www.youtube.com/c/PhysinoXyz)
 [![bilibili](https://img.shields.io/badge/B-站-blue?style=flat)](https://space.bilibili.com/610308328)
@@ -58,4 +58,4 @@ I administrate the USD Physics [Department][] and [Club][] pages on Facebook. Pl
 [YouTube]: https://www.youtube.com/c/PhysinoXyz
 [bilibili]: https://space.bilibili.com/610308328
 [Geant4]: https://geant4.web.cern.ch
-
+[tutorials]: http://physino.xyz/learning
