@@ -5,37 +5,6 @@ title: LaTeX
 subtitle: typesetting scientific documents
 ---
 
-## Install packages in HOME directory
-
-Check the definition of TEXMFHOME in your system tex config file:
-
-~~~sh
-kpsewhich texmf.cnf # locate system tex config file
-cat /path/to/system/texmf.cnf | grep TEXMFHOME
-~~~
-
-or simply
-```sh
-kpsewhich --var-value TEXMFHOME
-```
-
-You can change it in your shell:
-
-~~~sh
-export TEXMFHOME=/where/you/like
-~~~
-
-Put new packages into directory specified in TEXMFHOME and run
-
-~~~sh
-cd /path/specified/in/TEXMFHOME
-texhash . # or mktexlsr .
-~~~
-
-*NOTE*: *.cls* and *.sty* files should go to *TEXMFHOME/tex/latex/*, while
-*.bst* files should go to *TEXMFHOME/bibtex/bst/*. Those files won't be found
-if you don't follow this conventional path specification.
-
 One can use the [ctanify][] script to automatically organize a flat latex package based on the tex directory structure:
 
 ```sh
