@@ -13,61 +13,68 @@ Now, let's provide two solutions to the first problem, that is, how to deal with
 A better solution is to save the missing package to another directory and tell [LaTeX][] where to find it so that it will be kept separated from your personal [LaTeX][] project. Meanwhile, this package can be reused for your other [LaTeX][] projects. [LaTeX][] allows a normal Linux user (without [root][] privilege) to save his or her [LaTeX][] packages and configurations in a particular folder in the user's [home][] directory. This folder is defined by an [environment][] variable called [TEXMFHOME][]. You can check the definition of [TEXMFHOME][] in your system [TeX][] configuration file by running
 
 ```sh
-$ kpsewhich texmf.cnf # locate system TeX config file
-$ cat /path/to/system/texmf.cnf | grep TEXMFHOME
+kpsewhich texmf.cnf # locate system TeX config file
+cat /path/to/system/texmf.cnf | grep TEXMFHOME
 ```
 
 or simply
 
 ```sh
-$ kpsewhich --var-value TEXMFHOME
+kpsewhich --var-value TEXMFHOME
 ```
 
 If you don't have that folder, you can create it by yourself. If you don't like the default location of that folder, you can also change it by redefining the [environment][] variable [TEXMFHOME][]:
 
 ~~~sh
-$ export TEXMFHOME=/a/folder/that/you/like
+export TEXMFHOME=/a/folder/that/you/like
 ~~~
 
 Remember to put the code above to your [SHELL][] configuration file (`.bashrc`, `.profile`, `.zshrc`, etc.) to make the change permanent.
 
-Now you can put missing packages into this folder specified in [TEXMFHOME][] and run
+Now you can put missing packages into this folder specified in `$TEXMFHOME` and run
 
 ~~~sh
 cd /path/specified/in/TEXMFHOME
 texhash . # or mktexlsr .
 ~~~
 
-to create an index file that tells [LaTeX][] what's in this folder.
+to create an index file that tells [LaTeX][] what's in this folder. *NOTE*: `.cls` and `.sty` files should go to `$TEXMFHOME/tex/latex/`, while `.bst` files should go to `$TEXMFHOME/bibtex/bst/`. Those files won't be found if you don't follow this conventional path specification.
 
-*NOTE*: `.cls` and `.sty` files should go to `$TEXMFHOME/tex/latex/`, while `.bst` files should go to `$TEXMFHOME/bibtex/bst/`. Those files won't be found if you don't follow this conventional path specification.
+It is very easy to make mistakes here or there if you manually install missing packages. Fortunately, if the [LaTeX][] installation is new enough (later than 2013), you can use a command called [tlmgr][] ([texlive][] manager) in [usermode][] to automatically pull packages from [CTAN][] to your `$TEXMFHOME`:
+
+```sh
+# create directory defined in $TEXMFHOME (only need to be run once)
+tlmgr --init-usertree
+# pull missing_package from CTAN to your $TEXMFHOME and update the index file
+tlmgr --usermode install missing_package
+```
 
 ## Local LaTeX installation
 
-If the [LaTeX][] installation on your cluster is too old, it may not be able to handle new packages that you put in your `$TEXMFHOME` directory. In that case, you can install the entire [LaTeX][] program in your [home][] directory (Yes, [LaTeX][] can be installed without the [root][] privilege). You can follow the documentation of [texlive][] to achieve that. If you install [texlive][] in `~/texlive`, the `latex` command can be found in folder `~/texlive/20xx/bin/x86_64-linux/`. Another useful command in the same folder is [tlmgr][] (texlive manager). You can use it to install any missing package with just a line of command:
+If the [LaTeX][] installation on your cluster is too old, it may not be able to handle new packages that you put in your `$TEXMFHOME` directory. In that case, you can install the entire [LaTeX][] program in your [home][] directory (Yes, [LaTeX][] can be installed without the [root][] privilege). You can follow the documentation of [texlive][] to achieve that. If you install [texlive][] in `~/texlive`, the `latex` command can be found in folder `~/texlive/20xx/bin/x86_64-linux/`. Another useful command in the same folder is [tlmgr][]. You can use it to install any missing package without being in the [usermode][]:
 
 ```sh
-$ tlmgr install missing_package
+tlmgr install missing_package
 ```
 
 This sounds like a very attractive solution. However, it takes a lot of time and disk space as well as command-line experience. Before you resort to this solution, ask around. It is very likely that some experienced user on the same cluster has already done that. All you need to do is to use his/her [LaTeX][] installation instead of the system one.
 
 ## LaTeX on an ORNL HPC cluster
 
-Now let me explain how to use a [LaTeX][] installation that is not in the standard location. I will use an [HPC][] cluster at [ORNL][] called `hcdata` as an example. I have installed [texlive][] 2019 in my [home][] directory on `hcdata`. It is not the latest version, but is new enough to handle all scientific paper writings I have to do so far. To use it, put the following codes in your `~/.bashrc` file:
+Now let me explain how to use a [LaTeX][] installation that is not in the standard location. I will use an [HPC][] cluster at [ORNL][] called `hcdata` as an example. I have installed [texlive][] 2019 in my [home][] directory on `hcdata`. It is not the latest version, but is new enough to handle all scientific paper writings I have to do so far. To use it, put the following [environment][] variable settings in your `~/.bashrc` file:
 
 ```sh
-export PATH=~jingliu/local/texlive/2019/bin/x86_64-linux:$PATH
-export MANPATH=~jingliu/local/texlive/2019/texmf-dist/doc/man:$MANPATH
-export INFOPATH=~jingliu/local/texlive/2019/texmf-dist/doc/info:$INFOPATH
+export PATH=~jingliu/texlive/2019/bin/x86_64-linux:$PATH
+export MANPATH=~jingliu/texlive/2019/texmf-dist/doc/man:$MANPATH
+export INFOPATH=~jingliu/texlive/2019/texmf-dist/doc/info:$INFOPATH
 ```
 
-You need to log out and then back into your terminal to let the new settings take effect. Run `which latex` to make sure that you are using my [LaTeX][] instead of the system one. As an example, you can download a [LaTeX][] project from the MARS group and try to compile it with this [LaTeX] installation:
+You need to log out and then back into your terminal to let the new settings take effect. Run `which latex` to make sure that you are using my [LaTeX][] instead of the system one. As an example, you can download a [LaTeX][] project from the MARS group and try to compile it with my [LaTeX][] installation:
 
 ```sh
-$ git clone https://code.ornl.gov/CASA/MARS.git
-$ cd MARS/docs/papers/2021_MARSCharacterization
-$ latexmk
+git clone https://code.ornl.gov/CASA/MARS.git
+cd MARS/docs/papers/2021_MARSCharacterization
+latexmk # a Perl script that automates latex compilations
 ```
 
 You should be able to generate a pdf file `MARSCharacterization.pdf` upon a successful [LaTeX][] compilation.
@@ -83,9 +90,10 @@ You should be able to generate a pdf file `MARSCharacterization.pdf` upon a succ
 [TEXMFHOME]: https://texfaq.org/FAQ-privinst
 [root]: https://geek-university.com/linux/root-account
 [home]: https://wiki.debian.org/home_directory
-[TeX]: https://www.ctan.org/starter
 [environment]: https://www.geeksforgeeks.org/environment-variables-in-linux-unix
+[TeX]: https://www.ctan.org/starter
+[SHELL]: https://linuxcommand.org/lc3_lts0010.php
 [texlive]: https://www.tug.org/texlive
 [tlmgr]: https://www.tug.org/texlive/tlmgr.html
+[usermode]: https://www.preining.info/blog/2013/04/tlmgr-user-mode
 [ORNL]: https://www.ornl.gov
-
