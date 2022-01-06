@@ -6,7 +6,7 @@ tags: [HPGe, detector]
 
 I had an idea of turning HPGe crystal wafers to thin planar detectors to characterize it precisely. [Wenzhao][] turned it into reality! Hopefully, [Canberra][] and [ORTEC][] can use this method to provide more precise parameters for [LEGEND][] detectors.
 
-[Wenzhao]: research/group#wenzhao-wei
+[Wenzhao]: /research/group#wenzhao-wei
 [Canberra]: https://www.mirion.com/products/germanium-detectors
 [ORTEC]: https://www.ortec-online.com/products/radiation-detectors/germanium-hpge-radiation-detectors
 [LEGEND]: https://legend-exp.org
