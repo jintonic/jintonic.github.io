@@ -1,5 +1,5 @@
 ---
-tags: [tutorial, COHERENT, ORNL, Struck, electronics]
+tags: [COHERENT, ORNL, Struck, electronics]
 ---
 
 [![SIS3316 data structure](https://drive.google.com/uc?id=18IFF7jwUIV335iYFMGHka-D9cdxdex1i)](
