@@ -12,7 +12,7 @@ subtitle: I teach
 |2021 Spring | [Electrodynamics II][723-21] | Lecture | Graduate | University of South Dakota
 |2020 Fall | [Electrodynamics I][721-20] | Lecture | Graduate | University of South Dakota
 |2020 Spring | [Data Analytics in Radiation Detection][792-20] | Lecture | Graduate | University of South Dakota
-|2019 Fall | [Thermodynamics and Statistical Mechanics][441] | Lecture | Undergraduate | University of South Dakota
+|2019 Fall | [Thermodynamics and Statistical Mechanics](441) | Lecture | Undergraduate | University of South Dakota
 |2019 Spring | [Electrodynamics II][723-19] | Lecture | Graduate | University of South Dakota
 |2018 Fall | [Electrodynamics I][721-18] | Lecture | Graduate | University of South Dakota
 |2018 Spring | [Experimental Modern Physics I][332-18] | Laboratory | Undergraduate | University of South Dakota
