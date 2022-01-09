@@ -1,32 +1,3 @@
-{% if paginator.total_pages > 1 %}
-  <div class="text-center">
-  <ul class="pagination">
-     {% if paginator.previous_page %}
-         <li><a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo;</a></li>
-     {% else %}
-         <li class="disabled"><a>&laquo;</a></li>
-     {% endif %}
-
-     {% for page in (1..paginator.total_pages) %}
-
-     {% if page == paginator.page %}
-         <li class="active"><a>{{ page | pnumber }}</a></li>
-     {% elsif page == 1 %}
-         <li><a href="{{ '/index.html' | prepend: site.baseurl | replace: '//', '/' }}">{{ page | pnumber }}</a></li>
-     {% else %}
-         <li><a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page | pnumber }}</a></li>
-     {% endif %}
-
-     {% endfor %}
-
-     {% if paginator.next_page %}
-         <li><a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">&raquo;</a></li>
-     {% else %}
-         <li class="disabled"><a>&raquo;</a></li>
-     {% endif %}
-  </ul>
-  </div>
-{% endif %}
 </div><!-- col-md-8 -->
 <div class="col-md-4">
   <div class="panel panel-info">

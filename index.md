@@ -1,3 +1,6 @@
+---
+---
+
 [![Student evaluation](https://img.shields.io/badge/Student-Evaluation-green.svg)](https://www.ratemyprofessors.com/ShowRatings.jsp?tid=2008328)
 [![Courses taught](https://img.shields.io/badge/Courses-Taught-orange.svg)](http://physino.xyz/teaching/courses/)
 
@@ -59,3 +62,33 @@ I administrate the USD Physics [Department][] and [Club][] pages on Facebook. Pl
 [bilibili]: https://space.bilibili.com/610308328
 [Geant4]: https://geant4.web.cern.ch
 [tutorials]: http://physino.xyz/learning
+
+{% if paginator.total_pages > 1 %}
+  <div class="text-center">
+  <ul class="pagination">
+     {% if paginator.previous_page %}
+         <li><a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo;</a></li>
+     {% else %}
+         <li class="disabled"><a>&laquo;</a></li>
+     {% endif %}
+
+     {% for page in (1..paginator.total_pages) %}
+
+     {% if page == paginator.page %}
+         <li class="active"><a>{{ page | pnumber }}</a></li>
+     {% elsif page == 1 %}
+         <li><a href="{{ '/index.html' | prepend: site.baseurl | replace: '//', '/' }}">{{ page | pnumber }}</a></li>
+     {% else %}
+         <li><a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page | pnumber }}</a></li>
+     {% endif %}
+
+     {% endfor %}
+
+     {% if paginator.next_page %}
+         <li><a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">&raquo;</a></li>
+     {% else %}
+         <li class="disabled"><a>&raquo;</a></li>
+     {% endif %}
+  </ul>
+  </div>
+{% endif %}
