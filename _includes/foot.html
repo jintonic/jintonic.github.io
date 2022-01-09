@@ -1,3 +1,32 @@
+{% if paginator.total_pages > 1 %}
+  <div class="text-center">
+  <ul class="pagination">
+     {% if paginator.previous_page %}
+         <li><a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo;</a></li>
+     {% else %}
+         <li class="disabled"><a>&laquo;</a></li>
+     {% endif %}
+
+     {% for page in (1..paginator.total_pages) %}
+
+     {% if page == paginator.page %}
+         <li class="active"><a>{{ page | pnumber }}</a></li>
+     {% elsif page == 1 %}
+         <li><a href="{{ '/index.html' | prepend: site.baseurl | replace: '//', '/' }}">{{ page | pnumber }}</a></li>
+     {% else %}
+         <li><a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page | pnumber }}</a></li>
+     {% endif %}
+
+     {% endfor %}
+
+     {% if paginator.next_page %}
+         <li><a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">&raquo;</a></li>
+     {% else %}
+         <li class="disabled"><a>&raquo;</a></li>
+     {% endif %}
+  </ul>
+  </div>
+{% endif %}
 </div><!-- col-md-8 -->
 <div class="col-md-4">
   <div class="panel panel-info">
@@ -18,7 +47,22 @@
       </ul>
     </div>
   </div>
-</div>
+  <div class="panel panel-info">
+    <div class="panel-heading">Tags</div>
+    <div class="panel-body">
+      {% assign sorted_tags = site.tags | sort %}
+      <div class="well well-sm">
+        <ul class="nav nav-pills">
+          {% for each in sorted_tags %}
+            {% assign name = each | first %}
+            {% assign posts = each | last %}
+            <li><a href="/tags/#{{name|replace:' ','-'}}">{{name}} <span class="badge">{{posts|size}}</span></a></li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </div>
+</div><!-- col-md-4 -->
 </div><!-- row -->
 </div><!-- container -->
 </body>
