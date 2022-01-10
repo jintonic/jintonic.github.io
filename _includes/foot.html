@@ -19,7 +19,7 @@
     </div>
   </div>
   {% assign sorted_tags = site.tags | sort %}
-  <div class="alert alert-success">
+  <div class="well well-sm">
     <ul class="nav nav-pills">
       {% for each in sorted_tags %}
         {% assign name = each | first %}
