@@ -2,7 +2,7 @@
 ---
 
 [![Student evaluation](https://img.shields.io/badge/Student-Evaluation-green.svg)](https://www.ratemyprofessors.com/ShowRatings.jsp?tid=2008328)
-[![Courses taught](https://img.shields.io/badge/Courses-Taught-orange.svg)](http://physino.xyz/teaching/courses/)
+[![Courses taught](https://img.shields.io/badge/Courses-Taught-orange.svg)](teaching/courses)
 
 Hi, I'm Jing LIU /jiŋ liou/, an associate [professor][] in [physics][] at the University of South Dakota ([USD][]), [SD][], [US][], also known as [jintonic][] on [GitHub][] and [physino][] on [YouTube][]. You can get connected to me through various social media channels:
 <a href="https://www.youtube.com/c/PhysinoXyz"><i class="fab fa-youtube"></i></a>
@@ -14,10 +14,10 @@ Hi, I'm Jing LIU /jiŋ liou/, an associate [professor][] in [physics][] at the U
 [![Google Scholar](https://img.shields.io/badge/Google-Scholar-blue.svg)](https://scholar.google.com/citations?user=yKumdPcAAAAJ)
 <a href="https://orcid.org/0000-0003-1869-2407"><i class="fab fa-orcid"></i></a>
 
-I am the background coordinator and the deputy analysis coordinator of the [COHERENT][] experiment at the Spallation Neutron Source ([SNS][]), Oak Ridge National Laboratory ([ORNL][]), searching for new physics through the detection of Coherent Elastic neutrino(ν)-Nucleus Scatterings ([CEvNS][]). I also represent the USD [group][] in the COHERENT [Collaboration][] Board (CB). Please tell me your USD email address if you want to access the COHERENT [Wiki][], [Slack][] channel, and [Git repositories][GitLab]. I maintain a series of [tutorials][] here to help you get started with <a href="http://physino.xyz/tags/#COHERENT"><i class="fas fa-tag"></i>COHERENT</a> and <a href="http://physino.xyz/tags/#ORNL"><i class="fas fa-tag"></i>ORNL</a> related research.
+I am the background coordinator and the deputy analysis coordinator of the [COHERENT][] experiment at the Spallation Neutron Source ([SNS][]), Oak Ridge National Laboratory ([ORNL][]), searching for new physics through the detection of Coherent Elastic neutrino(ν)-Nucleus Scatterings ([CEvNS][]). I also represent the USD [group][] in the COHERENT [Collaboration][] Board (CB). Please tell me your USD email address if you want to access the COHERENT [Wiki][], [Slack][] channel, and [Git repositories][GitLab]. I maintain a series of [tutorials][] here to help you get started with <a href="tags/#COHERENT"><i class="fas fa-tag"></i>COHERENT</a> and <a href="tags/#ORNL"><i class="fas fa-tag"></i>ORNL</a> related research.
 
-[![My Group](https://img.shields.io/badge/My-Group-green.svg)](http://physino.xyz/research/group)
-[![My Lab](https://img.shields.io/badge/My-Lab-orange.svg)](http://physino.xyz/research/lab)
+[![My Group](https://img.shields.io/badge/My-Group-green.svg)](research/group)
+[![My Lab](https://img.shields.io/badge/My-Lab-orange.svg)](research/lab)
 
 My group is developing [cryogenic scintillating crystal](https://drive.google.com/drive/u/0/folders/0BwM7XYhFgK7oM2lITXdBLWlBc3M) and high purity germanium ([HPGe][]) crystal based particle detectors. Please tell me your preferred Gmail accounts for me to share with you our internal resources about them hosted on Google Drive.
 
@@ -33,13 +33,13 @@ I administrate the USD Physics [Department][] and [Club][] pages on Facebook. Pl
 
 [professor]: https://www.usd.edu/faculty-and-staff/Jing-Liu
 [physics]: https://www.usd.edu/physics
-[USD]: http://physino.xyz/tags/#USD
+[USD]: tags/#USD
 [jintonic]: https://github.com/jintonic
-[GitHub]: http://physino.xyz/tags/#GitHub
+[GitHub]: tags/#GitHub
 [physino]: https://www.youtube.com/c/PhysinoXyz
 [YouTube]: https://www.youtube.com
-[SD]: http://physino.xyz/tags/#South-Dakota
-[US]: http://physino.xyz/tags/#US
+[SD]: tags/#South-Dakota
+[US]: tags/#US
 [COHERENT]: https://sites.duke.edu/coherent
 [SNS]: https://neutrons.ornl.gov/sns
 [ORNL]: https://www.ornl.gov
@@ -61,34 +61,19 @@ I administrate the USD Physics [Department][] and [Club][] pages on Facebook. Pl
 [YouTube]: https://www.youtube.com/c/PhysinoXyz
 [bilibili]: https://space.bilibili.com/610308328
 [Geant4]: https://geant4.web.cern.ch
-[tutorials]: http://physino.xyz/learning
+[tutorials]: learning
 
-{% if paginator.total_pages > 1 %}
-  <div class="text-center">
-  <ul class="pagination">
-     {% if paginator.previous_page %}
-         <li><a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo;</a></li>
-     {% else %}
-         <li class="disabled"><a>&laquo;</a></li>
-     {% endif %}
+---
 
-     {% for page in (1..paginator.total_pages) %}
+<ul class="list-unstyled">
+  {% for post in site.posts limit:100 %}
+  {% unless post.next %}
+  <h4>{{ post.date | date: '%Y' }}</h4>
+  {% else %} {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %} {% capture nyear %}{{ post.next.date | date: '%Y' }}{% endcapture %}
+  {% if year != nyear %}
+  <h4>{{ post.date | date: '%Y' }}</h4> {% endif %}
+  {% endunless %}
+  <li><span class="glyphicon glyphicon-time"></span> {{ post.date | date_to_string }} &raquo; <a class="text-uppercase" href="{{ post.url }}">{{ post.title }}</a></li>
+  {% endfor %}
+</ul>
 
-     {% if page == paginator.page %}
-         <li class="active"><a>{{ page | pnumber }}</a></li>
-     {% elsif page == 1 %}
-         <li><a href="{{ '/index.html' | prepend: site.baseurl | replace: '//', '/' }}">{{ page | pnumber }}</a></li>
-     {% else %}
-         <li><a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page | pnumber }}</a></li>
-     {% endif %}
-
-     {% endfor %}
-
-     {% if paginator.next_page %}
-         <li><a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">&raquo;</a></li>
-     {% else %}
-         <li class="disabled"><a>&raquo;</a></li>
-     {% endif %}
-  </ul>
-  </div>
-{% endif %}
