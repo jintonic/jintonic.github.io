@@ -1,4 +1,4 @@
-Source codes of [physino.xyz](http://www.physino.xyz), research and education quanta of an experimental physicist.
+Source codes of [physino.xyz](http://physino.xyz), research and education quanta of an experimental physicist.
 
 # Structure
 
@@ -27,7 +27,6 @@ Ref.: <https://choosealicense.com/>
 
 # To-do's
 
-- add USD COHERENT group information
 - update blog with research activities
   - publications, grant applications, LEGEND, COHERENT, PIRE activities
   - youtube, bilibili updates
@@ -40,3 +39,7 @@ Ref.: <https://choosealicense.com/>
   - <https://stackoverflow.com/questions/36958975/listing-jekyll-collection-pages-by-tags>
 - user cases instead of manual
   - tags, collections, categories for organization
+
+## Limitation
+- jekyll-pagination only works in the `index.html` file, not [index.md](index.md). jekyll-pagination-v2 does support pagination in any file, but does not work for GitHub pages. Currently, the pagination code is in [blog/index.html](blog/index.html). It does not work.
+-
