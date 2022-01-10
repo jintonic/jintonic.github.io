@@ -14,6 +14,9 @@ Simply follow the instruction on <https://brew.sh/>. You may be prompt to instal
 
 There is no need to install `vim` using `brew` since `vim` is shipped with Mac.
 
+## Ruby
+Mac is shipped with a specific version of ruby. It's better not to touch it. Instead, you can `brew install ruby` into `/usr/local/opt/ruby`. Ruby gems will be installed into `/usr/local/lib/ruby/gems/`. To use them instead of the system ruby, `export PATH=/usr/local/lib/ruby/gems/3.0.0/bin:/usr/local/opt/ruby/bin:$PATH`
+
 # Keyboard, mouse and trackpad
 ## F11
 It is used by `Mission Control`, follow the following instruction to release it:

@@ -4,12 +4,10 @@ category: cs
 title: ruby
 ---
 
-Gemfile
-=======
+# Gemfile
 [man page](http://bundler.io/man/gemfile.5.html)
 
-Gem in cygwin
-=============
+# Gem in cygwin
 
 rubygems is provided in cygwin.
 
@@ -23,4 +21,5 @@ $ gem install somepackage
 ~~~sh
 gem cleanup # remove old versions of packages
 gem list -l # list local gems
+gem install package --no-document # faster
 ~~~
