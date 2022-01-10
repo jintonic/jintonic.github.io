@@ -6,17 +6,6 @@ title: Search physino.xyz
 
 {% assign sorted_tags = site.tags | sort %}
 
-<div class="well well-sm">
-  <ul class="nav nav-pills">
-    {% for each in sorted_tags %}
-      {% assign name = each | first %}
-      {% assign posts = each | last %}
-      <li><a href="/tags/#{{name|replace:' ','-'}}">{{name}}
-	<span class="badge">{{posts|size}}</span></a></li>
-    {% endfor %}
-  </ul>
-</div>
-
 {% for each in sorted_tags %}
   {% assign name = each | first %}
   {% assign posts = each | last %}
