@@ -1,5 +1,21 @@
 Source codes of [physino.xyz](http://physino.xyz), research and education quanta of an experimental physicist.
 
+# Getting started
+## Docker
+
+```sh
+cd /path/to/this/directory
+docker compose up
+```
+
+and open <http://localhost:4000/> in a browser.
+
+### Ref.
+- <https://dev.to/michael/compile-a-jekyll-project-without-installing-jekyll-or-ruby-by-using-docker-4184>
+- <https://hub.docker.com/r/jekyll/jekyll>
+- <https://docs.docker.com/compose/>
+
+
 # Structure
 
 Posts are categorized to sub directories
