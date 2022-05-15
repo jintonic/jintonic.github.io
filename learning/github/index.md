@@ -66,6 +66,24 @@ According to [stack overflow][so], custom attributes cannot be used for
 sortting. One has to use "path" (full path to the file) or "name" (name of the
 file) for sorting.
 
+## custom https domain
+<https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site>
+
+## Modify default jekyll theme items
+
+In `_config.yml`,
+
+```yaml
+title: your site title
+description: sub title
+# get rid of view on github, download, etc. buttons
+github:
+  is_user_page: false
+  is_project_page: false
+```
+
+The best way to find out these configuration options is to check the theme's `_layouts/default.html` file.
+
 # Integrate Doxygen with GitHub pages
 
 - Set the `docs` folder in master branch as the source of GitHub Pages for a project using the web interface provided on https://github.com
