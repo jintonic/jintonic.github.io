@@ -4,6 +4,10 @@ title: Ghostscript
 subtitle: a command-line PDF processor
 ---
 
+[Ghostscript][] is a free command-line program that can be used to add bookmarks, annotations, information, etc. to a pdf file.
+
+[Ghostscript]: https://www.ghostscript.com/doc/current/Readme.htm
+
 ## Configuration
 
 Frequently used `gs` options can be saved in an environment variable as default:
@@ -53,8 +57,8 @@ Try to change `-sPDFACompatibilityPolicy=1` to `-dPDFACompatibilityPolicy=1`, as
 
 ```sh
 gs -sDEVICE=pdfwrite -dNOPAUSE -dBATCH -dSAFER \
-   -dFirstPage=22 -dLastPage=36 \
-   -sOutputFile=outfile_p22-p36.pdf 100p-inputfile.pdf
+   -sPageList=1,3,5-8 \
+   -sOutputFile=outfile.pdf 100p-inputfile.pdf
 ```
 
 [One page per file](http://stackoverflow.com/questions/10228592/splitting-a-pdf-with-ghostscript):
@@ -85,14 +89,6 @@ Available settings to optimize the file size include
 - PDFSETTINGS=/prepress (high quality, color preserving, 300 dpi imgs)
 - PDFSETTINGS=/default  (almost identical to /screen)
 
-## Remove bookmarks
-
-```sh
-pdf2ps input.pdf
-ps2pdf input.ps
-```
-The file size can be kept small this way.
-
 ## Add bookmarks
 
 Ref.:
@@ -103,9 +99,12 @@ Create a simple text file with a random name, for example, `bookmarks`. Put the 
 
 ```
 [/PageMode /UseOutlines /DOCVIEW pdfmark
-[/Title (Prologue) /Page 1 /OUT pdfmark
-[/Title (Chapter 1) /Page 5 /OUT pdfmark
-[/Title (Chapter 2) /Page 27 /OUT pdfmark
+[/Page 1  /Title (Prologue) /OUT pdfmark
+[/Page 5  /Title (Chapter 1) /Count 2 /OUT pdfmark
+[/Page 5    /Title (Section 1.1) /OUT pdfmark
+[/Page 9    /Title (Section 1.2) /OUT pdfmark
+[/Page 18   /Title (Section 1.2) /OUT pdfmark
+[/Page 27 /Title (Chapter 2) /OUT pdfmark
 ```
 
 The first line enables the display of the bookmark sidebar in a pdf viewer. The rest adds bookmarks with titles on individual specified pages.
@@ -115,3 +114,26 @@ Run the following command to use this file:
 ```sh
 gs -dBATCH -dNOPAUSE -sDEVICE=pdfwrite -sOutputFile=out.pdf in.pdf bookmarks
 ```
+
+The command can be re-run to change the existing bookmarks. To remove bookmarks, one can try
+
+```sh
+pdf2ps input.pdf
+ps2pdf input.ps
+```
+
+The file size may change after this operation.
+
+Another option is to use [pdftk](https://stack.payne.run/blog/2014/08/26/key-removing-all-bookmarks-pdf-pdftk-command-line):
+
+```sh
+pdftk A=example.pdf cat A1-end output nobookmarks.pdf
+```
+
+To install pdftk in mac:
+
+```sh
+brew install pdftk-java
+```
+
+It is installed in `/usr/local/Celler/pdftk-java`.
