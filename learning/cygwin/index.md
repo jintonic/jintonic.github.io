@@ -1,6 +1,15 @@
 ---
+layout: note
+category: cs
 title: cygwin
+subtitle: Linux environment in Windows
 ---
+
+[Cygwin][] provides a Linux environment in Windows that is best integrated with the host OS compared to other Linux implementations in Windows, such as [WLS][], [Docker][], etc. It feels just like a normal Windows program instead of a virtual machine running inside of the host OS.
+
+[Cygwin]: https://www.cygwin.com
+[WLS]: https://docs.microsoft.com/en-us/windows/wsl/install
+[Docker]: https://www.docker.com
 
 Issue of slow start of shell
 ============================
