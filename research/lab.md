@@ -5,6 +5,8 @@ title: Radiation Detector Laboratory
 
 # Radiation Detector R&D Laboratory
 
+Shipping index: 241617
+
 ## Safety training
 
 - [Liquid Nitrogen Safety](https://ehs.research.uiowa.edu/liquid-nitrogen-handling)
