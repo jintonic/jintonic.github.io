@@ -2,6 +2,7 @@
 layout: note
 title: HPC
 subtitle: Hight Performance Computing
+tags: [Linux, HPC]
 ---
 
 According to Wikipedia:
@@ -27,7 +28,16 @@ According to Wikipedia:
 >management system (DRMS), distributed resource manager (DRM), and, commonly 
 >today, workload automation.
 
-According to https://www.biostars.org/p/54154/, SGE is very stable, it comes together with Rocks Cluster Distribution, and XSEDE provides a lot of training material for it. Condor was designed back in the day for farming out jobs between diverse resources (e.g., workstations after hours) and would have a lot of overhead for working within a homogeneous cluster.  It may be used to schedule jobs between clusters. The installation is not easy. SGE, Torque/PBS, openlava, LSF, SLURM have very similar user command list.
+According to <https://www.biostars.org/p/54154>, [SGE][] is very stable, it comes together with Rocks Cluster Distribution, and [XSEDE][] provides a lot of training material for it. [Condor][] was designed back in the day for farming out jobs between diverse resources (e.g., workstations after hours) and would have a lot of overhead for working within a homogeneous cluster.  It may be used to schedule jobs between clusters. The installation is not easy. [SGE][], [OGE][], [Torque][]/[PBS][], [openlava][], [LSF][], [SLURM][] have very similar user command list.
+
+[SGE]: https://en.wikipedia.org/wiki/Oracle_Grid_Engine
+[Condor]: https://en.wikipedia.org/wiki/HTCondor
+[OGE]: http://gridscheduler.sourceforge.net
+[Torque]: https://en.wikipedia.org/wiki/TORQUE
+[PBS]: https://en.wikipedia.org/wiki/Portable_Batch_System
+[openlava]: https://en.wikipedia.org/wiki/OpenLava
+[LSF]: https://en.wikipedia.org/wiki/IBM_Spectrum_LSF
+[SLURM]: https://www.schedmd.com
 
 ## Commonly used commands in SGE type scheduler
 
@@ -48,13 +58,14 @@ your favorite shell in the list if it is not there.
 
 ~~~sh
 # -V: inherit all environment variables
-# -cwd: start from current working directory
+# -cwd: start from current working directory (not available in PBS)
 # -e direct stderr to a file, -o direct stdout to a file
-# -b y: is a binary file, -b n: is a script
+# -b y: is a binary file, -b n: is a script (PBS can only handle script)
 # -S specify shell
 qsub -V -cwd -e run.err -o run.log -b n -S /bin/sh example.sh
 qstat # show job status of current user
 qstat -u \* # show job status of all users
 qdel <job id> # delete a job
 qdel -u <user> # delete jobs from user
+qsub --version # get to know how old your scheduler is
 ~~~
