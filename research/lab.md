@@ -31,6 +31,13 @@ Shipping index: 241617
 ## Facility
 
 - Please apply for an [USD High Performance Computing (HPC) cluster](https://www.usd.edu/technology/research/high-performance-computing) account (Lawrence instead of Legacy), asking to be added to the "liu_lab" group, and then follow the instruction at <http://rcg.usd.edu/docs> and <https://github.com/jintonic/lawrence>.
+- If you need an account for the [ORNL][] [HPC][] cluster, *hcdata.phy.ornl.gov*, please apply for an [XCAMS][] account first, forward your account information by email to [Robert L. Varner Jr.][https://www.ornl.gov/staff-profile/robert-l-varner-jr], the administrator of hcdata, tell Robert how you will use hcdata to do your research and cc the email to [Jing Liu](/research/group). After confirming with COHERENT collaborators, Robert can give your access to hcdata using the same [XCAMS][] account and password. hcdata can be accessed through [SSH][] in a terminal or [ThinLinc][], which provides a fully functional desktop environment.
+
+[ORNL]: https://www.ornl.gov
+[HPC]: https://en.wikipedia.org/wiki/High-performance_computing
+[XCAMS]: https://xcams.ornl.gov
+[SSH]: /learning/2020/01/22/SSH
+[ThinLinc]: https://www.cendio.com/thinlinc/download
 
 ## Equipment
 
