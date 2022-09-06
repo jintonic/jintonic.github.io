@@ -11,16 +11,12 @@ Shipping index: 241617
 
 - [Liquid Nitrogen Safety](https://ehs.research.uiowa.edu/liquid-nitrogen-handling)
 - [Radiation Safety](https://drive.google.com/file/d/1Vo_uD6xi9-1tCqzBISKNUU9Ia7hVQ6Ii/view?usp=sharing)
-- [Chemical Safety](https://www-training.llnl.gov/training/hc/HS4240-W/)
 - [Electrical Safety](https://www-training.llnl.gov/training/hc/HS5220/index.html)
-- [Pressure Safety](https://www-training.llnl.gov/training/hc/HS5030/index.html)
-- [High Voltage Safety](https://www-training.llnl.gov/training/hc/HS5230-W/index.html)
-- [Student Safety Awareness for Supervisors](https://www-training.llnl.gov/training/hc/HS0075/index.html)
 
 ## Code of Conduct
 
-- [Code of Conduct](http://www.china-embassy.org/eng/zmzlljs/t84229.htm)
-- [Responsible Conduct of Research](https://www.usd.edu/research/responsible-conduct-of-research)
+- [Code of Conduct](https://www.aps.org/meetings/policies/code-conduct.cfm)
+- [Responsible Conduct of Research](https://www.nsf.gov/od/recr.jsp)
 
 ## Online resouces
 - Onshape: <https://cad.onshape.com>. Please register there, let [Jing Liu](/research/group) know your user name.
@@ -32,6 +28,7 @@ Shipping index: 241617
 
 - Please apply for an [USD High Performance Computing (HPC) cluster](https://www.usd.edu/technology/research/high-performance-computing) account (Lawrence instead of Legacy), asking to be added to the "liu_lab" group, and then follow the instruction at <http://rcg.usd.edu/docs> and <https://github.com/jintonic/lawrence>.
 - If you need an account for the [ORNL][] [HPC][] cluster, *hcdata.phy.ornl.gov*, please apply for an [XCAMS][] account first, forward your account information by email to [Robert L. Varner Jr.](https://www.ornl.gov/staff-profile/robert-l-varner-jr), the administrator of hcdata, tell Robert how you will use hcdata to do your research and cc the email to [Jing Liu](/research/group). After confirming with COHERENT collaborators, Robert can give your access to hcdata using the same [XCAMS][] account and password. hcdata can be accessed through [SSH][] in a terminal or [ThinLinc][], which provides a fully functional desktop environment.
+- The USD creative services can print posters with a limit of 42" in one dimension. The request can be submitted [here](https://apps.usd.edu/administrative/creative-services/posters/app/)
 
 [ORNL]: https://www.ornl.gov
 [HPC]: https://en.wikipedia.org/wiki/High-performance_computing
@@ -54,7 +51,8 @@ Shipping index: 241617
 - <https://easyeda.com/>: Online PCB design and ordering platform, cheap and quick (about two weeks, even though it's from China)
 
 ### Machining
-- <https://www.3dhubs.com>: online machining, instant quote, standard tolerances: 0.125 mm (0.005"), if made in China, the shipping may be as long as 1 month
+- A CNC machine and a 3D printer are avaible in P122. Small things can be produced there
+- <https://www.hubs.com>: online machining, instant quote, standard tolerances: 0.125 mm (0.005"), if made in China, the shipping may be as long as 1 month
 - <https://get.xometry.com>: online machining, instant quote, standard tolerances: 0.125 mm (0.005"), if made in China, the shipping may be as long as 1 month
 - <https://www.protolabs.com>: online machining, quote available in a few minutes, same standard tolerances, part size is rather limited (less than 12"), usually more expensive than the two above
 
