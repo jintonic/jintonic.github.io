@@ -1,6 +1,6 @@
 services:
   site:
-    image: jekyll/jekyll
+    image: jekyll/minimal:pages
     # --force_polling: needed in bash in windows to watch for file changes
     # --livereload: let a browser to reload when the site is regenerated
     command: jekyll serve --incremental --livereload --force_polling
