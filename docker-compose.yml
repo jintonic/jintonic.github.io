@@ -1,6 +1,6 @@
 services:
   site:
-    image: jekyll/minimal:pages
+    image: physino/jekyll:pages
     # --force_polling: needed in bash in windows to watch for file changes
     # --livereload: let a browser to reload when the site is regenerated
     command: jekyll serve --incremental --livereload --force_polling
@@ -11,3 +11,4 @@ services:
       - 35729:35729
     volumes:
       - .:/srv/jekyll
+    build: .
