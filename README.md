@@ -1,20 +1,38 @@
-Source codes of [physino.xyz](http://physino.xyz), research and education quanta of an experimental physicist.
+Source code of <http://physino.xyz> that can be converted to static web pages using [Jekyll][].
 
-# Getting started
+[Jekyll]: https://jekyllrb.com/
+
+# Serve locally
+
 ## Docker
 
 ```sh
-cd /path/to/this/directory
+git clone git@github.com:jintonic/jintonic.github.io.git physino.xyz
+cd physino.xyz
+# run docker desktop before running the following commands
 docker compose up
 ```
 
-and open <http://localhost:4000/> in a browser.
+and open <http://localhost:4000> in a browser.
 
 ### Ref.
 - <https://dev.to/michael/compile-a-jekyll-project-without-installing-jekyll-or-ruby-by-using-docker-4184>
 - <https://hub.docker.com/r/jekyll/jekyll>
 - <https://docs.docker.com/compose/>
 
+### Docker image
+
+The Docker image can be obtained from <https://hub.docker.com/r/physino/jekyll>. It is generated using the following commands:
+
+```sh
+git clone git@github.com:jintonic/jintonic.github.io.git physino.xyz
+cd physino.xyz
+# run docker desktop before running the following commands
+# build image based on ./Dockerfile
+docker-compose build
+# push container to hub.docker.com
+docker-compose push
+```
 
 # Structure
 
