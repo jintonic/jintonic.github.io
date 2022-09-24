@@ -1,0 +1,25 @@
+---
+tags: [LaTeX, Mac]
+---
+
+```sh
+# most of the time, these are all you need:
+brew install basictex latexmk
+sudo tlmgr install collection-fontsrecommended
+# now try to compile your project using latexmk:
+cd /path/to/your/LaTeX/project
+latexmk
+# if some.sty is missing,
+# use the following commmand to find out which package includes it
+tlmgr search --global --file some.sty
+# and then install it
+tlmgr install missingPackage
+```
+
+Further explanation: [MacTeX][] is large (~4 GB). [BasicTeX][] is a much smaller option that provides basic functionality of [LaTeX][]. However, [BasicTeX][] does not include [latexmk][] and some common fonts. Fortunately, the [tlmgr][] command is provided in [BasicTeX][]. One can use [tlmgr][] to find and install missing packages.
+
+[MacTeX]: https://www.tug.org/mactex
+[BasicTeX]: https://www.tug.org/mactex/morepackages.html
+[LaTeX]: https://www.latex-project.org
+[latexmk]: https://mg.readthedocs.io/latexmk.html
+[tlmgr]: https://tug.org/texlive/tlmgr.html
