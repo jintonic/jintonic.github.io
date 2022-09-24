@@ -8,7 +8,7 @@ Before we talk about ways to fix the two problems, we need to think whether it i
 
 ## Local LaTeX configuration
 
-Now, let's provide two solutions to the first problem, that is, how to deal with missing packages in an old [LaTeX][] installation. If you see error messages complaining about missing `.sty, .cls`, or `.bst`, etc. files when you run `latex yourPaper.tex`, search that file on Google to find out which [LaTeX][] package contains it, then go to [CTAN][] to download that package and unpack it to your [LaTeX][] project directory. The drawback of this solution is that your [LaTeX][] project would include many files that is not related to your work.
+Now, let's provide two solutions to the first problem, that is, how to deal with missing packages in an old [LaTeX][] installation. If you see error messages complaining about missing `.sty, .cls`, or `.bst`, etc. files when you run `latex yourPaper.tex`, search that file on Google to find out which [LaTeX][] package contains it (or run `tlmgr search --global --file example.sty` if you have the [tlmgr][] command in the system), then go to [CTAN][] to download that package and unpack it to your [LaTeX][] project directory. The drawback of this solution is that your [LaTeX][] project would include many files that is not related to your work.
 
 A better solution is to save the missing package to another directory and tell [LaTeX][] where to find it so that it will be kept separated from your personal [LaTeX][] project. Meanwhile, this package can be reused for your other [LaTeX][] projects. [LaTeX][] allows a normal Linux user (without [root][] privilege) to save his or her [LaTeX][] packages and configurations in a particular folder in the user's [home][] directory. This folder is defined by an [environment][] variable called [TEXMFHOME][]. You can check the definition of [TEXMFHOME][] in your system [TeX][] configuration file by running
 
@@ -40,7 +40,7 @@ texhash . # or mktexlsr .
 
 to create an index file that tells [LaTeX][] what's in this folder. *NOTE*: `.cls` and `.sty` files should go to `$TEXMFHOME/tex/latex/`, while `.bst` files should go to `$TEXMFHOME/bibtex/bst/`. Those files won't be found if you don't follow this conventional path specification.
 
-It is very easy to make mistakes here or there if you manually install missing packages. Fortunately, if the [LaTeX][] installation is new enough (later than 2013), you can use a command called [tlmgr][] ([texlive][] manager) in [usermode][] to automatically pull packages from [CTAN][] to your `$TEXMFHOME`:
+It is very easy to make mistakes here or there if you manually install missing packages. Fortunately, if the [LaTeX][] installation is new enough (later than 2013), you can use the [tlmgr][] ([texlive][] manager) command in [usermode][] to automatically pull packages from [CTAN][] to your `$TEXMFHOME`:
 
 ```sh
 # create directory defined in $TEXMFHOME (only need to be run once)
