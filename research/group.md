@@ -26,26 +26,11 @@ Associate professor. Personality: [Logician](https://www.16personalities.com/int
 
 ---
 
-## Postdoc
-
-### Hao Mei
-
-- May. 2019 - now, HPGe crystal purification and growth
-- May. 2015 - May. 2019, Ph.D. student
-
-### Wenzhao Wei
-
-- Aug. 2017 - now, HPGe detector R&D
-- Sep. 2014 - Aug. 2017, Ph.D. student
-
----
-
 ## Graduate Student
 
-### Conan Bock
+### Perry Siehien
 
-- Jan. 2020 - now, neutron background for COHERENT
-- [GitHub](https://github.com/Croakyyyy)
+- Jan. 2021 - now, Application of machine learning in particle physics
 
 ### Keyu Ding
 
@@ -70,6 +55,9 @@ Associate professor. Personality: [Logician](https://www.16personalities.com/int
 
 ## Alumni
 
+- Hao Mei, Postdoc, May. 2019 - Nov. 2022, Ph.D. student, May. 2015 - May. 2019, HPGe crystal purification and growth.
+- Wenzhao Wei, Postdoc, Aug. 2017 - Feb. 2023, Ph.D. student, Sep. 2014 - Aug. 2017, HPGe detector R&D
+- Conan Bock, M.S. Jan. 2020 - Dec. 2022, neutron background for COHERENT, [GitHub](https://github.com/Croakyyyy)
 - [Dmitry chernyak](https://www.linkedin.com/in/dmitry-chernyak-78a9352a/), Postdoc, Jun. 2019 - Jun. 2020, cryogenic scintillator R&D.
 - [Jianchen (Byron) Li](https://github.com/byljcron), M.S. Jan. 2018 - Dec. 2019; B.S. May. 2015 - Dec. 2017, HPGe detector simulation.
 - [Nathan Saunders](https://www.linkedin.com/in/nathan-saunders-profile/), M.S. May 2016 - Aug. 2019, cryogenic scintillator R&D, [Facebook](https://www.facebook.com/nathan.saunders3).
