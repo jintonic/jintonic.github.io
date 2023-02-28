@@ -28,6 +28,10 @@ Associate professor. Personality: [Logician](https://www.16personalities.com/int
 
 ## Graduate Student
 
+### Laxman Paudel
+
+- Jan. 2023 - now, neutrinoless double beta decay.
+-
 ### Perry Siehien
 
 - Jan. 2021 - now, Application of machine learning in particle physics
