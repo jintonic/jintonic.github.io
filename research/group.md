@@ -19,7 +19,7 @@ Associate professor. Personality: [Logician](https://www.16personalities.com/int
 - [ResearchGate](https://www.researchgate.net/profile/Jing_Liu117)
 - [LinkedIn](https://www.linkedin.com/in/jingliuphys)
 - [StackExchange](http://stackexchange.com/users/2014017/jing)
-- [Facebook](https://www.facebook.com/liu.jing.501)
+- [Facebook](https://www.facebook.com/physino)
 - [Twitter](https://twitter.com/jingliusd)
 - [Mendeley](http://www.mendeley.com/profiles/jing-liu36)
 - [Rate My Professor](https://www.ratemyprofessors.com/ShowRatings.jsp?tid=2008328)
@@ -59,13 +59,14 @@ Associate professor. Personality: [Logician](https://www.16personalities.com/int
 
 ## Alumni
 
-- Hao Mei, Postdoc, May. 2019 - Nov. 2022, Ph.D. student, May. 2015 - May. 2019, HPGe crystal purification and growth.
+- Hao Mei, Postdoc, May. 2019 - Nov. 2022, Ph.D. student, May. 2015 - May. 2019, HPGe crystal purification and growth
 - Wenzhao Wei, Postdoc, Aug. 2017 - Feb. 2023, Ph.D. student, Sep. 2014 - Aug. 2017, HPGe detector R&D
+- [Jeffrey Charles Harstad](https://www.linkedin.com/in/jeffrey-c-harstad/), Summer, 2021, HPGe detector electronics
 - Conan Bock, M.S. Jan. 2020 - Dec. 2022, neutron background for COHERENT, [GitHub](https://github.com/Croakyyyy)
-- [Dmitry chernyak](https://www.linkedin.com/in/dmitry-chernyak-78a9352a/), Postdoc, Jun. 2019 - Jun. 2020, cryogenic scintillator R&D.
-- [Jianchen (Byron) Li](https://github.com/byljcron), M.S. Jan. 2018 - Dec. 2019; B.S. May. 2015 - Dec. 2017, HPGe detector simulation.
-- [Nathan Saunders](https://www.linkedin.com/in/nathan-saunders-profile/), M.S. May 2016 - Aug. 2019, cryogenic scintillator R&D, [Facebook](https://www.facebook.com/nathan.saunders3).
-- Yangyang Li, M.S. Aug. 2016 - Aug. 2019, HPGe detector data analysis.
-- [Tupendra Oli](https://www.linkedin.com/in/tupendra-oli-8163b1145/), M.S. Aug. 2016 - Nov. 2018, cryogenic scintillator R&D, [ResearchGate](https://www.researchgate.net/profile/Tupendra_Oli).
-- [Mitchell Wagner](https://www.linkedin.com/in/mitchell-wagner-90a8a374), B.S. 2015. M.S. Jan. 2016 – Jun. 2018, HPGe detector R&D, [Facebook](https://www.facebook.com/mitch.wagner.12).
-- [Arun Kumar Soma](https://www.facebook.com/Arun.Kumar.Soma), postdoc, Jan. 2016 - Nov. 2016, HPGe detector, cryogenic scintillating detector R&D.
+- [Dmitry chernyak](https://www.linkedin.com/in/dmitry-chernyak-78a9352a/), Postdoc, Jun. 2019 - Jun. 2020, cryogenic scintillator R&D
+- [Jianchen (Byron) Li](https://github.com/byljcron), M.S. Jan. 2018 - Dec. 2019; B.S. May. 2015 - Dec. 2017, HPGe detector simulation
+- [Nathan Saunders](https://www.linkedin.com/in/nathan-saunders-profile/), M.S. May 2016 - Aug. 2019, cryogenic scintillator R&D, [Facebook](https://www.facebook.com/nathan.saunders3)
+- Yangyang Li, M.S. Aug. 2016 - Aug. 2019, HPGe detector data analysis
+- [Tupendra Oli](https://www.linkedin.com/in/tupendra-oli-8163b1145/), M.S. Aug. 2016 - Nov. 2018, cryogenic scintillator R&D, [ResearchGate](https://www.researchgate.net/profile/Tupendra_Oli)
+- [Mitchell Wagner](https://www.linkedin.com/in/mitchell-wagner-90a8a374), B.S. 2015. M.S. Jan. 2016 – Jun. 2018, HPGe detector R&D, [Facebook](https://www.facebook.com/mitch.wagner.12)
+- [Arun Kumar Soma](https://www.facebook.com/Arun.Kumar.Soma), postdoc, Jan. 2016 - Nov. 2016, HPGe detector, cryogenic scintillating detector R&D
