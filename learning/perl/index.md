@@ -1,7 +1,7 @@
 ---
 layout: note
 category: cs
-title: python
+title: perl
 ---
 
 # Install perl module in home directory
