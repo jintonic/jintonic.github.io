@@ -69,3 +69,10 @@ qdel <job id> # delete a job
 qdel -u <user> # delete jobs from user
 qsub --version # get to know how old your scheduler is
 ~~~
+
+### Switching from PBS to SLURM
+
+| command | set job name | set output file | set error file | inherit enviroment variables |
+|---|---|---|---|---|
+| qsub | -N | -o | -e | -V |
+| sbatch | -J | -o | -e | no need |
