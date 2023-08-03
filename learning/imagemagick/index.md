@@ -1,5 +1,6 @@
 ---
 layout: note
+category: cs
 title: ImageMagick
 ---
 
@@ -24,3 +25,9 @@ The following command will display the *visual image directory* directly.
 ~~~sh
 display 'vid:*.jpg'
 ~~~
+
+# Display meta data of a image
+
+```sh
+identify -verbose image_file.jpg
+```

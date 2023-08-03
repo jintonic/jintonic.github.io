@@ -26,3 +26,10 @@ pkg-config --cflags name-of-package-depended
 ~~~
 
 `ROOT` and `Geant4` use similar mechanism. They provide `root-config` and `geant4-config` commands for developers to retrieve their metadata.
+
+# automatically generate *.d files
+
+Ref. <https://www.gnu.org/software/make/manual/html_node/Automatic-Prerequisites.html>
+
+make will parse the whole makefile first, and get noticed that *.d makefiles are needed. If they do not exist, make will try to find the rules to make them before make the main project. If they do exist, make will simply include them.
+

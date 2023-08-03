@@ -76,6 +76,36 @@ the latex file using the [graphicx](http://ctan.org/pkg/graphicx) package:
 \includegraphics[trim=lx ly rx ry, clip]{figure}
 ~~~
 
+## Table
+### long table
+supertabular and probably xtab is older than longtable. One should not use
+longtable inside table environment, because the latter prevent tables
+expending to many pages.
+```tex
+  \usagepackage{longtable}
+  ...
+  \begin{center}
+  \begin{longtable}{cc}
+
+  \caption[an example]{an example}\label{t:long}\\
+  item 1 & item 2 \\
+  \endfirsthead
+
+  \multicolumn{2}{c}{\tablename\ \thetable{} an example (Cont'd)}\\
+  item 1 & item 2 \\
+  \endhead
+
+  \multicolumn{2}{c}{\tablename\ \thetable{} Cont'd on next page}\\
+  \endfoot
+
+  \endlastfoot
+
+  1      & 2      \\
+  3      & 4      \\
+  \end{longtable}
+  \end{center}
+```
+
 ## Hyperlinks
 
 ~~~ latex
@@ -220,3 +250,58 @@ According to http://www.cespedes.org/blog/85/how-to-escape-latex-special-charact
 
 [db]: https://www.dropbox.com/
 [br]: https://www.google.com/search?q=git+bare+repository
+
+## Front matter
+### Attach email address to an author
+```tex
+  \title{Jing LIU \thanks{jing.liu@ipmu.jp}}
+```
+
+### Add affliation to an author
+```tex
+  \title{Jing LIU \\ Kavli IPMU}
+```
+Or use http://ctan.org/pkg/authblk instead.
+
+# pdflatex --shell-escape
+'--shell-escape' allows pdflatex to run shell commands during process, e.g.
+run epstopdf to convert eps figures to their pdf version. Please check the man
+page of pdflatex for detail.
+
+Put the following to ~/.latexmkrc to enable shell escape all the time:
+```tex
+  $pdflatex='pdflatex --shell-escape %O %S';
+```
+# derivative
+```tex
+  $\mathrm{d}f/\mathrm{d}x$
+```
+# break long equation
+```tex
+  \usepackage{amsmath}
+  \begin{equation}
+    \begin{split}
+    &\frac{\mathrm{d}\sigma(E_{\nu},E_{nr})}{\mathrm{d}E_{nr}} =
+    \frac{G^{2}_{F}M}{2\pi} \left[\vphantom{\frac{1}{2}}\right.
+      (G_V+G_A)^2 +\\
+      &(G_V-G_A)^2 \left(1-\frac{E_{nr}}{E_{\nu}}\right)^2 -
+      (G_V^2-G_A^2)\frac{ME_{nr}}{E^2_{\nu}}
+    \left.\vphantom{\frac{1}{2}}\right]
+    \end{split}
+  \end{equation}
+```
+where "&" is used to align different lines. "\left[" and "\right]" cannot be
+separated to different lines. One has to put
+"\left[\vphantom{\frac{1}{2}}\right." in one line and
+"\left.\vphantom{\frac{1}{2}}\right]" in another. Things in \vaphantom won't
+be shown by latex. It is used to calculate size of "\left[" and "\right]".
+
+# \pdfendlink ended up in different nesting level than \pdfstartlink
+
+https://tex.stackexchange.com/questions/1522/pdfendlink-ended-up-in-different-nesting-level-than-pdfstartlink
+
+when this error occurs, write down the page number where pdflatex aborted, then add the "draft" option to hyperref:
+```tex
+\usepackage[draft]{hyperref}
+```
+and recompile the document. PDF output will now be generated, the problematic link should be the citation whose latter half begins the page where pdflatex aborted. After slightly rearranging the text to avoid the linebreak, the [draft] option can be removed.
