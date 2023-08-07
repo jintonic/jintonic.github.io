@@ -32,10 +32,6 @@ Associate professor. Personality: [Logician](https://www.16personalities.com/int
 
 - Jan. 2023 - now, neutrinoless double beta decay.
 
-### Perry Siehien
-
-- Jan. 2021 - May 2023, Application of machine learning in particle physics
-
 ### Keyu Ding
 
 - Aug. 2019 - now, Cryogenic scintillator R&D.
@@ -52,13 +48,15 @@ Associate professor. Personality: [Logician](https://www.16personalities.com/int
 
 ### Yongjin Yang
 
-- Aug. 2020 - now, Cryogenic scintillator R&D. HPGe crystal purification and growth
+- Aug. 2020 - now, Ph.D. student, cryogenic scintillator R&D.
+- Aug. 2020 - Oct. 2022, master student, cryogenic scintillator R&D. [Thesis](https://red.library.usd.edu/diss-thesis/79/)
 - [GitHub](https://github.com/yyj398596791)
 
 ---
 
 ## Alumni
 
+- Perry Siehien, M.S. Jan. 2021 - May 2023, [Application of machine learning in particle physics](https://red.library.usd.edu/diss-thesis/121/)
 - Hao Mei, Postdoc, May. 2019 - Nov. 2022, Ph.D. student, May. 2015 - May. 2019, HPGe crystal purification and growth
 - Wenzhao Wei, Postdoc, Aug. 2017 - Feb. 2023, Ph.D. student, Sep. 2014 - Aug. 2017, HPGe detector R&D
 - [Jeffrey Charles Harstad](https://www.linkedin.com/in/jeffrey-c-harstad/), Summer, 2021, HPGe detector electronics
