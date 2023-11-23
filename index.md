@@ -2,7 +2,7 @@
 ---
 
 [![Student evaluation](https://img.shields.io/badge/Student-Evaluation-green.svg)](https://www.ratemyprofessors.com/ShowRatings.jsp?tid=2008328)
-[![Courses taught](https://img.shields.io/badge/Courses-Taught-orange.svg)](teaching/courses)
+[![Courses taught](https://img.shields.io/badge/Courses-Taught-orange.svg)](teaching)
 
 Hi, I'm Jing LIU /jiŋ liou/, an associate [professor][] in [physics][] at the University of South Dakota ([USD][]), [SD][], [US][], also known as [jintonic][] on [GitHub][] and [physino][] on [YouTube][]. You can get connected to me through various social media channels:
 <a href="https://www.youtube.com/c/PhysinoXyz"><i class="fab fa-youtube"></i></a>
