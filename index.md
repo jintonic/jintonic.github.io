@@ -6,8 +6,8 @@
 
 Hi, I'm Jing LIU /jiŋ liou/, an associate [professor][] in [physics][] at the University of South Dakota ([USD][]), [SD][], [US][], also known as [jintonic][] on [GitHub][] and [physino][] on [YouTube][]. You can get connected to me through various social media channels:
 <a href="https://www.youtube.com/c/PhysinoXyz"><i class="fab fa-youtube"></i></a>
-<a href="https://www.facebook.com/physino/"><i class="fab fa-facebook"></i></a>
 <a href="https://github.com/jintonic"><i class="fab fa-github"></i></a>
+<a href="https://www.facebook.com/physino/"><i class="fab fa-facebook"></i></a>
 <a href="https://www.linkedin.com/in/jingliuphys"><i class="fab fa-linkedin"></i></a>
 
 [![arXiv](https://img.shields.io/badge/arXiv-articles-yellow.svg)](https://arxiv.org/a/liu_j_2.html)
@@ -43,7 +43,7 @@ I administrate the USD Physics [Department][] and [Club][] pages on Facebook. Pl
 [COHERENT]: https://sites.duke.edu/coherent
 [SNS]: https://neutrons.ornl.gov/sns
 [ORNL]: https://www.ornl.gov
-[CEvNS]: http://pire.gemadarc.org/science/#menu4
+[CEvNS]: https://www.youtube.com/watch?v=lWQgzuWHlyY
 [group]: https://sites.duke.edu/coherent/collaboration/#U._of_South_Dakota
 [collaboration]: https://sites.duke.edu/coherent/collaboration
 [Wiki]: https://coherent.phy.duke.edu
