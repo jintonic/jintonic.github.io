@@ -8,7 +8,7 @@ Hi, I'm Jing LIU /jiŋ liou/, an associate [professor][] in [physics][] at the U
 <a href="https://www.youtube.com/c/PhysinoXyz"><i class="fab fa-youtube"></i></a>
 <a href="https://github.com/jintonic"><i class="fab fa-github"></i></a>
 <a href="https://www.facebook.com/physino/"><i class="fab fa-facebook"></i></a>
-<a href="https://www.linkedin.com/in/jingliuphys"><i class="fab fa-linkedin"></i></a>
+<a href="https://www.linkedin.com/in/physino"><i class="fab fa-linkedin"></i></a>
 
 [![arXiv](https://img.shields.io/badge/arXiv-articles-yellow.svg)](https://arxiv.org/a/liu_j_2.html)
 [![Google Scholar](https://img.shields.io/badge/Google-Scholar-blue.svg)](https://scholar.google.com/citations?user=yKumdPcAAAAJ)
