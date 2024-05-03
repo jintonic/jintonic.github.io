@@ -19,6 +19,13 @@ According to Wikipedia:
 >(OSCAR)), different operating systems can be used on each computer, and/or 
 >different hardware.
 
+>Grid computing is the collection of computer resources from multiple 
+>locations to reach a common goal. The grid can be thought of as a distributed 
+>system with non-interactive workloads that involve a large number of files. 
+>Grid computing is distinguished from conventional high performance computing 
+>systems such as cluster computing in that grid computers have each node set 
+>to perform a different task/application.
+
 ## Job scheduler
 According to Wikipedia:
 >A job scheduler is a computer application for controlling unattended 
@@ -28,8 +35,9 @@ According to Wikipedia:
 >management system (DRMS), distributed resource manager (DRM), and, commonly 
 >today, workload automation.
 
-According to <https://www.biostars.org/p/54154>, [SGE][] is very stable, it comes together with Rocks Cluster Distribution, and [XSEDE][] provides a lot of training material for it. [Condor][] was designed back in the day for farming out jobs between diverse resources (e.g., workstations after hours) and would have a lot of overhead for working within a homogeneous cluster.  It may be used to schedule jobs between clusters. The installation is not easy. [SGE][], [OGE][], [Torque][]/[PBS][], [openlava][], [LSF][], [SLURM][] have very similar user command list.
+[SLURM][] (Simple Linux Utility for Resource Management) is replacing [SGE][] (Sun Grid Engine) in many Linux clusters as the latter is not actively maintained anymore.  [Condor][] was designed back in the day for farming out jobs between diverse resources (e.g., workstations after hours) and would have a lot of overhead for working within a homogeneous cluster.  It may be used to schedule jobs between clusters. The installation is not easy. [SGE][], [OGE][], [Torque][]/[PBS][], [openlava][], [LSF][] have very similar user command list.
 
+[SLURM]: https://www.schedmd.com
 [SGE]: https://en.wikipedia.org/wiki/Oracle_Grid_Engine
 [Condor]: https://en.wikipedia.org/wiki/HTCondor
 [OGE]: http://gridscheduler.sourceforge.net
@@ -37,9 +45,23 @@ According to <https://www.biostars.org/p/54154>, [SGE][] is very stable, it come
 [PBS]: https://en.wikipedia.org/wiki/Portable_Batch_System
 [openlava]: https://en.wikipedia.org/wiki/OpenLava
 [LSF]: https://en.wikipedia.org/wiki/IBM_Spectrum_LSF
-[SLURM]: https://www.schedmd.com
 
-## Commonly used commands in SGE type scheduler
+## SLURM
+
+- `-w node0xx` or `--nodelist=node0xx`: specify a node when submitting a job
+
+### salloc
+
+`salloc` is intended to work with subsequent `srun` commands. `salloc` allocates resources and then creates an interactive shell in the login node, where the user can run a command through `srun`. The newly created shell has all the information about the allocated resources, there is hence no need to pass options to the subsequent `srun`. This command is created to solve the problem that one cannot run `srun` inside an `srun`.
+
+### Switching from PBS to SLURM
+
+| command | set job name | set output file | set error file | inherit enviroment variables |
+|---|---|---|---|---|
+| qsub | -N | -o | -e | -V |
+| sbatch | -J | -o | -e | no need |
+
+## Common commands in an SGE type scheduler
 
 ~~~sh
 qhost # list loads of all nodes
@@ -58,6 +80,7 @@ your favorite shell in the list if it is not there.
 
 ~~~sh
 # -V: inherit all environment variables
+# -N: give the job a specific name
 # -cwd: start from current working directory (not available in PBS)
 # -e direct stderr to a file, -o direct stdout to a file
 # -b y: is a binary file, -b n: is a script (PBS can only handle script)
@@ -68,11 +91,7 @@ qstat -u \* # show job status of all users
 qdel <job id> # delete a job
 qdel -u <user> # delete jobs from user
 qsub --version # get to know how old your scheduler is
+# https://stackoverflow.com/a/18408251
+qsub -l nodes=<node_name> # submit to specific node
 ~~~
 
-### Switching from PBS to SLURM
-
-| command | set job name | set output file | set error file | inherit enviroment variables |
-|---|---|---|---|---|
-| qsub | -N | -o | -e | -V |
-| sbatch | -J | -o | -e | no need |
