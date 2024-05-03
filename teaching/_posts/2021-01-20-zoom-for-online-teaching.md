@@ -1,5 +1,5 @@
 ---
-tags: [ZOOM, online, D2L]
+tags: [ZOOM, online]
 excerpt_separator: <!--more-->
 ---
 
