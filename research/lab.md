@@ -27,7 +27,7 @@ Shipping index: 241617
 ## Facility
 
 - Please apply for an [USD High Performance Computing (HPC) cluster](https://www.usd.edu/technology/research/high-performance-computing) account (Lawrence instead of Legacy), asking to be added to the "liu_lab" group, and then follow the instruction at <http://rcg.usd.edu/docs> and <https://github.com/jintonic/lawrence>.
-- If you need an account for the [ORNL][] [HPC][] cluster, *hcdata.phy.ornl.gov*, please apply for an [XCAMS][] account first, forward your account information by email to [Robert L. Varner Jr.](https://www.ornl.gov/staff-profile/robert-l-varner-jr), the administrator of hcdata, tell Robert how you will use hcdata to do your research and cc the email to [Jing Liu](/research/group). After confirming with COHERENT collaborators, Robert can give your access to hcdata using the same [XCAMS][] account and password. hcdata can be accessed through [SSH][] in a terminal or [ThinLinc][], which provides a fully functional desktop environment.
+- If you need an account for the [ORNL][] [HPC][] cluster, *phylogin1.phy.ornl.gov*, please apply for an [XCAMS][] account first, forward your account information by email to [Brian Ofsthus](https://www.ornl.gov/staff-profile/brian-e-ofsthus), the administrator, tell him how you will use the cluster to do your research and cc the email to [Jing Liu](/research/group). After confirming with COHERENT collaborators, Brian can give your access to phylogin1 using the same [XCAMS][] account and password. phylogin1 can be accessed through [SSH][] in a terminal or [ThinLinc][], which provides a fully functional desktop environment.
 - The USD creative services can print posters with a limit of 42" in one dimension. The request can be submitted [here](https://apps.usd.edu/administrative/creative-services/posters/app/)
 - The USD creative services can print business cards. The request can be submitted [here](https://apps.usd.edu/administrative/creative-services/business-cards/app/index.cfm)
 
@@ -56,6 +56,10 @@ Shipping index: 241617
 - <https://www.hubs.com>: online machining, instant quote, standard tolerances: 0.125 mm (0.005"), if made in China, the shipping may be as long as 1 month
 - <https://get.xometry.com>: online machining, instant quote, standard tolerances: 0.125 mm (0.005"), if made in China, the shipping may be as long as 1 month
 - <https://www.protolabs.com>: online machining, quote available in a few minutes, same standard tolerances, part size is rather limited (less than 12"), usually more expensive than the two above
+
+### Cryostat
+
+- thin CF flanges: <https://uhvstore.com/collections/slim-line-cf>
 
 ## Funding opportunities
 
