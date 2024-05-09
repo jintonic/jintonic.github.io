@@ -5,6 +5,15 @@ title: WSL
 subtitle: Windows Subsystem for Linux
 ---
 
+## Terminate a WSL
+
+In a powershell, use the following commands to list and terminate a WSL distribution.
+
+```
+wsl -l -v
+wsl -t <distroName>
+```
+
 ## Windows File Permission
 Permissions of files in `/mnt/c` are 777 by default unless you add the following in `/etc/wsl.conf` inside a specific WSL:
 
