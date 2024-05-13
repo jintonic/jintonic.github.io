@@ -25,6 +25,7 @@ Shipping index: 241617
 - References: <https://www.zotero.org/>. Please register there, let [Jing Liu](/research/group) know your user name, install the desktop version of zotero as well as the web browser plugin.
 - [NuDat][], National Nuclear Data Center [NNDC][]: interactive website to search for data for individual isotopes
 - [Stopping-Power & Range Tables for Electrons, Protons, and Helium Ions](https://www.nist.gov/pml/stopping-power-range-tables-electrons-protons-and-helium-ions)
+- [photon cross section data for a single element, compound, or mixture](https://physics.nist.gov/PhysRefData/Xcom/html/xcom1.html)
 
 [NuDat]: https://www.nndc.bnl.gov/nudat3
 [NNDC]: https://www.nndc.bnl.gov
