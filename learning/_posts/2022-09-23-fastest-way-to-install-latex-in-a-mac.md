@@ -16,9 +16,16 @@ tlmgr search --global --file some.sty
 tlmgr install missingPackage
 ```
 
-Further explanation: [MacTeX][] is large (~4 GB). [BasicTeX][] is a much smaller option that provides basic functionality of [LaTeX][]. However, [BasicTeX][] does not include [latexmk][] and some common fonts. Fortunately, the [tlmgr][] command is provided in [BasicTeX][]. One can use [tlmgr][] to find and install missing packages.
+Further explanation: [MacTeX][] is large (~4 GB). [BasicTeX][] is a much smaller option that provides basic functionality of [LaTeX][]. However, [BasicTeX][] does not include [latexmk][] and some common fonts. Fortunately, the [tlmgr][] command is provided in [BasicTeX][]. One can use [tlmgr][] to find and install missing packages. Binary folder from [BasicTeX][] will be automatically added to \$PATH.
 
-A similar package [TinyTeX][] works well for Windows.
+[BasicTeX][] updates once per year. Once it's updated, run
+
+```sh
+sudo tlmgr update --self
+sudo tlmgr install collection-fontsrecommended latexmk
+```
+
+A similar package [TinyTeX][] works well for Windows and Linux.
 
 [MacTeX]: https://www.tug.org/mactex
 [BasicTeX]: https://www.tug.org/mactex/morepackages.html
