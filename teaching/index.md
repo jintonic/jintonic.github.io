@@ -6,6 +6,7 @@ layout: list
 
 |Course | Syllabus | Type | Level | Evaluation
 |:------|:---------|:-----|:------|:----------
+|College Physics |[2025][104-25]|Lecture|Undergrad.|[2025][104i25]
 |Quantum Mechanics  |[2024][773-24], [2023][771-23], [2022][773-22], [2021][771-21]|Lecture|Graduate|[2024][773i24], [2023][771i23], [2022][773i22], [2021][771i21]
 |Electrodynamics    |[2021][723-21], [2020][721-20], [2019][723-19], [2018][721-18]|Lecture|Graduate|[2021][723i21], [2020][721i20], [2019][723i19], [2018][721i18]
 |Classical Mechanics|[2024][751-24], [2022][751-22]|Lecture|Graduate| [2024][751i24], [2022][751i22]
@@ -51,3 +52,5 @@ layout: list
 
 [441-19]: https://coyotesusd-my.sharepoint.com/:w:/g/personal/jing_liu_usd_edu/EYw-fpHzsvBAjyDMRF8k9ToB6njnd1cLTRXVsNitQSmTvw?e=QR0Osz
 
+[104-25]: https://coyotesusd-my.sharepoint.com/:w:/g/personal/jing_liu_usd_edu/EVUCA7Na8SxEt8gAMjVz02gBDo21F7tE2VmvVPzm06g1YQ?e=jgplLM
+[104i25]: 
