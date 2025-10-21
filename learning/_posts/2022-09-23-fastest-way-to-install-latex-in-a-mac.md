@@ -34,3 +34,11 @@ A similar package [TinyTeX][] works well for Windows and Linux.
 [tlmgr]: https://tug.org/texlive/tlmgr.html
 [TinyTeX]: https://yihui.org/tinytex
 
+## Packages Needed for Springer Nature Journals
+
+Since December 2024, a [new LaTeX package](https://www.springernature.com/gp/authors/campaigns/latex-author-support) is recommended for Springer Nature Journals. Place `sn_jnl.cls` and `sn_mathphys-num.bst` together with your `main.tex` for European Physics Journal series. Install the following packages to compile.
+
+```sh
+sudo tlmgr install algorithms algorithmicx appendix multirow ncctools rsfs sttools threeparttable
+```
+
