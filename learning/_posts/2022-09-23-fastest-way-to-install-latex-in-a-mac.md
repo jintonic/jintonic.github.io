@@ -42,3 +42,13 @@ Since December 2024, a [new LaTeX package](https://www.springernature.com/gp/aut
 sudo tlmgr install algorithms algorithmicx appendix multirow ncctools rsfs sttools threeparttable
 ```
 
+## Other Useful Packages
+
+```sh
+sudo tlmgr enumitem courier
+```
+- [enumitem][]: Control layout of itemize, enumerate, description
+- [courier][]: Adobe Type 1 “free” copies of Courier
+
+[enumitem]: https://ctan.org/pkg/enumitem
+[courier]: https://ctan.org/pkg/courier
