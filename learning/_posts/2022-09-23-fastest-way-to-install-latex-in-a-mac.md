@@ -18,7 +18,7 @@ tlmgr search --global --file some.sty
 tlmgr --usermode install missingPackage
 ```
 
-[MacTeX][] is large (~4 GB). [BasicTeX][] is a much smaller option that provides basic functionality of [LaTeX][]. However, [BasicTeX][] does not include [latexmk][] and some common fonts. Fortunately, the [tlmgr][] command is provided in [BasicTeX][]. One can use [tlmgr][] to find and install missing packages. Binary folder from [BasicTeX][] is automatically added to \$PATH. [latexmk][] will be available in the user's command line as soon as it is installed.
+[MacTeX][] is large (~4 GB). [BasicTeX][] is a much smaller option that provides basic functionality of [LaTeX][] on macOS. A similar package [TinyTeX][] works well for Windows and Linux. However, [BasicTeX][] does not include [latexmk][] and some common fonts. Fortunately, the [tlmgr][] command is provided in [BasicTeX][]. One can use [tlmgr][] to find and install missing packages. Binary folder from [BasicTeX][] is automatically added to \$PATH. [latexmk][] will be available in the user's command line as soon as it is installed.
 
 Except for [latexmk][], other packages can be installed into the user's [texmf][] folder, the location of which can be found using command `kpsewhich -var-value TEXMFHOME`. In a Mac, it defaults to `~/Library/texmf` and can be initialized using `tlmgr init-usertree`. Option `--usermode` for [tlmgr][] is used to interact with the user's [texmf][] folder instead of the system one.
 
@@ -41,8 +41,6 @@ To list all installed packages in one's own [texmf][] folder, run:
 ```sh
 tlmgr --usermode list --only-installed
 ```
-
-A similar package [TinyTeX][] works well for Windows and Linux.
 
 [MacTeX]: https://www.tug.org/mactex
 [BasicTeX]: https://www.tug.org/mactex/morepackages.html
