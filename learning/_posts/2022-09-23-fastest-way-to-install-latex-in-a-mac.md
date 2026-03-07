@@ -52,19 +52,22 @@ A similar package [TinyTeX][] works well for Windows and Linux.
 [texmf]: https://tex.stackexchange.com/a/420623
 [TinyTeX]: https://yihui.org/tinytex
 
-## Packages Needed for Springer Nature Journals
+## Useful Packages
+
+```sh
+tlmgr --usermode install enumitem pgf
+```
+- [enumitem][]: Control layout of itemize, enumerate, description
+- [pgf][]: Create PostScript and PDF graphics in TeX
+
+[enumitem]: https://ctan.org/pkg/enumitem
+[pgf]: https://ctan.org/pkg/pgf
+
+
+### Packages Needed for Springer Nature Journals
 
 Since December 2024, a [new LaTeX package](https://www.springernature.com/gp/authors/campaigns/latex-author-support) is recommended for Springer Nature Journals. Place `sn_jnl.cls` and `sn_mathphys-num.bst` together with your `main.tex` for European Physics Journal series. Install the following packages to compile.
 
 ```sh
 tlmgr --usermode install algorithms algorithmicx appendix multirow ncctools rsfs sttools threeparttable
 ```
-
-## Other Useful Packages
-
-```sh
-sudo tlmgr enumitem
-```
-- [enumitem][]: Control layout of itemize, enumerate, description
-
-[enumitem]: https://ctan.org/pkg/enumitem
