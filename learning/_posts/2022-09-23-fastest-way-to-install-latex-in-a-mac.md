@@ -71,3 +71,14 @@ Since December 2024, a [new LaTeX package](https://www.springernature.com/gp/aut
 ```sh
 tlmgr --usermode install algorithms algorithmicx appendix multirow ncctools rsfs sttools threeparttable
 ```
+
+## Integration with VS Code
+
+```sh
+brew install tex-fmt
+```
+
+Install [LaTeX Workshop][] extension. Select [tex-fmt][] as the formatter. The extension uses [latexmk] to automate the compilation.
+
+[LaTeX Workshop]: https://github.com/James-Yu/LaTeX-Workshop
+[tex-fmt]: https://github.com/WGUNDERWOOD/tex-fmt
