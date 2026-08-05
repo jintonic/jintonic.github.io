@@ -1,6 +1,15 @@
-from jekyll/minimal:pages
+# github pages reuires ruby 3.1
+FROM ruby:3.1-slim
 
-# https://github.com/jekyll/jekyll/issues/8523
-# `bundle install webrick` updates some other gems
-# `gem install webrick` simply install webrick
-run gem cleanup && gem install webrick
+# build-essential: for building bigdecimal gem
+RUN apt-get update -qq && \
+    apt-get install -y --no-install-recommends build-essential git && \
+    rm -rf /var/lib/apt/lists/* && \
+    gem install --no-document bundler
+
+COPY Gemfile ./
+
+RUN bundle install
+
+WORKDIR /srv/jekyll
+EXPOSE 4000 35729
