@@ -33,5 +33,9 @@ defaults:
 
 exclude:
   - Dockerfile
-  - docker-compose.yml
+  - compose.yml
   - CNAME
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - LICENSE
