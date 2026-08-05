@@ -1,4 +1,4 @@
-Source code of <http://physino.xyz> that can be converted to static web pages using [Jekyll][].
+Source code of <https://physino.xyz> that can be converted to static web pages using [Jekyll][].
 
 [Jekyll]: https://jekyllrb.com
 [Docker]: https://www.docker.com
@@ -14,12 +14,7 @@ cd physino.xyz
 docker compose up
 ```
 
-Now one can open <http://localhost:4000> in a browser and see the locally generated website.
-
-### Ref.
-- <https://dev.to/michael/compile-a-jekyll-project-without-installing-jekyll-or-ruby-by-using-docker-4184>
-- <https://hub.docker.com/r/jekyll/jekyll>
-- <https://docs.docker.com/compose/>
+Now one can open <http://0.0.0.0:4000> in a browser and see the locally generated website.
 
 ### Docker image
 
@@ -30,28 +25,16 @@ git clone git@github.com:jintonic/jintonic.github.io.git physino.xyz
 cd physino.xyz
 # run docker desktop before running the following commands
 # build image based on ./Dockerfile
-docker-compose build
+docker compose build
 # push container to hub.docker.com
-docker-compose push
+docker compose push
 ```
 
-The [Dockerfile](Dockerfile) contains only two lines:
+The [Dockerfile](Dockerfile) builds on `ruby:3.1-sim` image, which is required by the `github-pages` [gem]. `bundle install` is used in the [Dockerfile](Dockerfile) to install all `github-pages`' dependencies, including [Jekyll], based on [Gemfile](Gemfile).
 
-```
-from jekyll/minimal:pages
-run gem cleanup && gem install webrick
-```
+The image generated is named `physino/jekyll` in [compose.yml](compose.yml) and shared on <https://hub.docker.com/r/physino/jekyll>.
 
-The official [jekyll/minimal:pages](https://hub.docker.com/r/jekyll/minimal) image doesn't include the [webrick][] [gem][], which provides an http server. Without it, I can run `jekyll build`, but not `jekyll serve`. I can install it using [bundler][] for a specific ruby application or using `gem install webrick` for the whole Docker image. As this Docker image is created for the sole purpose of serving this website locally, there is no need to use [bundler][] anymore. Besides, `bundle install webrick` not only installs [webrick][], but also install a bunch of other gems in different versions from the ones installed by `gem`. [Jekyll][] gets confused by those different versions of gems. The difference between `bundle install` and `gem install` is mentioned in the following posts:
-
-- <https://stackoverflow.com/a/6162221>
-- <https://stackoverflow.com/a/11635148>
-
-The image generated is named `physino/jekyll:pages` in [docker-compose.yml](docker-compose.yml) and shared on <https://hub.docker.com/r/physino/jekyll>.
-
-[webrick]: https://github.com/ruby/webrick
 [gem]: https://rubygems.org
-[bundler]: https://bundler.io
 
 # Structure
 
@@ -95,4 +78,3 @@ Ref.: <https://choosealicense.com/>
 
 ## Limitation
 - jekyll-pagination only works in the `index.html` file, not [index.md](index.md). jekyll-pagination-v2 does support pagination in any file, but does not work for GitHub pages. Currently, the pagination code is in [blog/index.html](blog/index.html). It does not work.
--
