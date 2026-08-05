@@ -1,10 +1,11 @@
 services:
-  site:
-    # https://github.com/envygeeks/jekyll-docker#dependencies
+  jekyll:
     image: physino/jekyll
-    # --force_polling: needed in bash in windows to watch for file changes
+    # --host=0.0.0.0: listen on all interfaces, not just localhost
+    # --incremental: only regenerate files that have changed since the last build
     # --livereload: let a browser to reload when the site is regenerated
-    command: jekyll serve --incremental --livereload --force_polling
+    # --force_polling: needed in bash in windows to watch for file changes
+    command: bundle exec jekyll serve --host=0.0.0.0 --incremental --livereload --force_polling
     ports:
       # port for http service
       - 4000:4000
