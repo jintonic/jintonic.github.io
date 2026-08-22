@@ -1,4 +1,4 @@
-# github pages reuires ruby 3.1
+# github pages requires ruby 3.1
 FROM ruby:3.1-slim
 
 # build-essential: for building bigdecimal gem
